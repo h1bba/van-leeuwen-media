@@ -1,18 +1,33 @@
 .quotecontainer {
+    display: flex;
+    position: relative;
     width: 1240px;
-    height: 5em;
+    height: 10em;
+    padding: 2em 0em 2em 0em;
     background-color: #F4F4F4;
-    margin: 0 auto;
+    margin: 2em auto;
     border-radius: 1em;
+    align-items: center;
+}
+
+.quotecontainer>p {
+    font-weight: 700;
 }
 
 .quotecontainer::before {
     content: '“';
-    font-size: 5em;
+    font-size: 8em;
+    position: absolute;
+    top: 0;
+    left: -0.2em;
+    color: var(--var-color-orange);
 }
 
 .quotecontainer::after {
     content: '”';
-    font-size: 5em;
-
+    font-size: 8em;
+    position: absolute;
+    right: -0.2em;
+    bottom: -0.6em;
+    color: var(--var-color-orange);
 }
