@@ -1,24 +1,21 @@
 "use client"
 import React from 'react'
-import Faq from '../faq/Faq.jsx'
-import styles from './Footer.module.css'
 import Link from 'next/link.js'
 import Insta from '../../../public/insta.svg'
 import LinkedIn from '../../../public/linkedin.svg'
 import Image from 'next/image.js'
-import { Button } from '@mui/material'
 
 
 export const Footer = () => {
     return (
         <>
-            <div>
+            <div className='cta'>
                 <p>Waar wacht je op?</p>
-                <Button>Contact</Button>
+                <a>Contact</a>
             </div>
             <footer>
-                <div className={styles.footerflex}>
-                    <div className={styles.footercontainer}>
+                <div className='footerflex'>
+                    <div className='footercontainer'>
                         <ul>
                             <li><Link href="/">Ons werk</Link></li>
                             <li><Link href="/">Diensten</Link></li>
@@ -39,12 +36,12 @@ export const Footer = () => {
                         </ul>
 
 
-                        <ul className={styles.socials}>
+                        <ul className='socials'>
                             <li><Image src={Insta} alt='' /></li>
                             <li><Image src={LinkedIn} alt='' /></li>
                         </ul>
 
-                        <ul className={styles.info}>
+                        <ul className="info">
                             <li>vanleeuwenmedia® 2023</li>
                             <li>site by hibba</li>
                         </ul>
