@@ -26,6 +26,27 @@
   --color-quote-bg: #F4F4F4;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #F4F4F4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--var-color-orange);
+  border-radius: 1em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffac52;
+}
+
+
 .MuiTypography-root {
   font-family: 'Nunito Sans', sans-serif !important;
 }
@@ -42,6 +63,12 @@ html, body {
   padding: 0;
   margin: 0;
 }
+
+
+body {
+  overflow: overlay;
+}
+
 
 h2, h3 {
   line-height: 111.4%

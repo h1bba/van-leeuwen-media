@@ -23,7 +23,7 @@ export default function Faq() {
                         >
                             <Typography>Title of the question</Typography>
                         </AccordionSummary>
-                        <AccordionDetails style={{ paddingLeft: '0' }}>
+                        <AccordionDetails style={{ paddingLeft: '0', paddingRight: '48px' }}>
                             <Typography >
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                 malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -38,7 +38,7 @@ export default function Faq() {
                         >
                             <Typography>Title of the question</Typography>
                         </AccordionSummary>
-                        <AccordionDetails style={{ paddingLeft: '0' }}>
+                        <AccordionDetails style={{ paddingLeft: '0', paddingRight: '48px' }}>
                             <Typography>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                 malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -53,7 +53,7 @@ export default function Faq() {
                         >
                             <Typography>Title of the question</Typography>
                         </AccordionSummary>
-                        <AccordionDetails style={{ paddingLeft: '0' }}>
+                        <AccordionDetails style={{ paddingLeft: '0', paddingRight: '48px' }}>
                             <Typography>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                 malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -68,7 +68,7 @@ export default function Faq() {
                         >
                             <Typography>Title of the question</Typography>
                         </AccordionSummary>
-                        <AccordionDetails style={{ paddingLeft: '0' }}>
+                        <AccordionDetails style={{ paddingLeft: '0', paddingRight: '48px' }}>
                             <Typography>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                 malesuada lacus ex, sit amet blandit leo lobortis eget.
