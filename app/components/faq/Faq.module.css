@@ -1,11 +1,13 @@
 .faqcontainer {
     position: relative;
-    width: 65%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5em;
+}
+
+.faqcontainer>div {
+    margin-bottom: 1em;
+}
+
+.faqcontainer>div>div {
+    padding-left: 0;
 }
 
 .faqtext {
@@ -14,12 +16,23 @@
 }
 
 .faqlist>div>div>p {
+    padding-left: 0;
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Nunito Sans', sans-serif !important;
-
 }
 
 .faqcontainer>div {
     box-shadow: none;
+}
+
+.faqflex {
+    gap: 1em;
+    margin: 0 auto;
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.uiAccordionDetails-root {
+    padding: 0;
 }

@@ -19,10 +19,19 @@
 :root {
   --var-color-white: #fff;
   --var-color-black: #000000;
+  --var-color-grey: grey;
   --var-color-orange: #FF8500;
   --var-color-ph: #D9D9D9;
   --var-gradient-dark: linear-gradient(180deg, #161616 0%, #000000 100%);
   --color-quote-bg: #F4F4F4;
+}
+
+.MuiTypography-root {
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+
+.MuiAccordion-region {
+  color: var(--var-color-grey);
 }
 
 * {
@@ -84,80 +93,6 @@ a {
 .color-orange-bold {
   color: var(--var-color-orange);
   font-weight: 700;
-}
-
-.br {
-  border-radius: 1em;
-}
-
-.ph {
-  background-color: var(--var-color-ph);
-}
-
-.grid-container {
-  margin: 0 auto;
-  width: 1240px;
-  height: 100%;
-  position: relative;
-}
-
-.services-container {
-  position: relative;
-  width: 1240px;
-  margin: 0 auto;
-}
-
-.services-flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: space-between;
-}
-
-.services-badge {
-  padding: 1em;
-  width: 100%;
-  flex-basis: 49.35%;
-  background: var(--var-gradient-dark);
-  align-items: center;
-
-
-  color: var(--var-color-white);
-  display: flex;
-  gap: 1.5em;
-  position: relative;
-  flex-wrap: wrap;
-}
-
-h2.service-title {
-  font-size: 24px;
-  flex-basis: 80%;
-}
-
-div.services-badge>svg {
-  fill: var(--var-color-orange);
-  width: 3.5em;
-  height: 3.5em;
-  margin-left: 1em;
-  flex-basis: 10%;
-}
-
-h2.service-title::after {
-  content: url('../public/open.svg');
-  position: absolute;
-  top: 1.4em;
-  right: 1.5em;
-}
-
-.service-desc {
-  position: relative;
-  display: flex;
-  flex-basis: 100%;
-  padding: 1em;
-  padding-top: 0;
-  font-size: 16px;
-  margin-right: 1em;
-  margin-top: 0;
 }
 
 .break {
@@ -230,6 +165,14 @@ ul.info {
   flex-direction: row !important;
 }
 
+.ctacontainer {
+  position: relative;
+  display: flex;
+  justify-items: center;
+  height: 16em;
+  background-color: var(--var-color-black);
+}
+
 .cta {
   margin: 0 auto;
   text-align: center;
@@ -238,6 +181,11 @@ ul.info {
 .cta>p {
   font-size: 48px;
   font-weight: bold;
+  color: var(--var-color-white);
+}
+
+img.br {
+  border-radius: 1em;
 }
 
 .cta>a {

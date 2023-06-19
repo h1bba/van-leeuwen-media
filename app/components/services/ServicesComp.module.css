@@ -1,0 +1,71 @@
+.gridcontainer {
+    margin: 0 auto;
+    width: 1240px;
+    height: 100%;
+    position: relative;
+}
+
+.servicescontainer {
+    position: relative;
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.servicesflex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.servicesbadge {
+    padding: 1em;
+    width: 100%;
+    flex-basis: 49.35%;
+    background: var(--var-gradient-dark);
+    align-items: center;
+    border-radius: 1em;
+
+
+
+    color: var(--var-color-white);
+    display: flex;
+    gap: 1.5em;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+h2.servicetitle {
+    font-size: 24px;
+    flex-basis: 80%;
+}
+
+div.servicesbadge>svg {
+    fill: var(--var-color-orange);
+    width: 3em;
+    height: 3em;
+    margin-left: 1em;
+    flex-basis: 10%;
+}
+
+h2.servicetitle::after {
+    content: url('../../../public/open.svg');
+    position: absolute;
+    top: 1.4em;
+    right: 1.5em;
+}
+
+.servicedesc {
+    position: relative;
+    display: flex;
+    flex-basis: 100%;
+    padding: 1em;
+    padding-top: 0;
+    font-size: 16px;
+    margin-right: 1em;
+    margin-top: 0;
+}
+
+.ph {
+    background-color: var(--var-color-ph);
+}

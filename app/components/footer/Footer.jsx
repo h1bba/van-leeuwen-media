@@ -9,9 +9,11 @@ import Image from 'next/image.js'
 export const Footer = () => {
     return (
         <>
-            <div className='cta'>
-                <p>Waar wacht je op?</p>
-                <a>Contact</a>
+            <div className='ctacontainer'>
+                <div className='cta'>
+                    <p>Waar wacht je op?</p>
+                    <a>Contact</a>
+                </div>
             </div>
             <footer>
                 <div className='footerflex'>
