@@ -8,7 +8,7 @@ import { BsFillCameraVideoFill } from 'react-icons/bs'
 import { BsSpeakerFill } from 'react-icons/bs'
 import { BsSunriseFill } from 'react-icons/bs'
 import Quote from './components/quote/Quote'
-
+import Faq from './components/faq/Faq'
 
 
 const Home = () => {
@@ -46,6 +46,7 @@ const Home = () => {
         </div>
       </div>
       <Quote />
+      <Faq />
 
 
     </>
