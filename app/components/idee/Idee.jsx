@@ -12,46 +12,21 @@ const Idee = () => {
         const textContainer = textContainerRef.current;
         const imageContainer = imageContainerRef.current;
 
-        let isScrolling = false;
-
         const handleScroll = () => {
-            if (!isScrolling) {
-                isScrolling = true;
-                window.requestAnimationFrame(() => {
-                    const scrollY = window.scrollY || window.pageYOffset;
-                    const triggerPosition = imageContainer.offsetTop - window.innerHeight * 0.6;
+            const scrollY = window.scrollY || window.pageYOffset;
+            const triggerPosition = imageContainer.offsetTop - window.innerHeight * 0.6;
 
-                    if (scrollY >= triggerPosition) {
-                        container.style.position = 'static';
-                        textContainer.style.opacity = '0';
-                    } else {
-                        container.style.position = 'fixed';
-                        textContainer.style.opacity = '1';
-                    }
-
-                    isScrolling = false;
-                });
-            }
-        };
-
-        const handleMouseMove = () => {
-            if (imageContainer.scrollHeight > window.innerHeight) {
-                const mouseY = window.event.clientY;
-                const containerTop = container.offsetTop;
-                const containerHeight = container.offsetHeight;
-                const scrollHeight = imageContainer.scrollHeight - window.innerHeight;
-                const scrollPosition = (mouseY - containerTop) / containerHeight;
-
-                imageContainer.scrollTop = scrollHeight * scrollPosition;
+            if (scrollY >= triggerPosition) {
+                textContainer.style.opacity = '1';
+            } else {
+                textContainer.style.opacity = '1';
             }
         };
 
         window.addEventListener('scroll', handleScroll);
-        window.addEventListener('mousemove', handleMouseMove);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
-            window.removeEventListener('mousemove', handleMouseMove);
         };
     }, []);
 
@@ -62,6 +37,8 @@ const Idee = () => {
             </h2>
             <div ref={containerRef} className={styles.ideecontainer}>
                 <div ref={imageContainerRef} className={`${styles.ideeimgs} ${styles.scrollableImages}`}>
+                    <img src="https://placehold.co/800x800" alt="" />
+                    <img src="https://placehold.co/800x800" alt="" />
                     <img src="https://placehold.co/800x800" alt="" />
                 </div>
 
