@@ -1,32 +1,94 @@
 .grid {
-    max-width: 1240px;
     display: flex;
-    margin: 0 auto;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
+    gap: 2em;
 }
 
 .grid>div {
+    position: relative;
+    flex-basis: 48%;
+    height: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     border-radius: 1em;
-    width: 414px;
-    height: 414px;
-    background-color: var(--var-color-black);
+    background-color: var(--color-quote-bg);
+    padding: 1.5em;
+}
+
+.grid>div>img {
+    flex-basis: 20%;
+}
+
+.grid>div>div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    flex-direction: row;
+    width: 100%;
+    align-self: center;
+    padding-left: 1em;
+    gap: 0.1em;
+
+
+}
+
+.grid>div>div h3, .grid>div>div p {
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: center;
+    flex-basis: 80%;
+}
+
+.grid>div>div>a {
+    align-self: center;
+    flex-basis: 80%;
+}
+
+.grid>div:first-child {
+    align-items: center;
+    align-self: center;
 }
 
 .grid h3 {
-    color: var(--var-color-white);
+    color: var(--var-color-black);
     font-size: 24px;
     margin-bottom: 0;
 }
 
 .grid h4 {
-    color: var(--var-color-white);
+    color: var(--var-color-black);
     font-size: 16px;
     margin-bottom: 0;
 }
 
 .grid p {
-    color: var(--var-color-white);
+    color: var(--var-color-black);
     font-size: 16px;
-    margin-top: 0.4em;
+    margin-top: 0em;
+}
+
+.centersvg {
+    align-self: center;
+    align-items: center;
+}
+
+.contactcontainer {
+    gap: 2em;
+    margin: 0 auto;
+    max-width: 1240px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.contactperson {
+    flex-basis: 33%;
+    height: 16em;
+    text-align: center;
+}
+
+.contactperson img {
+    border-radius: 1em;
 }
