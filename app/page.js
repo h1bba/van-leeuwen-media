@@ -8,6 +8,7 @@ import ServicesComp from "./components/services/ServicesComp";
 const Home = () => {
   return (
     <>
+      <SelectedWork />
       <ServicesComp />
       <Quote />
       <Faq />

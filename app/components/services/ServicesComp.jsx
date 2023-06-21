@@ -4,8 +4,6 @@ import { BsFillPaletteFill } from 'react-icons/bs'
 import { BsFillCameraVideoFill } from 'react-icons/bs'
 import { BsSpeakerFill } from 'react-icons/bs'
 import { BsSunriseFill } from 'react-icons/bs'
-import Quote from '../quote/Quote'
-import Faq from '../faq/Faq'
 
 const ServicesComp = () => {
     return (

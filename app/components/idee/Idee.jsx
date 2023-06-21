@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import styles from './Idee.module.css'
-import { motion } from "framer-motion"
 
 
 const Idee = () => {
