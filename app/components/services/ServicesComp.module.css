@@ -36,8 +36,8 @@
 }
 
 h2.servicetitle {
-    font-size: 24px;
-    flex-basis: 80%;
+    font-size: 1.618rem;
+    margin-bottom: 1rem;
 }
 
 div.servicesbadge>svg {
@@ -61,11 +61,24 @@ h2.servicetitle::after {
     flex-basis: 100%;
     padding: 1em;
     padding-top: 0;
-    font-size: 16px;
+    font-size: 1rem;
     margin-right: 1em;
     margin-top: 0;
 }
 
 .ph {
     background-color: var(--var-color-ph);
+}
+
+.h2animate {
+    position: sticky;
+    top: 50;
+    font-size: 4.236rem;
+    line-height: 100%;
+    margin-top: 0em;
+    margin-bottom: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 20em;
 }
