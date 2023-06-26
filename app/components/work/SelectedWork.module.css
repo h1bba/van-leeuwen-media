@@ -1,57 +1,98 @@
+/* SelectedWork.module.css */
 .sworkcontainer {
     margin: 0 auto;
-    max-width: 1240px;
+    max-width: 80vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2em;
+    gap: 1em;
 }
 
 .fullwidthimg {
+    position: sticky;
+    top: 10em;
     background-color: green;
-    position: relative;
-    top: 2em;
-    flex-basis: 100%;
-    width: 100%;
-    height: 76em;
+    width: 78em;
+    height: 36em;
     border-radius: 0;
     transition: height 0.3s ease, border-radius 0.3s ease;
     margin: auto;
     overflow-x: hidden;
 }
 
-
 .leftcolumn {
-    margin-top: 2em;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     width: 100%;
     margin-bottom: 2em;
 }
 
 .rightcolumn {
-    margin-top: 2em;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     width: 100%;
     margin-bottom: 2em;
-
 }
 
-.rightcolumn>div, .leftcolumn>div {
+.rightcolumn>div,
+.leftcolumn>div {
     border-radius: 1em;
-
 }
 
 .phitem1 {
     background-color: green;
     width: 100%;
-    height: 38em;
+    height: 20em;
 }
 
 .phitem2 {
-    background-color: green;
+    background-color: var(--var-color-orange);
     width: 100%;
-    height: 24em;
+    height: 20em;
+    display: flex;
+    align-items: center;
+}
+
+.phitem3 {
+    display: flex;
+    align-items: center;
+    background-color: var(--var-color-black);
+    color: var(--var-color-white);
+    width: 100%;
+    height: 20em;
+    position: relative;
+    line-height: 1.2;
+}
+
+/* .phitem3::before {
+    content: '“';
+    font-size: 6.854rem;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: -0.2em;
+    color: var(--var-color-orange);
+} */
+
+/* .phitem3::after {
+    content: '”';
+    font-size: 6.854rem;
+    font-weight: 400;
+    position: absolute;
+    right: -0.2em;
+    bottom: -0.6em;
+    color: var(--var-color-orange);
+} */
+
+.category {
+    list-style: none;
+    font-size: 2.618rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0;
+    color: var(--var-color-white);
+    line-height: 150%;
 }
