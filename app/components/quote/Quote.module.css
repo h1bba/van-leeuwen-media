@@ -2,21 +2,17 @@
     display: flex;
     position: relative;
     width: 1240px;
-    height: 12em;
-    padding: 2em 0em 2em 0em;
+    padding: 4em 0em 4em 0em;
     background-color: #F4F4F4;
     margin: 2em auto;
     border-radius: 1em;
     align-items: center;
 }
 
-.quotecontainer>p {
-    font-weight: 700;
-}
-
 .quotecontainer::before {
     content: '“';
-    font-size: 8em;
+    font-size: 6.854rem;
+    font-weight: 400;
     position: absolute;
     top: 0;
     left: -0.2em;
@@ -25,9 +21,18 @@
 
 .quotecontainer::after {
     content: '”';
-    font-size: 8em;
+    font-size: 6.854rem;
+    font-weight: 400;
     position: absolute;
     right: -0.2em;
     bottom: -0.6em;
     color: var(--var-color-orange);
+}
+
+.quotetext {
+    font-size: 4.236rem;
+    line-height: 120%;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
 }
