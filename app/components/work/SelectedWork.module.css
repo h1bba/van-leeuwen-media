@@ -1,5 +1,6 @@
 /* SelectedWork.module.css */
 .sworkcontainer {
+    position: relative;
     margin: 0 auto;
     max-width: 80vw;
     display: grid;
@@ -95,4 +96,31 @@
     padding-left: 0;
     color: var(--var-color-white);
     line-height: 150%;
+}
+
+.outershowreel {
+    position: sticky;
+    top: 50%;
+    bottom: 2em;
+    transform: translateY(-50%);
+    margin-top: 48em;
+}
+
+.showreelcontainer {
+    height: 40em;
+    width: 78em;
+    margin: auto;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+
+}
+
+.showreelcontainer video {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 0;
+    width: 1920px;
+    height: 1080px;
 }

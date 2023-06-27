@@ -1,6 +1,8 @@
 .quotecontainer {
     display: flex;
-    position: relative;
+    position: fixed;
+    left: 0;
+    right: 0;
     width: 1240px;
     padding: 4em 0em 4em 0em;
     background-color: #F4F4F4;
