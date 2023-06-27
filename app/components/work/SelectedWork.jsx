@@ -1,52 +1,23 @@
 // SelectedWork.jsx
 'use client'
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import styles from './SelectedWork.module.css';
-import { cubicBezier, EaseIn, useTransform, motion, useViewportScroll, easeIn, animate } from 'framer-motion';
 import Quote from '../quote/Quote';
+import ReactPlayer from 'react-player';
+import dynamic from 'next/dynamic';
 
 const SelectedWork = () => {
-    const targetRef = useRef(null);
-    const { scrollY, scrollYProgress } = useViewportScroll();
-
-    const width = useTransform(scrollYProgress, [0, 0.12], ['78em', '99.55dvw']);
-    const borderRadius = useTransform(scrollYProgress, [0, 0.3], ['32px', '0px']);
-    const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8])
-    const opacity = useTransform(scrollYProgress, [0, 0.15, 0.21], [1, 1, 0])
-    const translateY = useTransform(scrollYProgress, [0, 0.1], ['100%', '0%'])
-
-    const handleScroll = () => {
-        const targetElement = targetRef.current;
-        if (targetElement) {
-            const rect = targetElement.getBoundingClientRect();
-            const divOffset = rect.top + rect.height;
-            const windowHeight = window.innerHeight;
-
-            if (divOffset <= windowHeight) {
-                targetElement.classList.add(styles.fixed);
-            } else {
-                targetElement.classList.remove(styles.fixed);
-            }
-        }
-    };
-
-    useEffect(() => {
-        handleScroll();
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
+    const showreel = "https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Showreel.webm"
 
     return (
         <>
-            <Quote />
-            <div style={{ position: 'sticky', marginTop: '2em', marginBottom: '40em' }} >
-                <motion.div
-                    style={{ borderRadius, position: 'sticky', top: '10em' }}
-                    ref={targetRef}
-                    className={`${styles.fullwidthimg} ${styles.fixed}`}
-                ></motion.div>
+            <div>
+                <Quote />
+            </div>
+
+            <div style={{ margin: '0 auto' }}>
+                <ReactPlayer width='1440px' height='960px' controls={true} playing={true} url={showreel} />
             </div>
 
 
@@ -60,22 +31,21 @@ const SelectedWork = () => {
                             <li>Corporate</li>
                             <li>Fictional</li>
                             <li>Social</li>
-
                         </ul>
                     </div>
                     <div className={styles.phitem1}></div>
                     <div className={styles.phitem1}></div>
-
                 </div>
                 <div className={styles.rightcolumn}>
                     <div className={styles.phitem1}></div>
                     <div className={styles.phitem1}></div>
                     <div className={styles.phitem1}></div>
 
-                    <div className={styles.phitem3}><p style={{ textAlign: 'center', verticalAlign: 'center', fontSize: '2.618rem', maxWidth: '12em', margin: '0 auto' }}>Niet je standaard studio,
-                        wel de juiste.</p>
+                    <div className={styles.phitem3}>
+                        <p style={{ textAlign: 'center', verticalAlign: 'center', fontSize: '2.618rem', maxWidth: '12em', margin: '0 auto' }}>
+                            Niet je standaard studio, wel de juiste.
+                        </p>
                     </div>
-
                 </div>
             </div>
         </>
