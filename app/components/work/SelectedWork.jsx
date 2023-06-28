@@ -3,49 +3,41 @@
 import React, { useRef } from 'react';
 import styles from './SelectedWork.module.css';
 import Quote from '../quote/Quote';
-import ReactPlayer from 'react-player';
 import dynamic from 'next/dynamic';
 import { useScroll, useTransform, motion } from 'framer-motion'
 import { relative } from 'path';
+import Showreel from '../showreel/Showreel'
 
 
 const SelectedWork = () => {
-    const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
-    const showreel = "https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Showreel.webm"
-
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
         offset: ["end end", "end start"],
     })
 
-    const opacity = useTransform(scrollYProgress, [0.85, 1], [1, 0]);
-    const width = useTransform(scrollYProgress, [0.4, 0.6], ['78em', '99.5vw'])
+    const opacity = useTransform(scrollYProgress, [0.6, 0.75], [1, 0]);
+    const scale = useTransform(scrollYProgress, [0.6, 0.75], [1, 0.85]);
+    const translateY = useTransform(scrollYProgress, [0.85, 1], [1, 0.2])
 
     return (
         <>
 
             <motion.div
-                style={{ opacity }}
+                style={{ opacity, scale, translateY, marginTop: '20em' }}
                 ref={targetRef}>
                 <Quote style={{ position: 'fixed' }} />
             </motion.div>
 
+            <Showreel />
+
             <motion.div
-                className={styles.outershowreel}>
-                <div className={styles.showreelcontainer}>
-                    <video autoPlay muted loop >
-                        <source src={showreel} type="video/webm" />
-                    </video>
-                </div>
+                initial={{ opacity: 0, scale: 0.8, translateY: '32px' }}
+                animate={{ opacity: 1, scale: 1, translateY: '0px' }}
+                transition={{ duration: 0.3 }}>
+                <h2 className={styles.title}>Selected work</h2>
             </motion.div>
 
-            {/* <div style={{ margin: '0 auto' }}>
-                <ReactPlayer width='1440px' height='810px' controls={true} playing={true} url={showreel} />
-            </div> */}
-
-
-            <h2 style={{ position: 'relative', fontSize: '4.236rem', textAlign: 'center', marginBottom: '0', fontWeight: '400' }}>Selected work</h2>
             <div className={styles.sworkcontainer}>
                 <div className={styles.leftcolumn}>
                     <div className={styles.phitem1}></div>

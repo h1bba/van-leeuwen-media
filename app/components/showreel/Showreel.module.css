@@ -1,0 +1,38 @@
+.outershowreel {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    bottom: 2em;
+    top: 0em;
+    z-index: 1;
+    scroll-snap-type: y mandatory;
+
+}
+
+
+.showreelcontainer {
+    position: relative;
+    height: 42em;
+    width: 65vw;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    scroll-snap-align: start;
+
+}
+
+.showreelcontainer video {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    right: 0;
+    z-index: 1;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+
+}
