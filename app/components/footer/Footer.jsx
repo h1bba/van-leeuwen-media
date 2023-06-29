@@ -9,14 +9,15 @@ import Image from 'next/image.js'
 export const Footer = () => {
     return (
         <>
-            <div className='ctacontainer'>
-                <div className='cta'>
-                    <p>Waar wacht je op?</p>
-                    <a>Contact</a>
-                </div>
-            </div>
-            <footer>
+
+            <footer style={{ zIndex: '0'}}>
                 <div className='footerflex'>
+                    <div className='ctacontainer'>
+                        <div className='cta'>
+                            <p>Waar wacht je op?</p>
+                            <a>Contact</a>
+                        </div>
+                    </div>
                     <div className='footercontainer'>
                         <ul>
                             <li><Link href="/">Ons werk</Link></li>

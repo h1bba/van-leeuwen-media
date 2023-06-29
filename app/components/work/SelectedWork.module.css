@@ -1,4 +1,13 @@
 /* SelectedWork.module.css */
+.quote {
+    padding-top: 6em;
+    position: relative;
+    height: 24em;
+    padding-bottom: 6em;
+    margin-bottom: 6em;
+    background-color: white;
+}
+
 .sworkcontainer {
     position: relative;
     margin: 0 auto;
@@ -6,6 +15,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+}
+
+.wrapperwork {
+    position: relative;
+    z-index: 1;
+    background-color: white;
 }
 
 .fullwidthimg {
@@ -40,19 +55,19 @@
 
 .rightcolumn>div,
 .leftcolumn>div {
+    width: 100%;
+    height: 26em;
     border-radius: 1em;
+    object-fit: cover;
+    background-size: 100%;
 }
 
 .phitem1 {
-    background-color: green;
-    width: 100%;
-    height: 20em;
+    background-image: url(https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus1.jpg);
 }
 
 .phitem2 {
-    background-color: var(--var-color-orange);
-    width: 100%;
-    height: 20em;
+    background-color: var(--var-color-black);
     display: flex;
     align-items: center;
 }
@@ -60,20 +75,45 @@
 .phitem3 {
     display: flex;
     align-items: center;
-    background-color: var(--var-color-black);
-    color: var(--var-color-white);
+    background-color: white;
+    border: 0.4em solid var(--var-color-grey);
+    color: var(--var-color-grey);
     width: 100%;
-    height: 20em;
+    height: 26em;
     position: relative;
     line-height: 1.2;
 }
 
+.lkqcom {
+    background-image: url(https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom1.jpg);
+}
+
+.bikker {
+    background-image: url(https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bikker1.jpg);
+}
+
+.bula {
+    background-image: url(https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/bula1.jpg);
+}
+
+.lkqtime {
+    background-image: url(https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQtime1.jpg);
+}
+
+.sweetbob {
+    background-image: url(https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/sweetbob1.jpg);
+}
+
 .title {
+    height: 2.5em;
+    padding-top: .2em;
     font-size: 4.236rem;
+    line-height: 0.7;
     text-align: center;
     position: relative;
-    margin-top: 2em;
+    background-color: white;
     font-weight: 400;
+    z-index: 1;
 }
 
 .category {
@@ -84,4 +124,24 @@
     padding-left: 0;
     color: var(--var-color-white);
     line-height: 150%;
+}
+
+.pegasus {
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.credstitle {
+    margin: 0 auto;
+    padding: 1em 2em 0em 1em;
+    font-size: 1.618rem;
+    font-weight: 400;
+    color: var(--var-color-white);
+    mix-blend-mode: difference;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: -11.5em;
 }
