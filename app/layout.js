@@ -1,9 +1,7 @@
-'use client'
 import './globals.css'
 import { Nunito_Sans } from 'next/font/google'
 import Navbar from './components/navbar/Navbar.jsx'
 import Footer from './components/footer/Footer.jsx'
-import AnimatedCursor from 'react-animated-cursor'
 
 
 const NunitoSans = Nunito_Sans({ subsets: ['latin']})
@@ -22,14 +20,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
-        <AnimatedCursor
-          innerSize={20}
-          outerSize={20}
-          color='255, 133, 0'
-          outerAlpha={0.2}
-          innerScale={0.5}
-          outerScale={5}
-        />
+
         </body>
     </html>
   )
