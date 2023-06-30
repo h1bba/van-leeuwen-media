@@ -25,13 +25,13 @@
 }
 
 .showreelcontainer video {
-    position: relative;
+    position: absolute;
     transform: translateX(-50%);
     left: 50%;
     right: 0;
     z-index: 1;
-    width: 1920px;
+    width: 100vw;
     height: 1080px;
-    overflow: hidden;
+    overflow-x: hidden;
 
 }

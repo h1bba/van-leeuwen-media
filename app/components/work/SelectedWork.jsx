@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic';
 import { useScroll, useTransform, motion } from 'framer-motion'
 import { relative } from 'path';
 import Showreel from '../showreel/Showreel'
+import BackgroundSlider from 'react-background-slider'
 
 
 const SelectedWork = () => {
@@ -16,15 +17,18 @@ const SelectedWork = () => {
         offset: ["end end", "end start"],
     })
 
-    const opacity = useTransform(scrollYProgress, [0.3, 0.1], [1, 1]);
-    // const scale = useTransform(scrollYProgress, [0.6, 0.75], [1, 0.85]);
-    // const translateY = useTransform(scrollYProgress, [0.85, 1], [1, 1])
+    const opacity = useTransform(scrollYProgress, [0.65, 0.8], [1, 0]);
+    const scale = useTransform(scrollYProgress, [0.65, 0.8], [1, 1.15]);
+    const translateY = useTransform(scrollYProgress, [0.85, 1], [1, 1])
+
+    const sweetbob1 = "https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus2.jpg"
+
 
     return (
         <>
 
             <motion.div
-                style={{ opacity, backgroundColor: 'white', zIndex: '1' }}
+                style={{ opacity, scale, backgroundColor: 'white', zIndex: '1' }}
                 className={styles.quote}
                 ref={targetRef}>
                 <Quote />
