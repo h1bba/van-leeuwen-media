@@ -26,7 +26,8 @@ const SelectedWork = () => {
 
     const opacity = useTransform(scrollYProgress, [0.65, 0.8], [1, 0]);
     const scale = useTransform(scrollYProgress, [0.65, 0.8], [1, 1.15]);
-    const translateY = useTransform(scrollYProgress, [0.85, 1], [1, 1])
+    const translateY = useTransform(scrollYProgress, [0.85, 1], [1, 1]);
+    const backgroundColor = useTransform(scrollYProgress, [0.1, 0.25], ['#121211', '#FF8500'])
 
 
 
@@ -53,14 +54,17 @@ const SelectedWork = () => {
                     <div className={styles.leftcolumn}>
                         <Pegasus />
 
-                        <div className={styles.phitem2}>
+                        <motion.div
+                            ref={targetRef}
+                            style={{ backgroundColor }}
+                            className={styles.phitem2}>
                             <ul className={styles.category}>
                                 <li>Commercial</li>
                                 <li>Corporate</li>
                                 <li>Fictional</li>
                                 <li>Social</li>
                             </ul>
-                        </div>
+                        </motion.div>
 
                         <Bikker />
                         <Sweetbob />
@@ -69,7 +73,11 @@ const SelectedWork = () => {
                         <Lkqcom />
                         <Bula />
                         <Lkqtime />
-                        <div className={styles.banner}><p>Onze succesformule?<br></br>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p></div>
+                        <motion.div
+                        ref={targetRef}
+                        style={{ backgroundColor}}
+                        className={styles.banner}><p>Onze succesformule?<br></br>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
+                        </motion.div>
                     </div>
 
                 </div>
