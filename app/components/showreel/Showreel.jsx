@@ -6,7 +6,9 @@ import dynamic from 'next/dynamic';
 
 export const Showreel = () => {
 
-    const showreel = "https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Showreel.webm"
+    const showreelwebm = "https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Showreel.webm"
+    const showreelmp4 = "https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Showreel.mp4"
+
 
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -30,7 +32,8 @@ export const Showreel = () => {
 
                 className={styles.showreelcontainer}>
                 <video autoPlay muted loop >
-                    <source src={showreel} type="video/webm" />
+                    <source src={showreelmp4} type="video/mp4" />
+                    <source src={showreelwebm} type="video/webm" />
                 </video>
             </motion.div>
         </motion.div>

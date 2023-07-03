@@ -61,7 +61,7 @@
     object-fit: fill;
     background-size: 47.5em;
 
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .phitem1 {
@@ -86,26 +86,6 @@
     line-height: 1.2;
 }
 
-.lkqcom {
-    background-image: url(https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom1.jpg);
-}
-
-.bikker {
-    background-image: url(https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bikker1.jpg);
-}
-
-.bula {
-    background-image: url(https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/bula1.jpg);
-}
-
-.lkqtime {
-    background-image: url(https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQtime1.jpg);
-}
-
-.sweetbob {
-    background-image: url(https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/sweetbob1.jpg);
-}
-
 .title {
     height: 2.5em;
     padding-top: .2em;
@@ -128,12 +108,6 @@
     line-height: 150%;
 }
 
-.pegasus {
-    position: relative;
-    box-sizing: border-box;
-
-}
-
 .credstitle {
     margin: 0 auto;
     padding: 1em 2em 0em 1em;
@@ -146,4 +120,39 @@
     right: 0;
     text-align: center;
     bottom: -11.5em;
+}
+
+.thumbnailWrapper {
+    width: 47.5em;
+    height: 25.5em;
+    object-fit: fill;
+    background-size: 47.5em;
+    overflow: hidden;
+}
+
+.thumbnailWrapper>img {
+    width: 47.5em;
+    height: 25.5em;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+}
+
+.slick-slide {
+    overflow: hidden;
+}
+
+.banner {
+    display: flex;
+    width: 47.5em;
+    height: 25.5em;
+    background-color: var(--var-color-black);
+    padding: 2em;
+    align-items: center;
+}
+
+.banner p {
+    color: var(--var-color-white);
+    font-size: 1.618rem;
+    line-height: 150%
 }

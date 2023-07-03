@@ -1,14 +1,21 @@
 // SelectedWork.jsx
 'use client'
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './SelectedWork.module.css';
 import Quote from '../quote/Quote';
 import dynamic from 'next/dynamic';
 import { useScroll, useTransform, motion } from 'framer-motion'
 import { relative } from 'path';
 import Showreel from '../showreel/Showreel'
-import BackgroundSlider from 'react-background-slider'
-
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Lkqcom from './Lkqcom/Lkqcom'
+import Pegasus from './Pegasus/Pegasus'
+import Bula from './Bula/Bula'
+import Lkqtime from './Lkqtime/Lkqtime'
+import Bikker from './Bikker/Bikker'
+import Sweetbob from './Sweetbob/Sweetbob'
 
 const SelectedWork = () => {
     const targetRef = useRef(null);
@@ -21,7 +28,6 @@ const SelectedWork = () => {
     const scale = useTransform(scrollYProgress, [0.65, 0.8], [1, 1.15]);
     const translateY = useTransform(scrollYProgress, [0.85, 1], [1, 1])
 
-    const sweetbob1 = "https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus2.jpg"
 
 
     return (
@@ -45,10 +51,8 @@ const SelectedWork = () => {
             <div className={styles.wrapperwork}>
                 <div className={styles.sworkcontainer}>
                     <div className={styles.leftcolumn}>
-                        <div className={styles.phitem1}>
-                            <h3 className={styles.credstitle}>Pegasus</h3>
+                        <Pegasus />
 
-                        </div>
                         <div className={styles.phitem2}>
                             <ul className={styles.category}>
                                 <li>Commercial</li>
@@ -57,21 +61,17 @@ const SelectedWork = () => {
                                 <li>Social</li>
                             </ul>
                         </div>
-                        <div className={styles.bikker}></div>
-                        <div className={styles.sweetbob}></div>
+
+                        <Bikker />
+                        <Sweetbob />
                     </div>
                     <div className={styles.rightcolumn}>
-                        <div className={styles.lkqcom}>
-                        </div>
-                        <div className={styles.bula}></div>
-                        <div className={styles.lkqtime}></div>
-
-                        <div className={styles.phitem3}>
-                            <p style={{ fontSize: '2.618rem', maxWidth: '12em', margin: '0 auto' }}>
-                                +
-                            </p>
-                        </div>
+                        <Lkqcom />
+                        <Bula />
+                        <Lkqtime />
+                        <div className={styles.banner}><p>Onze succesformule?<br></br>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p></div>
                     </div>
+
                 </div>
             </div>
 
