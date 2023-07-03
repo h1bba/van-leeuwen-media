@@ -1,6 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    
-}
+// next.config.js
 
-module.exports = nextConfig
+module.exports = {
+    images: {
+      domains: ['vanleeuwenmedia.s3.eu-central-1.amazonaws.com'],
+    },
+  };
+  

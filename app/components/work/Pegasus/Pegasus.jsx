@@ -3,6 +3,7 @@ import styles from '../SelectedWork.module.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image';
 
 const Pegasus = () => {
 
@@ -38,7 +39,7 @@ const Pegasus = () => {
             <Slider {...settings}>
                 {Pegasusimgs.map((Pegasusimgs, index) => (
                     <div key={index} className={styles.thumbnailWrapper}>
-                        <img
+                        <Image width={720} height={1080}
                             src={Pegasusimgs}
                             alt={`Pegasus`}
                             className={styles.thumbnail}
