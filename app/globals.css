@@ -1,50 +1,35 @@
 @font-face {
-  font-family: 'Nunito Sans';
-  src: url('../public/nunito-sans.regular.ttf');
-  font-weight: normal;
+  font-family: 'Mulish';
+  src: url('/public/fonts/Mulish-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Nunito Sans';
-  src: url(../public/nunito-sans.bold.ttf);
+  font-family: 'Mulish';
+  src: url('/public/fonts/Mulish-SemiBold.woff') format('woff');
+  font-weigh: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('/public/fonts/Mulish-Bold.woff') format('woff');
   font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Nunito Sans';
-  src: url(../public/nunito-sans.semibold.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'product_sansbold_italic';
-  src: url('/public/product_sans_bold_italic-webfont.woff2') format('woff2'),
-    url('/public/product_sans_bold_italic-webfont.woff') format('woff');
-  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'product_sansbold';
-  src: url('/public/product_sans_bold-webfont.woff2') format('woff2'),
-    url('/public/product_sans_bold-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Mulish';
+  src: url('/public/fonts/Mulish-Light.woff') format('woff');
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'product_sansitalic';
-  src: url('/public/product_sans_italic-webfont.woff2') format('woff2'),
-    url('/public/product_sans_italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'product_sansregular';
-  src: url('/public/product_sans_regular-webfont.woff2') format('woff2'),
-    url('/public/product_sans_regular-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Mulish';
+  src: url('/public/fonts/Mulish-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -101,7 +86,7 @@ html {
 }
 
 body {
-  font-family: 'product_sansregular', sans-serif;
+  font-family: 'Mulish', sans-serif;
   top: 0;
   overflow-x: hidden;
 }

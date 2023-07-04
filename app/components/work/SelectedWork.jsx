@@ -21,13 +21,13 @@ const SelectedWork = () => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
-        offset: ["end end", "end start"],
+        offset: ["start end", "start start"],
     })
 
     const opacity = useTransform(scrollYProgress, [0.65, 0.8], [1, 0]);
     const scale = useTransform(scrollYProgress, [0.65, 0.8], [1, 1.15]);
     const translateY = useTransform(scrollYProgress, [0.85, 1], [1, 1]);
-    const backgroundColor = useTransform(scrollYProgress, [0.1, 0.25], ['#121211', '#FF8500'])
+    const backgroundColor = useTransform(scrollYProgress, [0.05, 0.25], ['#121211', '#FF8500'])
 
 
 
