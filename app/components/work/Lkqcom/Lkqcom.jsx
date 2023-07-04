@@ -1,13 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
+import Slider from 'react-slick';
 import styles from '../SelectedWork.module.css';
 
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
 const Lkqcom = () => {
-    const [hoveredThumbnail, setHoveredThumbnail] = useState(null);
-
+    const [isHovered, setIsHovered] = useState(false);
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     const settings = {
         autoplay: true,
@@ -28,12 +25,14 @@ const Lkqcom = () => {
         ],
     };
 
-    const handleThumbnailHover = (index) => {
-        setHoveredThumbnail(index);
+    const handleMouseEnter = (index) => {
+        setIsHovered(true);
+        setHoveredIndex(index);
     };
 
-    const handleThumbnailLeave = () => {
-        setHoveredThumbnail(null);
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+        setHoveredIndex(null);
     };
 
     const lkqcomimgs = [
@@ -42,28 +41,30 @@ const Lkqcom = () => {
         'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom/LKQcom3.jpg',
     ];
 
-    return (
-        <>
-            <Slider {...settings}>
-                {lkqcomimgs.map((lkqcomimgs, index) => (
-                    <div key={index} className={styles.thumbnailWrapper}>
-                        <img
-                            src={lkqcomimgs}
-                            alt={`Thumbnail ${index + 1}`}
-                            className={styles.thumbnail}
-                            onMouseEnter={() => handleThumbnailHover(index)}
-                            onMouseLeave={handleThumbnailLeave}
-                        />
-                        {hoveredThumbnail === index && (
-                            <div className={styles.previewVideo}>
-                                {/* Add your preview video component here */}
-                            </div>
-                        )}
-                    </div>
-                ))}
-            </Slider>
-        </>
-    )
-}
 
-export default Lkqcom
+
+    return (
+        <Slider {...settings}>
+            {lkqcomimgs.map((image, index) => (
+                <div
+                    key={index}
+                    className={styles.thumbnailWrapper}
+                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseLeave={handleMouseLeave}
+                >
+                    <img
+                        src={image}
+                        alt={`Thumbnail ${index + 1}`}
+                        className={styles.thumbnail}
+                    />
+                    {isHovered && hoveredIndex === index && (
+                        <div className={styles.previewVideo}>
+                        </div>
+                    )}
+                </div>
+            ))}
+        </Slider>
+    );
+};
+
+export default Lkqcom;
