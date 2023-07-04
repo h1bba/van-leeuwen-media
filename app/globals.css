@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'Mulish';
   src: url('/public/fonts/Mulish-Regular.woff') format('woff');
   font-weight: 400;
@@ -7,31 +7,31 @@
 
 @font-face {
   font-family: 'Mulish';
-  src: url('/public/fonts/Mulish-SemiBold.woff') format('woff');
+  src: url('/public/Mulish-SemiBold.woff') format('woff');
   font-weigh: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mulish';
-  src: url('/public/fonts/Mulish-Bold.woff') format('woff');
+  src: url('/public/Mulish-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mulish';
-  src: url('/public/fonts/Mulish-Light.woff') format('woff');
+  src: url('/public/Mulish-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mulish';
-  src: url('/public/fonts/Mulish-Medium.woff') format('woff');
+  src: url('/public/Mulish-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
-}
+} */
 
 :root {
   --var-color-white: #fffdfb;
@@ -64,19 +64,12 @@
 }
 
 
-.MuiTypography-root {
-  font-family: 'product_sansregular', sans-serif !important;
-}
-
-.MuiAccordion-region {
-  color: var(--var-color-grey);
-}
-
 * {
   box-sizing: border-box;
 }
 
 html, body {
+  font-family: 'Mulish', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -86,7 +79,6 @@ html {
 }
 
 body {
-  font-family: 'Mulish', sans-serif;
   top: 0;
   overflow-x: hidden;
 }
