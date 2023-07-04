@@ -4,7 +4,8 @@ import styles from './Quote.module.css'
 const Quote = () => {
     return (
         <div className={styles.quotecontainer}>
-            <p className={styles.quotetext}>Niet je standaard studio,<br></br> wel de <span className='color-orange'>juiste</span>.</p>
+            <p className={styles.quotetext}>Breng jouw visie tot leven
+                met onze creatieve high-end media oplossingen</p>
         </div>
     )
 }
