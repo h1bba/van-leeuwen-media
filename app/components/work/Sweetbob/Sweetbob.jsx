@@ -11,7 +11,7 @@ const Sweetbob = () => {
 
     return (
         <div
-            className={`${styles.pegasusContainer} ${isHovered ? styles.hovered : ''}`}
+            className={`${styles.sweetbobContainer} ${isHovered ? styles.hovered : ''}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >

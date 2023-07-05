@@ -11,7 +11,7 @@ const LKQtime = () => {
 
     return (
         <div
-            className={`${styles.pegasusContainer} ${isHovered ? styles.hovered : ''}`}
+            className={`${styles.lkqtContainer} ${isHovered ? styles.hovered : ''}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >

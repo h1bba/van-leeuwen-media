@@ -11,7 +11,7 @@ const Autofirst = () => {
 
     return (
         <div
-            className={`${styles.pegasusContainer} ${isHovered ? styles.hovered : ''}`}
+            className={`${styles.autoContainer} ${isHovered ? styles.hovered : ''}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >

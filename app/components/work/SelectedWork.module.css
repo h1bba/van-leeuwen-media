@@ -215,9 +215,184 @@
     z-index: 3;
 }
 
-.pegasusContainer:hover .video {
+.pegasusContainer:hover .video, .sweetbobContainer .video {
     opacity: 1;
 }
+
+.sweetbobContainer {
+    position: relative;
+    overflow: hidden;
+    width: 47.5em;
+    height: 25.5em;
+
+}
+
+.sweetbobContainer::before {
+
+    content: 'Commercial';
+    font-size: 1rem;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 2.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+.sweetbobContainer::after {
+
+    content: 'Sweetbob | Dare to share';
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+.lkqtContainer {
+    position: relative;
+    overflow: hidden;
+    width: 47.5em;
+    height: 25.5em;
+
+}
+
+.lkqtContainer::before {
+
+    content: 'Corporate';
+    font-size: 1rem;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 2.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+.lkqtContainer::after {
+
+    content: 'LKQ | The future is now';
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+.lkqcContainer {
+    position: relative;
+    overflow: hidden;
+    width: 47.5em;
+    height: 25.5em;
+
+}
+
+.lkqcContainer::before {
+    content: 'Corporate';
+    font-size: 1rem;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 2.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+.lkqcContainer::after {
+
+    content: 'LKQ | Keeps you moving';
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+.bulaContainer {
+    position: relative;
+    overflow: hidden;
+    width: 47.5em;
+    height: 25.5em;
+
+}
+
+.bulaContainer::before {
+    content: 'Fictional';
+    font-size: 1rem;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 2.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+.bulaContainer::after {
+
+    content: 'Bula | Pano de prato';
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+
+.autoContainer {
+    position: relative;
+    overflow: hidden;
+    width: 47.5em;
+    height: 25.5em;
+
+}
+
+.autoContainer::before {
+    content: 'Commercial';
+    font-size: 1rem;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 2.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+.autoContainer::after {
+
+    content: 'Autofirst | Geen gedoe, goed geregeld';
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+
 
 .hidden {
     opacity: 0;
