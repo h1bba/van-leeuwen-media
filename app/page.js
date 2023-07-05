@@ -12,10 +12,8 @@ const Home = () => {
 
   return (
     <>
-    <main className="mulish.className">
       <SelectedWork />
       <Ctabanner />
-      </main>
     </>
 
   );

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styles from '../SelectedWork.module.css';
 
-const Sweetbob = () => {
+const Autofirst = () => {
     const [isHovered, setIsHovered] = useState(false);
 
-    const sweetbobPreviewMp4 =
-        'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Sweetbob/PreviewSweetbob.mp4';
-    const sweetbobPreviewPoster =
-        'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Sweetbob/sweetbob1.jpg';
+    const autoPreviewMp4 =
+        'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bikker/PreviewAutofirst.mp4';
+    const autoPreviewPoster =
+        'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bikker/Autofirst1.jpg';
 
     return (
         <div
@@ -16,11 +16,11 @@ const Sweetbob = () => {
             onMouseLeave={() => setIsHovered(false)}
         >
             <video autoPlay loop muted className={`${styles.video} ${isHovered ? styles.visible : ''}`}>
-                <source src={sweetbobPreviewMp4} type="video/mp4" />
+                <source src={autoPreviewMp4} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <img
-                src={sweetbobPreviewPoster}
+                src={autoPreviewPoster}
                 alt="Pegasus Thumbnail"
                 className={`${styles.thumbnailWrapper} ${isHovered ? styles.hidden : ''}`}
             />
@@ -28,4 +28,4 @@ const Sweetbob = () => {
     );
 };
 
-export default Sweetbob;
+export default Autofirst;

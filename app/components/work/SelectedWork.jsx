@@ -14,7 +14,7 @@ import Lkqcom from './Lkqcom/Lkqcom'
 import Pegasus from './Pegasus/Pegasus'
 import Bula from './Bula/Bula'
 import Lkqtime from './Lkqtime/Lkqtime'
-import Bikker from './Bikker/Bikker'
+import Bikker from './Autofirst/Autofirst'
 import Sweetbob from './Sweetbob/Sweetbob'
 
 const SelectedWork = () => {

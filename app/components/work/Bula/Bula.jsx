@@ -1,69 +1,31 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import styles from '../SelectedWork.module.css';
 
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
 const Bula = () => {
-    const [hoveredThumbnail, setHoveredThumbnail] = useState(null);
+    const [isHovered, setIsHovered] = useState(false);
 
-
-    const settings = {
-        autoplay: true,
-        autoplaySpeed: 8000,
-        arrows: false,
-        dots: false,
-        infinite: true,
-        speed: 3000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                },
-            },
-        ],
-    };
-
-    const handleThumbnailHover = (index) => {
-        setHoveredThumbnail(index);
-    };
-
-    const handleThumbnailLeave = () => {
-        setHoveredThumbnail(null);
-    };
-
-    const bulaimgs = [
-        'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula1.jpg',
-        'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula2.jpg',
-        'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula3.jpg',
-    ];
+    const bulaPreviewMp4 =
+        'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/PreviewBula.mp4';
+    const bulaPreviewPoster =
+        'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula1.jpg';
 
     return (
-        <>
-            <Slider {...settings}>
-                {bulaimgs.map((bulaimgs, index) => (
-                    <div key={index} className={styles.thumbnailWrapper}>
-                        <img
-                            src={bulaimgs}
-                            alt={`Thumbnail ${index + 1}`}
-                            className={styles.thumbnail}
-                            onMouseEnter={() => handleThumbnailHover(index)}
-                            onMouseLeave={handleThumbnailLeave}
-                        />
-                        {hoveredThumbnail === index && (
-                            <div className={styles.previewVideo}>
-                                {/* Add your preview video component here */}
-                            </div>
-                        )}
-                    </div>
-                ))}
-            </Slider>
-        </>
-    )
-}
+        <div
+            className={`${styles.pegasusContainer} ${isHovered ? styles.hovered : ''}`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            <video autoPlay loop muted className={`${styles.video} ${isHovered ? styles.visible : ''}`}>
+                <source src={bulaPreviewMp4} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <img
+                src={bulaPreviewPoster}
+                alt="Pegasus Thumbnail"
+                className={`${styles.thumbnailWrapper} ${isHovered ? styles.hidden : ''}`}
+            />
+        </div>
+    );
+};
 
-export default Bula
+export default Bula;

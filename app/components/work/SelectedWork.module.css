@@ -11,13 +11,17 @@
 .sworkcontainer {
     position: relative;
     margin: 0 auto;
-    max-width: 80vw;
+    max-width: 1240px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
 }
 
 .wrapperwork {
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
     position: relative;
     z-index: 1;
     background-color: white;

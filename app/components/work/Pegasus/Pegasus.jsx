@@ -5,7 +5,7 @@ const Pegasus = () => {
     const [isHovered, setIsHovered] = useState(false);
 
     const pegasusPreviewMp4 =
-        'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus/PegasusPreview.mp4';
+        'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus/PreviewPegasus.mp4';
     const pegasusPreviewPoster =
         'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus/Pegasus1.jpg';
 
