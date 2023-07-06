@@ -30,7 +30,7 @@
     font-weight: 400;
     position: absolute;
     right: 0.2em;
-    bottom: -0.55em;
+    bottom: -0.5em;
     color: var(--var-color-orange);
 }
 
@@ -42,4 +42,54 @@
     text-align: center;
     z-index: 3;
     max-width: 80%;
+}
+
+.servicesmenu {
+    display: flex;
+    margin: 2em auto;
+    gap: 4em;
+    max-width: 1240px;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    z-index: 2;
+    background-color: var(--var-color-white);
+}
+
+.servicesmenu li {
+    font-size: 2.168rem;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+
+}
+
+.selectedService {
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.serviceContent {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.serviceContent>ul:first-child {
+    background-color: var(--var-color-orange);
+}
+
+.description {
+    max-width: 50%;
+
+}
+
+.description h2 {
+    font-size: 1.618rem;
+    color: var(--var-color-black);
+}
+
+.stills {
+
 }

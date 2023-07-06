@@ -34,8 +34,8 @@
 } */
 
 :root {
-  --var-color-white: #fffdfb;
-  --var-color-black: #111111;
+  --var-color-white: #fffbf6;
+  --var-color-black: #080808;
   --var-color-grey: grey;
   --var-color-orange: #FF8500;
   --var-color-ph: #D9D9D9;
@@ -165,6 +165,7 @@ a {
 
 div.footerflex {
   display: block;
+  position: relative;
   margin: 0 auto;
 
   width: 100%;
@@ -172,7 +173,7 @@ div.footerflex {
 
   background-color: var(--var-color-black);
   padding: 2em 0em 2em 0em;
-  z-index: 0;
+  z-index: -1;
 }
 
 .footercontainer>ul>li>a {
@@ -248,9 +249,11 @@ ul.info {
 }
 
 .cta>p {
+  position: relative;
   font-size: 48px;
   font-weight: bold;
   color: var(--var-color-white);
+  z-index: -1;
 }
 
 img.br {
