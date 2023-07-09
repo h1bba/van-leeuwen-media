@@ -52,7 +52,7 @@ const SelectedWork = () => {
             <div className={styles.wrapperwork}>
                 <div className={styles.sworkcontainer}>
                     <div className={styles.leftcolumn}>
-                        <Pegasus />
+                        <a href='/project/pegasus'><Pegasus /></a>
 
                         <motion.div
                             ref={targetRef}
@@ -66,17 +66,18 @@ const SelectedWork = () => {
                             </ul>
                         </motion.div>
 
-                        <Bikker />
-                        <Sweetbob />
+                        <a href='/project/autofirst'><Bikker /></a>
+                        <a href='/project/sweetbob'><Sweetbob /></a>
                     </div>
                     <div className={styles.rightcolumn}>
-                        <Lkqcom />
-                        <Bula />
-                        <Lkqtime />
+                        <a href='/project/lkqcom'><Lkqcom /></a>
+
+                        <a href='/project/bula'><Bula /></a>
+                        <a href='/project/lkqtime'><Lkqtime /></a>
                         <motion.div
-                        ref={targetRef}
-                        style={{ backgroundColor}}
-                        className={styles.banner}><p>Onze succesformule?<br></br>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
+                            ref={targetRef}
+                            style={{ backgroundColor }}
+                            className={styles.banner}><p>Onze succesformule?<br></br>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
                         </motion.div>
                     </div>
 

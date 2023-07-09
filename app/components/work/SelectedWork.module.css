@@ -9,8 +9,10 @@
 }
 
 .sworkcontainer {
+    margin: 0 auto;
+    transform: translateX(0);
     position: relative;
-    max-width: 1240px;
+    max-width: 1600px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -54,6 +56,17 @@
     gap: 1em;
     width: 100%;
     margin-bottom: 2em;
+}
+
+.rightcolumn>a>div,
+.leftcolumn>a>div {
+    width: 47.5em;
+    height: 25.5em;
+    border-radius: 1em;
+    object-fit: fill;
+    background-size: 47.5em;
+
+    overflow: hidden;
 }
 
 .rightcolumn>div,
