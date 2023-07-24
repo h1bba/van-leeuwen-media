@@ -19,8 +19,8 @@ export const Showreel = () => {
     const opacity = useTransform(scrollYProgress, [0.6, 0.75], [1, 0]);
     const scale = useTransform(scrollYProgress, [0.6, 0.75], [1, 0.85]);
     const borderRadius = useTransform(scrollYProgress, [0.2, 0.5], ['16px', '0px'])
-    const width = useTransform(scrollYProgress, [0.2, 0.8], ['65vw', '99.55vw'])
-    const height = useTransform(scrollYProgress, [0.2, 0.8], ['65vh', '108vh'])
+    const width = useTransform(scrollYProgress, [0.4, 0.8], ['56em', '99.55vw'])
+    const height = useTransform(scrollYProgress, [0.4, 0.8], ['65vh', '108vh'])
 
 
     return (

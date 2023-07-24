@@ -89,7 +89,7 @@ h2, h3 {
 }
 
 .navbar {
-  position: relative;
+  position: sticky;
   z-index: 2;
   color: var(--var-color-white);
   top: 0;
