@@ -1,7 +1,8 @@
+'use client'
 import React from 'react'
 import styles from '../Services.module.css'
 
-export const Color = () => {
+export const color = () => {
     return (
         <>
             <div className={styles.servicegrid}>
@@ -20,4 +21,4 @@ export const Color = () => {
     )
 }
 
-export default Color;
+export default color;

@@ -83,11 +83,11 @@ h2, h3 {
     display: inline-flex !important;
     position: absolute;
     right: 0;
-    top: -1.8em;
   }
 
   #mobilenav {
     margin: 0 auto;
+    height: 4em;
   }
 
   #hamburgerlinks {
