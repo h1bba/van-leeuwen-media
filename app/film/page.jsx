@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../Services.module.css'
+import styles from '../services/Services.module.css'
 
 export const Film = () => {
     return (
