@@ -7,7 +7,6 @@ import dynamic from 'next/dynamic';
 import { useScroll, useTransform, motion } from 'framer-motion'
 import { relative } from 'path';
 import Showreel from '../showreel/Showreel'
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Lkqcom from './Lkqcom/Lkqcom'
@@ -21,13 +20,11 @@ const SelectedWork = () => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
-        offset: ["start end", "start start"],
+        offset: ["start center", "start start"],
     })
 
-    const opacity = useTransform(scrollYProgress, [0.65, 0.8], [1, 0]);
-    const scale = useTransform(scrollYProgress, [0.65, 0.8], [1, 1.15]);
-    const translateY = useTransform(scrollYProgress, [0.85, 1], [1, 1]);
-    const backgroundColor = useTransform(scrollYProgress, [0.05, 0.25], ['#121211', '#FF8500'])
+    // const scale = useTransform(scrollYProgress, [0.65, 0.9], [1, 1.15]);
+    // const backgroundColor = useTransform(scrollYProgress, [0.05, 0.25], ['#121211', '#FF8500'])
 
 
 
@@ -35,7 +32,7 @@ const SelectedWork = () => {
         <>
 
             <motion.div
-                style={{ opacity, scale, backgroundColor: 'white', zIndex: '1' }}
+                style={{ backgroundColor: 'white', zIndex: '1' }}
                 className={styles.quote}
                 ref={targetRef}>
                 <Quote />
@@ -43,45 +40,29 @@ const SelectedWork = () => {
 
             <Showreel />
 
-            <motion.div
-
-                className={styles.title}>
-                <h2 className={styles.title}>Selected work</h2>
-            </motion.div>
-
-            <div className={styles.wrapperwork}>
-                <div className={styles.sworkcontainer}>
-                    <div className={styles.leftcolumn}>
-                        <a href='/project/pegasus'><Pegasus /></a>
-
-                        <motion.div
-                            ref={targetRef}
-                            style={{ backgroundColor }}
-                            className={styles.phitem2}>
-                            <ul className={styles.category}>
-                                <li>Commercial</li>
-                                <li>Corporate</li>
-                                <li>Fictional</li>
-                                <li>Social</li>
-                            </ul>
-                        </motion.div>
-
-                        <a href='/project/autofirst'><Bikker /></a>
-                        <a href='/project/sweetbob'><Sweetbob /></a>
-                    </div>
-                    <div className={styles.rightcolumn}>
-                        <a href='/project/lkqcom'><Lkqcom /></a>
-
-                        <a href='/project/bula'><Bula /></a>
-                        <a href='/project/lkqtime'><Lkqtime /></a>
-                        <motion.div
-                            ref={targetRef}
-                            style={{ backgroundColor }}
-                            className={styles.banner}><p>Onze succesformule?<br></br>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
-                        </motion.div>
-                    </div>
-
+            <h2 className={styles.title}>Selected work</h2>
+            <div className={styles.workflex}>
+                <a href='/project/pegasus'><Pegasus /></a>
+                <a href='/project/lkqcom'><Lkqcom /></a>
+                <div
+                    className={styles.phitem2}>
+                    <ul className={styles.category}>
+                        <li>Commercial</li>
+                        <li>Corporate</li>
+                        <li>Fictional</li>
+                        <li>Social</li>
+                    </ul>
                 </div>
+                <a href='/project/autofirst'><Bikker /></a>
+                <a href='/project/bula'><Bula /></a>
+
+                <a href='/project/lkqtime'><Lkqtime /></a>
+                <div className={styles.banner}>
+                    <p>Onze succesformule?<br></br>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
+                </div>
+                <a href='/project/sweetbob'><Sweetbob /></a>
+
+
             </div>
 
 

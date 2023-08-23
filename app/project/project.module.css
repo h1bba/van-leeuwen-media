@@ -1,0 +1,64 @@
+.videocontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+}
+
+.videocontainer h3 {
+    font-size: 2.25rem;
+    margin-top: 0.8em;
+    margin-bottom: 0;
+}
+
+.videocontainer p {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.videocontainer ul {
+    list-style: none;
+    margin-top: 0.8em;
+    font-size: 1.5rem;
+}
+
+.videocontainer ul>li::before {
+    content: '\2022';
+    color: var(--var-color-orange);
+    margin-right: 0.6em;
+    font-weight: bold;
+    width: 2em;
+}
+
+
+.videocontainer video {
+    width: 100%;
+    border-radius: 2em;
+}
+
+.videoinfo {}
+
+.infoflex {
+    display: flex;
+    gap: 6em;
+}
+
+.diensten {
+    padding-right: 1em;
+    position: absolute;
+    right: 0;
+}
+
+.grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+
+.gridimgs img {
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 2em;
+}

@@ -3,6 +3,8 @@ import React, { useRef } from 'react'
 import styles from './Showreel.module.css';
 import { useScroll, useTransform, motion } from 'framer-motion'
 import dynamic from 'next/dynamic';
+import Arrow from '../../../public/Arrow.svg'
+import Image from 'next/image';
 
 export const Showreel = () => {
 
@@ -16,27 +18,37 @@ export const Showreel = () => {
         offset: ["start end", "start start"],
     })
 
-    const opacity = useTransform(scrollYProgress, [0.6, 0.75], [1, 0]);
-    const scale = useTransform(scrollYProgress, [0.6, 0.75], [1, 0.85]);
-    const borderRadius = useTransform(scrollYProgress, [0.2, 0.5], ['16px', '0px'])
-    const width = useTransform(scrollYProgress, [0.4, 0.8], ['56em', '99.55vw'])
-    const height = useTransform(scrollYProgress, [0.4, 0.8], ['65vh', '108vh'])
+    const width = useTransform(scrollYProgress, [0.2, 0.8], ['50%', '80%'])
 
 
     return (
-        <motion.div
-            className={styles.outershowreel}>
+        <>
             <motion.div
-                style={{ borderRadius, width, height }}
-                ref={targetRef}
-
-                className={styles.showreelcontainer}>
-                <video autoPlay muted loop >
-                    <source src={showreelmp4} type="video/mp4" />
-                    <source src={showreelwebm} type="video/webm" />
-                </video>
+                animate={{
+                    translateY: ['0%', '30%', '0%', '30%', '0%']
+                }}
+                transition={{ repeat: Infinity, duration: 5 }}
+                style={{ textAlign: 'center', fill: '#FF8500' }}>
+                <Image src={Arrow} width={120} alt='Scroll Arrow'></Image>
             </motion.div>
-        </motion.div>
+
+            <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.2 }}
+                className={styles.outershowreel}>
+                <motion.div
+                    style={{ width }}
+                    ref={targetRef}
+
+                    className={styles.showreelcontainer}>
+                    <video autoPlay muted loop controls >
+                        <source src={showreelmp4} type="video/mp4" />
+                        <source src={showreelwebm} type="video/webm" />
+                    </video>
+                </motion.div>
+            </motion.div>
+        </>
     )
 }
 export default Showreel;

@@ -1,95 +1,141 @@
-.quotecontainer {
+.servicespage {
+    height: 82vh;
+    position: relative;
+}
+
+.servicesheight {
+    display: flex;
+    align-items: center;
+}
+
+.services {
+    position: relative;
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.services>a {
+    position: relative;
+    aspect-ratio: 1/1;
+    width: auto;
+    border-radius: 2em;
+    text-decoration: none;
+    color: var(--var-color-black);
+    margin: 1em;
+    padding: 2em;
+    background-color: var(--color-quote-bg);
+    transition: 0.5s ease;
+
+}
+
+.services>a:nth-child(1) {
+    border: 8px solid var(--var-color-orange);
+}
+
+.services>a:nth-child(1)::after {
+    position: absolute;
+    content: '*Meest gekozen';
+    bottom: -2.5em;
+    left: 1em;
+    color: var(--var-color-orange);
+}
+
+.services>a:hover {
+    background-color: var(--var-color-orange);
+    transition: 0.5s ease;
+    color: var(--var-color-white);
+}
+
+.services>a:hover svg>path {
+    fill: var(--var-color-white);
+    transition: 0.5s ease;
+}
+
+.services>a svg>path {
+    transition: 0.5s ease;
+}
+
+.services>a>li>h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.services>a>li>h3 {
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    padding-left: 1.4em;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: left;
+}
+
+.servicegrid {
+    max-width: 80%;
+    display: grid;
+    padding-left: 1em;
+    padding-right: 1em;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+
+.servicestick {
+    position: sticky;
+    height: fit-content;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    list-style: none;
+    padding-left: 0;
+}
+
+.categories>li {
+    padding: 1em;
+    border-radius: 1em;
+    background-color: var(--color-quote-bg);
+    font-size: 24.00px;
+}
+
+.text h2 {
+    font-size: 54.00px;
+    line-height: normal;
+    margin-bottom: 1.2rem;
+}
+
+.text h3 {
+    font-size: 36.00px;
+    line-height: normal;
+    margin-bottom: 1.2rem;
+
+}
+
+.text p {
+    font-size: 24.00px;
+    line-height: normal;
+    margin-bottom: 1.2rem;
+}
+
+.contact {
     display: flex;
     position: relative;
-    left: 0;
-    right: 0;
-    width: 1240px;
-    padding: 4em 0em 4em 0em;
-    background-color: #F4F4F4;
-    margin-top: 4em;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1em;
-    align-items: center;
-    z-index: 1;
+    justify-content: center;
+    margin: 2em;
 }
 
-.quotecontainer::before {
-    content: '“';
-    font-size: 6.854rem;
-    font-weight: 400;
-    position: absolute;
-    top: -0.05em;
-    left: 0.2em;
-    color: var(--var-color-orange);
-}
-
-.quotecontainer::after {
-    content: '”';
-    font-size: 6.854rem;
-    font-weight: 400;
-    position: absolute;
-    right: 0.2em;
-    bottom: -0.5em;
-    color: var(--var-color-orange);
-}
-
-.quotetext {
-    font-size: 2.618rem;
-    line-height: 120%;
-    font-weight: 600;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 3;
-    max-width: 80%;
-}
-
-.servicesmenu {
-    display: flex;
-    margin: 2em auto;
-    gap: 4em;
-    max-width: 1240px;
-    justify-content: space-between;
-    flex-direction: row;
-    list-style: none;
-    text-decoration: none;
-    padding: 0;
-    z-index: 2;
-    background-color: var(--var-color-white);
-}
-
-.servicesmenu li {
-    font-size: 2.168rem;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-
-}
-
-.selectedService {
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-}
-
-.serviceContent {
-    max-width: 1240px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.serviceContent>ul:first-child {
+.contact>a {
+    font-size: 1.5rem;
     background-color: var(--var-color-orange);
-}
-
-.description {
-    max-width: 50%;
-
-}
-
-.description h2 {
-    font-size: 1.618rem;
-    color: var(--var-color-black);
-}
-
-.stills {
-
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
 }

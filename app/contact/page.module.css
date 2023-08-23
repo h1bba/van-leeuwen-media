@@ -1,13 +1,12 @@
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2em;
+    height: 8em;
 }
 
 .grid>div {
     position: relative;
-    flex-basis: 48%;
     height: 8em;
     display: flex;
     flex-wrap: wrap;
@@ -15,10 +14,28 @@
     border-radius: 1em;
     background-color: var(--color-quote-bg);
     padding: 1.5em;
+    transition: 0.5s ease;
 }
 
-.grid>div>img {
+.grid>div:hover {
+    background-color: var(--var-color-orange);
+    transition: 0.5s ease;
+}
+
+.grid>div:hover p, .grid>div:hover h3 {
+    color: white;
+    transition: 0.5s ease;
+}
+
+.grid>div:hover svg>path {
+    fill: white;
+    transition: 0.5s ease;
+}
+
+.grid>div>svg {
+    align-self: center;
     flex-basis: 20%;
+    transition: 0.5s ease;
 }
 
 .grid>div>div {
@@ -39,6 +56,8 @@
     margin-bottom: 0;
     align-self: center;
     flex-basis: 80%;
+    transition: 0.5s ease;
+
 }
 
 .grid>div>div>a {
@@ -53,42 +72,108 @@
 
 .grid h3 {
     color: var(--var-color-black);
-    font-size: 24px;
+    font-size: 2.25rem;
     margin-bottom: 0;
 }
 
 .grid h4 {
     color: var(--var-color-black);
-    font-size: 16px;
+    font-size: 1.5rem;
     margin-bottom: 0;
 }
 
 .grid p {
     color: var(--var-color-black);
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 0em;
-}
-
-.centersvg {
-    align-self: center;
-    align-items: center;
 }
 
 .contactcontainer {
     gap: 2em;
     margin: 0 auto;
-    max-width: 1240px;
+    max-width: 80%;
+    padding-left: 1em;
+    padding-right: 1em;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     justify-content: center;
 }
 
 .contactperson {
-    flex-basis: 33%;
-    height: 16em;
+    height: 100%;
     text-align: center;
+}
+
+.contactperson h3 {
+    margin-top: 0.4em;
+    margin-bottom: 0;
+    font-size: 2.25rem;
+}
+
+.contactperson h4 {
+    margin-top: 0.2em;
+    font-size: 1.5rem;
 }
 
 .contactperson img {
     border-radius: 1em;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.socials {
+    margin: 0 auto;
+    padding-left: 0 !important;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    transition: 0.5s ease;
+    justify-content: space-between !important;
+    flex-basis: 100%;
+}
+
+.socials>div {
+    transition: 0.5s ease;
+}
+
+.socials>div:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+
+div.socials>div>svg>path {
+    transition: 0.5s ease;
+
+}
+
+.contactpage {
+    height: 81vh;
+}
+
+@media (max-width: 1440px) {
+    .contactcontainer {
+        position: relative;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+
+    }
 }

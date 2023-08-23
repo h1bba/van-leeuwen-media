@@ -1,7 +1,8 @@
 'use client'
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Logo from '../../../public/logo.svg'
+import Hamburger from '../../../public/Hamburger.svg'
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 
@@ -13,29 +14,45 @@ const Header = () => {
         offset: ["end end", "end start"],
     })
 
-    const padding = useTransform(scrollYProgress, [0.85, 1], ['4em', '3em'])
     const scale = useTransform(scrollYProgress, [0.85, 1], ['1', '0.8'])
 
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
 
     return (
         <motion.div
-            style={{ padding }}
-            ref={targetRef}
             className="navbar">
             <div className="navbar-container">
-                <motion.div
-                    ref={targetRef}
-                    style={{ scale, float: "left" }}>
+                <div>
                     <Link className="logo" href="/"><Image src={Logo} alt="" />
                     </Link>
-                </motion.div>
-                <Link href="/about">Ons werk</Link>
-                <Link href="/services">Diensten</Link>
-                <Link href="/about">Over Ons</Link>
-                <Link href="/contact">Contact</Link>
+                </div>
+                <div id="navlinks">
+                    <Link href="/work">Ons werk</Link>
+                    <Link href="/services">Diensten</Link>
+                    <Link href="/about">Over ons</Link>
+                    <Link href="/contact">Contact</Link>
+                </div>
+                <div id="mobilenav">
+                    <a className="hamburgerIcon" onClick={toggleMenu}>
+                        <Image src={Hamburger} height={50} alt="Hamburger Menu" />
+                    </a>
+                    {menuOpen && (
+                        <div id="hamburgerlinks">
+                            <Link href="/">Home</Link>
+                            <Link href="/about">Ons werk</Link>
+                            <Link href="/services">Diensten</Link>
+                            <Link href="/about">Over Ons</Link>
+                            <Link href="/contact">Contact</Link>
+                        </div>
+                    )}
+                </div>
             </div>
         </motion.div>
     )
 }
 
-export default Header
+export default Header;

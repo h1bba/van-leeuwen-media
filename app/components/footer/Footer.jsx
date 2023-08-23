@@ -10,14 +10,14 @@ export const Footer = () => {
     return (
         <>
 
-            <footer style={{ zIndex: '0'}}>
+            <footer style={{ zIndex: '0' }}>
                 <div className='footerflex'>
-                    <div className='ctacontainer'>
+                    {/* <div className='ctacontainer'>
                         <div className='cta'>
                             <p>Waar wacht je op?</p>
                             <a>Contact</a>
                         </div>
-                    </div>
+                    </div> */}
                     <div className='footercontainer'>
                         <ul>
                             <li><Link href="/">Ons werk</Link></li>
