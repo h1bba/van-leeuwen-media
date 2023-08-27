@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import styles from '../services/Services.module.css'
+import styles from '../Services.module.css'
 
 export const Page = () => {
     return (
