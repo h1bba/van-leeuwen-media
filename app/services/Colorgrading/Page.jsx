@@ -2,7 +2,7 @@
 import React from 'react'
 import styles from '../services/Services.module.css'
 
-export const page = () => {
+export const Page = () => {
     return (
         <>
             <div className={styles.servicegrid}>
@@ -21,4 +21,4 @@ export const page = () => {
     )
 }
 
-export default page;
+export default Page;
