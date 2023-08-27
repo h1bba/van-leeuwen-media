@@ -30,21 +30,20 @@ const SelectedWork = () => {
 
     return (
         <>
+            <div style={{ backgroundColor: 'white', zIndex: '1', position: 'relative' }}>
+                <motion.div
+                    className={styles.quote}
+                    ref={targetRef}>
+                    <Quote />
+                </motion.div>
 
-            <motion.div
-                style={{ backgroundColor: 'white', zIndex: '1' }}
-                className={styles.quote}
-                ref={targetRef}>
-                <Quote />
-            </motion.div>
+                <Showreel />
 
-            <Showreel />
-
-            <h2 className={styles.title}>Selected work</h2>
-            <div className={styles.workflex}>
-                <a href='/project/pegasus'><Pegasus /></a>
-                <a href='/project/lkqcom'><Lkqcom /></a>
-                <div
+                <h2 className={styles.title}>Selected work</h2>
+                <div className={styles.workflex}>
+                    <a href='/project/pegasus'><Pegasus /></a>
+                    <a href='/project/lkqcom'><Lkqcom /></a>
+                    {/* <div
                     className={styles.phitem2}>
                     <ul className={styles.category}>
                         <li>Commercial</li>
@@ -52,20 +51,30 @@ const SelectedWork = () => {
                         <li>Fictional</li>
                         <li>Social</li>
                     </ul>
-                </div>
-                <a href='/project/autofirst'><Bikker /></a>
-                <a href='/project/bula'><Bula /></a>
+                </div> */}
+                    <a href='/project/autofirst'><Bikker /></a>
+                    <a href='/project/bula'><Bula /></a>
 
-                <a href='/project/lkqtime'><Lkqtime /></a>
-                <div className={styles.banner}>
+                    <a href='/project/lkqtime'><Lkqtime /></a>
+                    {/* <div className={styles.banner}>
                     <p>Onze succesformule?<br></br>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
+                </div> */}
+                    <a href='/project/sweetbob'><Sweetbob /></a>
+
+
                 </div>
-                <a href='/project/sweetbob'><Sweetbob /></a>
-
-
+                <div style={{ fontSize: '3.375rem', width: '80%', margin: '0 auto', zIndex: '3', position: 'relative', backgroundColor: 'white' }}>
+                    <div style={{ width: '83%', paddingLeft: '0.25em' }}>
+                        <p style={{ fontWeight: 'bold', marginBottom: '0em' }}>Onze succesformule?</p><p style={{ marginTop: '0.4em', lineHeight: 'normal' }}>Een vakkundige samenwerking tussen specialisten in elke fase van het project.<br></br>Zo creëren we het beste resultaat:<br></br>een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
+                    </div>
+                    <ul className={styles.categories} style={{ display: 'flex', gap: '1em', listStyle: 'none', paddingLeft: '0.25em', marginTop: '0.8em' }}>
+                        <li>Commercial</li>
+                        <li>Corporate</li>
+                        <li>Fictional</li>
+                        <li>Social</li>
+                    </ul>
+                </div>
             </div>
-
-
         </>
     );
 };

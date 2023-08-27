@@ -28,7 +28,7 @@
 .phitem2 {
     aspect-ratio: 16/9;
     border-radius: 2em;
-    width: 604px;
+    width: 100%;
     background-color: var(--var-color-black);
     display: flex;
     align-items: center;
@@ -47,14 +47,12 @@
 }
 
 .title {
-    margin-top: 1.2em;
-    padding-top: .6em;
-    font-size: 4.236rem;
-    line-height: 0.7;
+    margin-top: 0.8em;
+    font-size: 3.375rem;
     text-align: center;
     position: relative;
     background-color: white;
-    font-weight: 400;
+    font-weight: 600;
     z-index: 1;
 }
 
@@ -84,7 +82,7 @@
 
 .thumbnailWrapper {
     position: relative;
-    width: 604px;
+    width: 100%;
     height: auto;
     object-fit: cover;
     opacity: 1;
@@ -106,7 +104,7 @@
 
 .banner {
     display: flex;
-    width: 604px;
+    width: 100%;
     aspect-ratio: 16/9;
     border-radius: 2em;
     height: auto;
@@ -122,7 +120,7 @@
 }
 
 .video {
-    width: 604px;
+    width: 100%;
     height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
@@ -141,7 +139,7 @@
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
-    width: 604px;
+    width: 100%;
     height: auto;
     aspect-ratio: 16/9;
     border-radius: 2em;
@@ -151,7 +149,7 @@
 .pegasusContainer::before {
 
     content: 'Commercial';
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: absolute;
     color: var(--var-color-white);
     bottom: 2.5em;
@@ -164,7 +162,7 @@
 .pegasusContainer::after {
 
     content: 'Pegasus | Jouw paard onze zorg';
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
     color: var(--var-color-white);
@@ -182,7 +180,7 @@
 .sweetbobContainer::before {
 
     content: 'Commercial';
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: absolute;
     color: var(--var-color-white);
     bottom: 2.5em;
@@ -195,7 +193,7 @@
 .sweetbobContainer::after {
 
     content: 'Sweetbob | Dare to share';
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
     color: var(--var-color-white);
@@ -209,7 +207,7 @@
 .lkqtContainer::before {
 
     content: 'Corporate';
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: absolute;
     color: var(--var-color-white);
     bottom: 2.5em;
@@ -222,7 +220,7 @@
 .lkqtContainer::after {
 
     content: 'LKQ | The future is now';
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
     color: var(--var-color-white);
@@ -235,7 +233,7 @@
 
 .lkqcContainer::before {
     content: 'Corporate';
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: absolute;
     color: var(--var-color-white);
     bottom: 2.5em;
@@ -248,7 +246,7 @@
 .lkqcContainer::after {
 
     content: 'LKQ | Keeping you moving';
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
     color: var(--var-color-white);
@@ -261,7 +259,7 @@
 
 .bulaContainer::before {
     content: 'Fictional';
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: absolute;
     color: var(--var-color-white);
     bottom: 2.5em;
@@ -273,7 +271,7 @@
 
 .bulaContainer::after {
     content: 'Bula | Pano de prato';
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
     color: var(--var-color-white);
@@ -286,7 +284,7 @@
 
 .autoContainer::before {
     content: 'Commercial';
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: absolute;
     color: var(--var-color-white);
     bottom: 2.5em;
@@ -299,7 +297,7 @@
 .autoContainer::after {
 
     content: 'Autofirst | Geen gedoe, goed geregeld';
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
     color: var(--var-color-white);
@@ -337,18 +335,38 @@
 } */
 
 .workflex {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 60%;
+    max-width: 80%;
+    padding-left: 1em;
+    padding-right: 1em;
     flex-wrap: wrap;
     gap: 1em;
     margin: 0 auto;
     justify-content: center;
     background-color: white;
     padding-bottom: 2em;
+    z-index: 3;
 }
 
-@media (max-width: 1530px) {
+.categories li {
+    font-size: 2.25rem;
+    padding: 0.5em;
+    color: black;
+    border-radius: 0.5em;
+    background-color: var(--color-quote-bg);
+    transition: 0.5s ease;
+
+}
+
+.categories li:hover {
+    background-color: var(--var-color-orange);
+    color: white;
+    transition: 0.5s ease;
+}
+
+/* @media (max-width: 1530px) {
 
     .pegasusContainer, .lkqcContainer, .autoContainer, .bulaContainer, .lkqtContainer, .sweetbobContainer {
         flex-wrap: wrap;
@@ -503,5 +521,23 @@
     .pegasusContainer::before, .pegasusContainer::after, .lkqcContainer::before, .lkqcContainer::after, .autoContainer::before, .autoContainer::after, .bulaContainer::before, .bulaContainer::after, .lkqtContainer::before, .lkqtContainer::after, .sweetbobContainer::before, .sweetbobContainer::after {
         font-size: 32px;
         text-shadow: 0px 0px 16px black;
+    }
+} */
+
+@media (max-width: 1024px) {
+    .workflex {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1440px) {
+    .banner p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+
+    .category {
+        font-size: 1.5rem;
     }
 }

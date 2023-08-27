@@ -10,8 +10,8 @@ const Ctabanner = () => {
         offset: ['start end', 'end start'],
     });
 
-    const opacity = useTransform(scrollYProgress, [0.55, 0.70], [1, 0]);
-    const scale = useTransform(scrollYProgress, [0, 1], [1, 16]);
+    // const opacity = useTransform(scrollYProgress, [0.4, 0.55], [1, 0]);
+    const scale = useTransform(scrollYProgress, [0, 0.5], [1, 16]);
     const translateY = useTransform(scrollYProgress, [0, 1], [0, 16]);
     const borderRadius = useTransform(scrollYProgress, [0, 0.4], ['0px', '3em']);
     const maxWidth = useTransform(scrollYProgress, [0, 1], ['100%', '90%']);
@@ -23,11 +23,14 @@ const Ctabanner = () => {
     return (
         <>
             {!isMobile && (
-                <motion.div ref={targetRef} style={{ borderRadius, maxWidth, backgroundColor }} className={styles.ctabox}>
-                    <motion.p ref={targetRef} style={{ scale, opacity, translateY }} className={styles.ctatext}>
-                        Daag ons uit
-                    </motion.p>
-                </motion.div>
+                <a href='/contact'>
+                    <motion.div ref={targetRef} style={{ borderRadius, maxWidth, backgroundColor, alignSelf: 'center' }} className={styles.ctabox}>
+                        <motion.p ref={targetRef} style={{ scale, translateY }} className={styles.ctatext}>
+                            Daag ons uit
+                        </motion.p>
+                    </motion.div>
+                </a>
+
             )}
         </>
     );
