@@ -1,3 +1,8 @@
+.aboutpage {
+    z-index: 2;
+    position: relative;
+}
+
 .aboutcontainer, .aboutcontainer2 {
     height: 20em;
     display: grid;

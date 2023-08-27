@@ -23,7 +23,7 @@
     position: relative;
     aspect-ratio: 1/1;
     width: auto;
-    border-radius: 2em;
+    border-radius: 1em;
     text-decoration: none;
     color: var(--var-color-black);
     margin: 1em;

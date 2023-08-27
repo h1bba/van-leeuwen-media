@@ -15,7 +15,7 @@ const Contact = () => {
                 <div className={styles.contactperson}>
                     <div>
                         <img
-                            src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Team/Fabio-van-Leeuwen.jpg"
+                            src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Team/Fabio-contact.jpg"
                             alt="Fabio van Leeuwen - Producent & Video creator" />
                     </div>
                     <h3>Fabio van Leeuwen</h3>

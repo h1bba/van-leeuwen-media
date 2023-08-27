@@ -1,14 +1,12 @@
 'use client'
 import React from 'react'
-import Quote from '../components/quote/Quote'
 import styles from './page.module.css'
 import Team from '../components/team/Team'
-import Faq from '../components/faq/Faq'
 import Image from 'next/image'
 
 const About = () => {
     return (
-        <div>
+        <div className={styles.aboutpage}>
             <h2 style={{ textAlign: 'center', fontSize: '3.375rem' }}>Over ons</h2>
             <div className={styles.aboutcontainer}>
                 <div>

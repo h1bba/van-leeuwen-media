@@ -27,7 +27,7 @@
 
 .phitem2 {
     aspect-ratio: 16/9;
-    border-radius: 2em;
+    border-radius: 1em;
     width: 100%;
     background-color: var(--var-color-black);
     display: flex;
@@ -106,7 +106,7 @@
     display: flex;
     width: 100%;
     aspect-ratio: 16/9;
-    border-radius: 2em;
+    border-radius: 1em;
     height: auto;
     background-color: var(--var-color-black);
     padding: 2em;
@@ -142,7 +142,7 @@
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
-    border-radius: 2em;
+    border-radius: 1em;
     object-fit: cover;
 }
 
@@ -365,164 +365,6 @@
     color: white;
     transition: 0.5s ease;
 }
-
-/* @media (max-width: 1530px) {
-
-    .pegasusContainer, .lkqcContainer, .autoContainer, .bulaContainer, .lkqtContainer, .sweetbobContainer {
-        flex-wrap: wrap;
-        position: relative;
-        overflow: hidden;
-        width: 560px;
-        height: auto;
-        aspect-ratio: 16/9;
-        border-radius: 2em;
-        object-fit: cover;
-    }
-
-    .phitem2 {
-        width: 560px;
-    }
-
-    .banner {
-        width: 560px;
-        margin: 0;
-    }
-
-    .video {
-        width: 560px;
-    }
-
-    .thumbnailWrapper {
-        width: 560px;
-    }
-
-}
-
-@media (max-width: 1420px) {
-
-    .pegasusContainer, .lkqcContainer, .autoContainer, .bulaContainer, .lkqtContainer, .sweetbobContainer {
-        flex-wrap: wrap;
-        position: relative;
-        overflow: hidden;
-        width: 500px;
-        height: auto;
-        aspect-ratio: 16/9;
-        border-radius: 2em;
-        object-fit: cover;
-    }
-
-    .phitem2 {
-        width: 500px;
-    }
-
-    .banner {
-        width: 500px;
-    }
-
-    .banner>p {
-        font-size: 24px;
-        margin: 0;
-    }
-
-    .video {
-        width: 500px;
-    }
-
-    .thumbnailWrapper {
-        width: 500px;
-    }
-
-}
-
-@media (max-width: 1270px) {
-
-    .pegasusContainer, .lkqcContainer, .autoContainer, .bulaContainer, .lkqtContainer, .sweetbobContainer {
-        flex-wrap: wrap;
-        position: relative;
-        overflow: hidden;
-        width: 460px;
-        height: auto;
-        aspect-ratio: 16/9;
-        border-radius: 2em;
-        object-fit: cover;
-    }
-
-    .phitem2 {
-        width: 460px;
-    }
-
-    .banner {
-        width: 460px;
-        line-height: 100%;
-        margin-top: 0%;
-    }
-
-    .banner>p {
-        font-size: 20px;
-        line-height: normal;
-        margin: 0;
-    }
-
-    .video {
-        width: 460px;
-    }
-
-    .thumbnailWrapper {
-        width: 460px;
-    }
-
-
-}
-
-@media (max-width: 768px) {
-    .pegasusContainer, .lkqcContainer, .autoContainer, .bulaContainer, .lkqtContainer, .sweetbobContainer {
-        flex-wrap: wrap;
-        position: relative;
-        overflow: hidden;
-        width: 992px;
-        height: auto;
-        aspect-ratio: 16/9;
-        border-radius: 2em;
-        object-fit: cover;
-    }
-
-    .pegasusContainer::before, .pegasusContainer::after, .lkqcContainer::before, .lkqcContainer::after, .autoContainer::before, .autoContainer::after, .bulaContainer::before, .bulaContainer::after, .lkqtContainer::before, .lkqtContainer::after, .sweetbobContainer::before, .sweetbobContainer::after {
-        font-size: 24px;
-        text-shadow: 0px 0px 8px black;
-    }
-
-    .phitem2 {
-        width: 992px;
-    }
-
-    .banner {
-        width: 992px;
-        line-height: 100%;
-        margin-top: 0%;
-    }
-
-    .banner>p {
-        padding: 2em;
-        font-size: 36px;
-        line-height: normal;
-        margin: 0;
-    }
-
-    .video {
-        width: 992px;
-    }
-
-    .thumbnailWrapper {
-        width: 992px;
-    }
-}
-
-@media (max-width: 425px) {
-    .pegasusContainer::before, .pegasusContainer::after, .lkqcContainer::before, .lkqcContainer::after, .autoContainer::before, .autoContainer::after, .bulaContainer::before, .bulaContainer::after, .lkqtContainer::before, .lkqtContainer::after, .sweetbobContainer::before, .sweetbobContainer::after {
-        font-size: 32px;
-        text-shadow: 0px 0px 16px black;
-    }
-} */
 
 @media (max-width: 1024px) {
     .workflex {
