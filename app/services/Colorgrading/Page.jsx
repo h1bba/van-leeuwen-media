@@ -2,7 +2,7 @@
 import React from 'react'
 import styles from '../Services.module.css'
 
-export const Page = () => {
+const Colorgrading = () => {
     return (
         <>
             <div className={styles.servicegrid}>
@@ -21,4 +21,4 @@ export const Page = () => {
     )
 }
 
-export default Page;
+export default Colorgrading;

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../Services.module.css'
 
 
-export const Sound = () => {
+const Sound = () => {
     return (
         <>
             <div className={styles.servicegrid}>

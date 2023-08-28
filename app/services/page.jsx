@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import styles from './Services.module.css';
 
 const Services = () => {
-
     return (
         <>
             <div className={styles.servicespage}>
@@ -18,12 +17,11 @@ const Services = () => {
                                 </svg>
                                 <br />
                                 <h2>Video/film Productie</h2>
-                                {/* <p>Imponeer met onze creatieve high-end video/filmoplossingen.</p> */}
                                 <h3>Videoproductiebedrijf<br /> Van Leeuwen Media</h3>
                             </li>
                         </a>
 
-                        <a href='/services/color'>
+                        <a href='/services/colorgrading'>
                             <li>
                                 <svg width="40" height="40" viewBox="0 0 190 190" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M131.944 73.8889C140.689 73.8889 147.778 66.8001 147.778 58.0556C147.778 49.311 140.689 42.2222 131.944 42.2222C123.2 42.2222 116.111 49.311 116.111 58.0556C116.111 66.8001 123.2 73.8889 131.944 73.8889Z" fill="#0D0D0D" />
@@ -31,7 +29,6 @@ const Services = () => {
                                 </svg>
                                 <br />
                                 <h2>Color Grading</h2>
-                                {/* <p>Haal het maximale uit je beelden d.m.v color grading</p> */}
                                 <h3>Mediabedrijf
                                     <br />Van Leeuwen Media</h3>
                             </li>
@@ -43,7 +40,6 @@ const Services = () => {
                                 </svg>
                                 <br />
                                 <h2>Sound Design</h2>
-                                {/* <p>Maak indruk met motion design</p> */}
                                 <h3>Mediabedrijf
                                     <br />Van Leeuwen Media</h3>
                             </li>
@@ -55,7 +51,6 @@ const Services = () => {
                                 </svg>
                                 <br />
                                 <h2>Motion Design</h2>
-                                {/* <p>Maak indruk met motion design</p> */}
                                 <h3>Mediabedrijf<br />Van Leeuwen Media</h3>
                             </li>
                         </a>
