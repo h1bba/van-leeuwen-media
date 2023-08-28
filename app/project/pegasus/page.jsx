@@ -10,7 +10,7 @@ const Pegasus = () => {
     <>
       <div className={styles.page}>
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '2em' }}>
-          <a href='#'>
+          <a href='/'>
             <Image src={Arrow} height={40} alt='' />
           </a>
           <h2 style={{ textAlign: 'center', fontSize: '3.375rem', fontWeight: '400' }}> Pegasus | Jouw paard onze zorg</h2 >
