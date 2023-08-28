@@ -17,7 +17,6 @@ const Services = () => {
                                 </svg>
                                 <br />
                                 <h2>Video/film Productie</h2>
-                                <h3>Videoproductiebedrijf<br /> Van Leeuwen Media</h3>
                             </li>
                         </a>
 
@@ -29,8 +28,6 @@ const Services = () => {
                                 </svg>
                                 <br />
                                 <h2>Color Grading</h2>
-                                <h3>Mediabedrijf
-                                    <br />Van Leeuwen Media</h3>
                             </li>
                         </a>
                         <a href='/sound'>
@@ -40,8 +37,6 @@ const Services = () => {
                                 </svg>
                                 <br />
                                 <h2>Sound Design</h2>
-                                <h3>Mediabedrijf
-                                    <br />Van Leeuwen Media</h3>
                             </li>
                         </a>
                         <a href='/motion'>
@@ -51,15 +46,14 @@ const Services = () => {
                                 </svg>
                                 <br />
                                 <h2>Motion Design</h2>
-                                <h3>Mediabedrijf<br />Van Leeuwen Media</h3>
                             </li>
                         </a>
-                    </ul >
+                    </ul>
                 </div>
             </div>
 
         </>
     );
-};
+}
 
 export default Services;
