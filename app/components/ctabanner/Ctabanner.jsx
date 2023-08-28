@@ -12,6 +12,7 @@ const Ctabanner = () => {
 
     const scale = useTransform(scrollYProgress, [0, 0.5], [1, 16]);
     const translateY = useTransform(scrollYProgress, [0, 1], [0, 16]);
+    const fontSize = useTransform(scrollYProgress, [0, 0.5], ['1.5rem', '11.391rem']);
     const borderRadius = useTransform(scrollYProgress, [0, 0.4], ['0px', '3em']);
     const maxWidth = useTransform(scrollYProgress, [0, 1], ['100%', '90%']);
     const backgroundColor = useTransform(scrollYProgress, [0, 1], ['black', 'white']);
@@ -24,7 +25,7 @@ const Ctabanner = () => {
             {!isMobile && (
                 <a href='/contact'>
                     <motion.div ref={targetRef} style={{ borderRadius, maxWidth, backgroundColor, alignSelf: 'center' }} className={styles.ctabox}>
-                        <motion.p ref={targetRef} style={{ scale, translateY }} className={styles.ctatext}>
+                        <motion.p ref={targetRef} style={{ fontSize, translateY }} className={styles.ctatext}>
                             Daag ons uit
                         </motion.p>
                     </motion.div>

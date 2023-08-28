@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body>
+      <div className="cursor__dot">
 
+      </div>
         <Navbar />
 
         {children}

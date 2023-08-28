@@ -15,10 +15,10 @@ export const Footer = () => {
                     <div className='footercontainer'>
                         <ul>
                             <li style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>Menu</li>
-                            <li><Link href="/">Ons werk</Link></li>
-                            <li><Link href="/">Diensten</Link></li>
-                            <li><Link href="/">Over ons</Link></li>
-                            <li><Link href="/">Contact</Link></li>
+                            <li><Link href="/portfolio">Ons werk</Link></li>
+                            <li><Link href="/services">Diensten</Link></li>
+                            <li><Link href="/about">Over ons</Link></li>
+                            <li><Link href="/contact">Contact</Link></li>
                         </ul>
 
                         <ul>

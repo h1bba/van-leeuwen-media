@@ -31,7 +31,7 @@ const Header = () => {
                     </Link>
                 </div>
                 <div id="navlinks">
-                    <Link href="/work">Ons werk</Link>
+                    <Link href="/portfolio">Ons werk</Link>
                     <Link href="/services">Diensten</Link>
                     <Link href="/about">Over ons</Link>
                     <Link href="/contact">Contact</Link>
