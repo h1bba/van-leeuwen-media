@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import styles from '../Services.module.css'
+import styles from './color.module.css'
 
 const Colorgrading = () => {
     return (

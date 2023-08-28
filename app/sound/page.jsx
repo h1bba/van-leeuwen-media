@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../Services.module.css'
+import styles from './sound.module.css'
 
 
 const Sound = () => {
