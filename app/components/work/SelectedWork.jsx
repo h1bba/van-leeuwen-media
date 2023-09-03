@@ -39,7 +39,9 @@ const SelectedWork = () => {
 
                 <Showreel />
 
-                <h2 className={styles.title}>Selected work</h2>
+                <div style={{ maxWidth: '80%', margin: '0 auto', paddingRight: '1em' }}>
+                    <h2 className={styles.title}>Selected work</h2>
+                </div>
                 <div className={styles.workflex}>
                     <a href='/project/pegasus'><Pegasus /></a>
                     <a href='/project/lkqcom'><Lkqcom /></a>
@@ -51,16 +53,29 @@ const SelectedWork = () => {
 
 
                 </div>
-                <div style={{ fontSize: '3.375rem', width: '80%', margin: '0 auto', zIndex: '3', position: 'relative', backgroundColor: 'white' }}>
-                    <div style={{ width: '83%', paddingLeft: '0.25em' }}>
-                        <p style={{ fontWeight: 'bold', marginBottom: '0em' }}>Onze succesformule?</p><p style={{ marginTop: '0.4em', lineHeight: 'normal' }}>Een vakkundige samenwerking tussen specialisten in elke fase van het project.<br></br>Zo creëren we het beste resultaat:<br></br>een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
+                <div style={{ maxWidth: '80%', padding: '1em', marginRight: 'auto', marginLeft: 'auto' }}>
+                    <div style={{ maxWidth: '60%', textAlign: 'center', fontSize: '2.25rem', margin: '0 auto' }}>
+                        <p style={{ marginBottom: '2em', marginTop: '2em' }}>
+                            Als bedrijf bieden we een breed scala aan diensten aan, waaronder
+                            volledige video & film producties maar ook losse diensten zoals color
+                            grading, sound design en motion design.
+                        </p>
+                        <a href='/services' className={styles.servicebutton} style={{}}>Bekijk diensten</a>
                     </div>
-                    <ul className={styles.categories} style={{ display: 'flex', gap: '1em', listStyle: 'none', paddingLeft: '0.25em', marginTop: '0.8em', flexWrap: 'wrap' }}>
-                        <li>Commercial</li>
-                        <li>Corporate</li>
-                        <li>Fictional</li>
-                        <li>Social</li>
-                    </ul>
+                </div>
+
+                <div style={{ maxWidth: '80%', padding: '1em', marginLeft: 'auto', marginRight: 'auto' }}>
+                    <div style={{ fontSize: '2.25rem', width: '60%', marginTop: '4em', marginLeft: 'auto', marginRight: 'auto', zIndex: '3', position: 'relative', backgroundColor: 'white', textAlign: 'center' }}>
+                        <div>
+                            <p style={{ fontWeight: 'bold', marginBottom: '0em', fontSize: '3.375rem' }}>Onze succesformule?</p><p style={{ marginTop: '0.4em', lineHeight: 'normal' }}>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
+                        </div>
+                        <ul className={styles.categories} style={{ margin: '0 auto', display: 'flex', gap: '1em', listStyle: 'none', paddingLeft: '0.25em', marginTop: '0.8em', flexWrap: 'wrap' }}>
+                            <li>Commercial</li>
+                            <li>Corporate</li>
+                            <li>Fictional</li>
+                            <li>Social</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>

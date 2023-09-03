@@ -49,7 +49,7 @@
 .title {
     margin-top: 0.8em;
     font-size: 3.375rem;
-    text-align: center;
+    text-align: right;
     position: relative;
     background-color: white;
     font-weight: 600;
@@ -313,26 +313,11 @@
 .hidden {
     opacity: 0;
     pointer-events: none;
-    /* Disable pointer events on the image */
 }
 
 .visible {
     opacity: 1;
 }
-
-
-/* NIEUW */
-
-/* .workflex {
-    display: flex;
-    max-width: 80%;
-    flex-wrap: wrap;
-    gap: 1em;
-    margin: 0 auto;
-    justify-content: center;
-    background-color: white;
-    padding-bottom: 2em;
-} */
 
 .workflex {
     position: relative;
@@ -348,6 +333,24 @@
     background-color: white;
     padding-bottom: 2em;
     z-index: 3;
+}
+
+.servicebutton {
+    background-color: #FF8500;
+    color: white;
+    padding: 0.5em;
+    border-radius: 16px;
+    transition: 0.5s ease;
+}
+
+.servicebutton:hover {
+    background-color: var(--color-quote-bg);
+    color: black;
+    transition: 0.5s ease;
+}
+
+.categories {
+    justify-content: center;
 }
 
 .categories li {
