@@ -41,7 +41,7 @@ const Sweetbob = () => {
 
           <div className={styles.grid}>
             <div>
-              <p>Of het nu gaat om het delen van ervaringen of het delen van de heerlijke Braziliaanse lekkernijen van Sweet Bob, het motto van Sweet Bob is altijd "dare to share". Het was een fantastische uitdaging voor ons om dit concept tot leven te brengen in een pakkende commercial.</p>
+              <p>Of het nu gaat om het delen van ervaringen of het delen van de heerlijke Braziliaanse lekkernijen van Sweet Bob, het motto van Sweet Bob is altijd &quot;dare to share&quot;. Het was een fantastische uitdaging voor ons om dit concept tot leven te brengen in een pakkende commercial.</p>
             </div>
             <div className={styles.gridimgs}>
               <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Sweetbob/sweetbob1.jpg"></img>
@@ -54,7 +54,7 @@ const Sweetbob = () => {
               <p>In de commercial laten we zien hoe Sweet Bob de kracht heeft om je dag compleet te veranderen en zelfs je stemming te verbeteren.</p>
             </div>
             <div>
-              <p>We tonen het verhaal van Marcelo die aanvankelijk inspiratieloos lijkt, maar wanneer Marcelo Sweet Bob bezoekt, wordt hij geïnspireerd om te delen. Het delen van ervaringen, positiviteit en lekkernijen. Dit allemaal onder het genot van "Bossa Nova" muziek en van de heerlijke omgeving "de Jordaan".</p>
+              <p>We tonen het verhaal van Marcelo die aanvankelijk inspiratieloos lijkt, maar wanneer Marcelo Sweet Bob bezoekt, wordt hij geïnspireerd om te delen. Het delen van ervaringen, positiviteit en lekkernijen. Dit allemaal onder het genot van &quot;Bossa Nova&quot; muziek en van de heerlijke omgeving &quot;de Jordaan&quot;.</p>
             </div>
             <div className={styles.gridimgs}>
               <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Sweetbob/sweetbob3.jpg"></img>

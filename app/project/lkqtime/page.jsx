@@ -43,7 +43,7 @@ const LKQtime = () => {
 
           <div className={styles.grid}>
             <div>
-              <p>LKQ had de wens om een visueel verhaal te vertellen over de snelle vooruitgang van de tijd waarbij ze de boodschap wilden overbrengen : "the future is now". Doormiddel van een vlotte reeks aan innovaties namen we de kijkers mee op een reis door de tijd, waarbij we belangrijke mijlpalen en technologische ontwikkelingen illustreerden.</p>
+              <p>LKQ had de wens om een visueel verhaal te vertellen over de snelle vooruitgang van de tijd waarbij ze de boodschap wilden overbrengen : &quot;the future is now&quot;. Doormiddel van een vlotte reeks aan innovaties namen we de kijkers mee op een reis door de tijd, waarbij we belangrijke mijlpalen en technologische ontwikkelingen illustreerden.</p>
             </div>
             <div className={styles.gridimgs}>
               <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQtime/LKQtime1.jpg"></img>
