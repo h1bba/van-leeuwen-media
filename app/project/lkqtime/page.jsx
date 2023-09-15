@@ -31,11 +31,7 @@ const LKQtime = () => {
               </div>
               <div className={styles.diensten}>
                 <ul>
-                  <li>Video/film productie</li>
-                  <li>Color grading</li>
-                  <li>Sound design</li>
                   <li>Motion design</li>
-
                 </ul>
               </div>
             </div>

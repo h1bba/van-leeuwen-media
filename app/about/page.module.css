@@ -51,6 +51,21 @@
     border-radius: 1em;
 }
 
+.servicebutton {
+    margin-top: 2em;
+    background-color: #FF8500;
+    color: white;
+    padding: 0.5em;
+    border-radius: 16px;
+    transition: 0.5s ease;
+}
+
+.servicebutton:hover {
+    background-color: var(--color-quote-bg);
+    color: black;
+    transition: 0.5s ease;
+}
+
 
 .grid {
     max-width: 1240px;
