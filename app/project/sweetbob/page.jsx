@@ -41,7 +41,7 @@ const Sweetbob = () => {
 
           <div className={styles.grid}>
             <div>
-              <p>Of het nu gaat om het delen van ervaringen of het delen van de heerlijke Braziliaanse lekkernijen van Sweet Bob, het motto van Sweet Bob is altijd "Dare to share". Het was een fantastische uitdaging voor ons om dit concept tot leven te brengen in een pakkende commercial.</p>
+              <p>Of het nu gaat om het delen van ervaringen of het delen van de heerlijke Braziliaanse lekkernijen van Sweet Bob, het motto van Sweet Bob is altijd &quot;Dare to share&quot;. Het was een fantastische uitdaging voor ons om dit concept tot leven te brengen in een pakkende commercial.</p>
             </div>
             <div className={styles.gridimgs}>
               <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Sweetbob/sweetbob1.jpg"></img>
