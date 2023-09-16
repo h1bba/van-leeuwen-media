@@ -1,8 +1,3 @@
-.servicespage {
-    height: 82vh;
-    position: relative;
-}
-
 .servicesheight {
     display: flex;
     align-items: center;
@@ -84,6 +79,9 @@
     padding-right: 1em;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+    position: relative;
+    background-color: white;
+    z-index: 2;
 }
 
 .servicestick {

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './motion.module.css'
+import Ctabanner from '../components/ctabanner/Ctabanner';
 
 
 const Motion = () => {
@@ -8,13 +9,16 @@ const Motion = () => {
             <div className={styles.servicegrid}>
                 <div className={styles.text}>
                     <h2>Motion design</h2>
-                    <h3>Maak indruk met motion design</h3>
-                    <p>Met creatieve animaties, visuele effecten en grafische elementen creëren we een visueel spektakel dat de aandacht trekt en indruk maakt. Wij brengen jouw beelden tot leven met onze expertise in motion design en creëren een blijvende impact. Met motion design voeg je een extra laag aan visuele aantrekkingskracht toe aan je project, of het nu gaat om animaties, logo&aposs, promotiemateriaal of digitale content.</p>
+                    <h3>Maak indruk met Motion Design</h3>
+                    <p>Motion design is een breed begrip waar diverse aspecten onder vallen. Denk bijvoorbeeld aan creatieve animaties, visuele effecten en grafische elementen om een visueel spektakel te creëren dat onmiddellijk de aandacht trekt en een blijvende indruk achterlaat. Of je nu een bedrijfslogo wilt animeren, special effects nodig hebt of dat er iets weggepoetst moet worden, motion design voegt een wow factor toe aan jouw video.</p>
+                    <h3>Van Leeuwen media neemt het uit handen</h3>
+                    <p>Geen zin om urenlang te keyframen? Bij Van Leeuwen Media nemen we graag de complexiteit van Motion design uit handen. Onze Motion designer staat klaar om jouw project tot leven te brengen. Klaar om indruk te maken? Neem contact met ons op en ontdek wat we voor jou kunnen doen!</p>
                 </div>
             </div >
-            <div className={styles.contact}>
+            {/* <div className={styles.contact}>
                 <a>Contact</a>
-            </div>
+            </div> */}
+            <Ctabanner />
         </>
     )
 }

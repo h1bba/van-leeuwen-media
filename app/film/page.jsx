@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './film.module.css'
+import Ctabanner from '../components/ctabanner/Ctabanner';
 
 
 const Film = () => {
@@ -7,7 +8,7 @@ const Film = () => {
         <>
             <div className={styles.servicegrid}>
                 <div className={styles.text}>
-                    <h2>Video/film Productie</h2>
+                    <h2>Video/Film producties</h2>
                     <h3>Imponeer met onze creatieve high-end video/filmoplossingen.</h3>
                     <p>Breng jouw visie tot leven met onze creatieve high-end video-oplossingen. Wij leveren visuele content die fascineert en verrast, waarbij out-of-the-box denken geen taboe is. Met indrukwekkende cinematografie, meeslepende storytelling en het oog voor detail van specialisten tillen we jouw project naar een hoger niveau. Vertrouw op onze creatieve expertise voor een onvergetelijke videobeleving.</p>
                     <h3>Preproductie</h3>
@@ -15,7 +16,7 @@ const Film = () => {
                     <h3>Productie</h3>
                     <p>Tijdens de productiedagen zelf zorgen we voor een vlotte en georganiseerde uitvoering. Met de combinatie van goede belichting, compositie, framing en high-end apparatuur zorgt onze crew voor een verbluffende visuele kwaliteit. Naast de visuele kwaliteit zorgt de regisseur ervoor dat de juiste visie wordt overgebracht voor een doeltreffend resultaat.</p>
                     <h3>Postproductie</h3>
-                    <p>Onze postproductieafdeling is gespecialiseerd in het transformeren van ruwe beelden tot meesterwerken. Met expertise in editing, color grading, motion design en sound design geven we jouw project een high-end look. Met prachtige kleuren, visueel verbluffende effecten en meeslepende audio brengen we jouw visie tot leven in de postproductie!</p>
+                    <p>Onze postproductieafdeling is gespecialiseerd in het transformeren van ruwe beelden tot meesterwerken. Met expertise in Editing, Color grading, Motion design en Sound design geven we jouw project een high-end look. Met prachtige kleuren, visueel verbluffende effecten en meeslepende audio brengen we jouw visie tot leven in de postproductie!</p>
                     <ul className={styles.categories}>
                         <li>Commercial</li>
                         <li>Corporate</li>
@@ -27,9 +28,10 @@ const Film = () => {
 
                 </div>
             </div>
-            <div className={styles.contact}>
+            {/* <div className={styles.contact}>
                 <a>Contact</a>
-            </div>
+            </div> */}
+            <Ctabanner />
         </>
     )
 }

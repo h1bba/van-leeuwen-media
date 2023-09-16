@@ -84,6 +84,9 @@
     padding-right: 1em;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+    z-index: 2;
+    background-color: white;
+    position: relative;
 }
 
 .servicestick {
