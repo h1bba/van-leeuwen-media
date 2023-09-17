@@ -19,6 +19,14 @@ const Colorgrading = () => {
                     <h3>Klaar om jouw beelden tot leven te brengen?</h3>
                     <p>Wij kijken samen met jou naar oplossingen die perfect passen bij jouw unieke project. We begrijpen dat elk project zijn eigen sfeer en karakter heeft, en daarom denken we graag met jou mee! Als de huisstijl van jouw klant bijvoorbeeld een prachtig blauw palet omvat, staan wij klaar om dat palet terug te laten komen in de beelden. Onze colorist staat garant voor een naadloze Color Grading-ervaring die de essentie van jouw project vastlegt en versterkt. Waar wacht je nog op? Neem vandaag nog contact op en ontdek hoe we jouw visie tot leven kunnen brengen met de kracht van Color grading!</p>
                 </div>
+                <div className={styles.image}>
+                    <h3 style={{ textAlign: 'right', fontSize: '24px' }}>Before</h3>
+                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Colorgrading/Before.jpg'></img>
+                    <h3 style={{ textAlign: 'right', fontSize: '24px' }}>After</h3>
+
+                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Colorgrading/After.jpg'></img>
+
+                </div>
             </div>
             {/* <div className={styles.contact}>
                 <a>Contact</a>
