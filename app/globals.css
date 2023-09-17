@@ -56,6 +56,11 @@ h2, h3 {
   line-height: 111.4%
 }
 
+.navbarwidth {
+  width: 100%;
+
+}
+
 .navbar {
   padding-left: 1em;
   padding-right: 1em;

@@ -23,35 +23,37 @@ const Header = () => {
     };
 
     return (
-        <motion.div
-            className="navbar">
-            <div className="navbar-container">
-                <div>
-                    <Link className="logo" href="/"><Image src={Logo} alt="" />
-                    </Link>
-                </div>
-                <div id="navlinks">
-                    <Link href="/portfolio">Ons werk</Link>
-                    <Link href="/services">Diensten</Link>
-                    <Link href="/about">Over ons</Link>
-                    <Link href="/contact">Contact</Link>
-                </div>
-                <div id="mobilenav">
-                    <a className="hamburgerIcon" onClick={toggleMenu}>
-                        <Image src={Hamburger} height={50} alt="Hamburger Menu" />
-                    </a>
-                    {menuOpen && (
-                        <div id="hamburgerlinks">
-                            <Link href="/">Home</Link>
-                            <Link href="/about">Ons werk</Link>
-                            <Link href="/services">Diensten</Link>
-                            <Link href="/about">Over Ons</Link>
-                            <Link href="/contact">Contact</Link>
-                        </div>
-                    )}
+        <div className="navbarwidth">
+            <div
+                className="navbar">
+                <div className="navbar-container">
+                    <div>
+                        <Link className="logo" href="/"><Image src={Logo} alt="" />
+                        </Link>
+                    </div>
+                    <div id="navlinks">
+                        <Link href="/portfolio">Ons werk</Link>
+                        <Link href="/services">Diensten</Link>
+                        <Link href="/about">Over ons</Link>
+                        <Link href="/contact">Contact</Link>
+                    </div>
+                    <div id="mobilenav">
+                        <a className="hamburgerIcon" onClick={toggleMenu}>
+                            <Image src={Hamburger} height={50} alt="Hamburger Menu" />
+                        </a>
+                        {menuOpen && (
+                            <div id="hamburgerlinks">
+                                <Link href="/">Home</Link>
+                                <Link href="/about">Ons werk</Link>
+                                <Link href="/services">Diensten</Link>
+                                <Link href="/about">Over Ons</Link>
+                                <Link href="/contact">Contact</Link>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }
 

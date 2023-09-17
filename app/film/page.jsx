@@ -24,13 +24,16 @@ const Film = () => {
                         <li>Social</li>
                     </ul>
                 </div>
-                <div className={styles.servicestick}>
-
+                <div className={styles.images}>
+                    <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bikker/Autofirst3.jpg"></img>
+                    <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus/Pegasus3.jpg"></img>
+                    <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Sweetbob/sweetbob1.jpg"></img>
                 </div>
             </div>
             {/* <div className={styles.contact}>
                 <a>Contact</a>
             </div> */}
+
             <Ctabanner />
         </>
     )

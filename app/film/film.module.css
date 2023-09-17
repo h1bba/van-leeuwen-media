@@ -87,11 +87,17 @@
     z-index: 2;
     background-color: white;
     position: relative;
+    gap: 2em;
 }
 
-.servicestick {
-    position: sticky;
-    height: fit-content;
+.images {
+    margin-top: 3em;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 1em;
+    margin-bottom: 1.5em;
 }
 
 .categories {

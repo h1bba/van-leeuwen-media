@@ -1,3 +1,19 @@
+.servicepage {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+}
+
+.image img {
+    border-radius: 1em;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.image {
+    margin-top: 3em;
+}
+
 .servicesheight {
     display: flex;
     align-items: center;
@@ -77,6 +93,7 @@
     display: grid;
     padding-left: 1em;
     padding-right: 1em;
+    gap: 2em;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     position: relative;
