@@ -1,5 +1,5 @@
 .servicespage {
-    height: 75%;
+    height: fit-content;
     position: relative;
     z-index: 2;
     background-color: white;
@@ -7,8 +7,19 @@
 
 .servicesheight {
     position: relative;
-    height: fit-content;
+    height: 100%;
+    background-color: white;
 }
+
+.title {
+    font-size: 3.375rem;
+}
+
+.hovertext {
+    font-size: 36px;
+}
+
+
 
 .services {
     position: relative;
@@ -172,11 +183,23 @@
         aspect-ratio: unset;
 
     }
+}
 
 
-
-
-    /* .services>a>li>h2 {
+@media (max-width: 1024px) {
+    .hovertext {
         font-size: 1.5rem;
-    } */
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .services>a>li>h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+    }
+
 }

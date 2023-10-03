@@ -12,13 +12,13 @@ const Ctabanner = () => {
 
     const scale = useTransform(scrollYProgress, [0, 0.5], [1, 16]);
     const translateY = useTransform(scrollYProgress, [0, 1], [0, 16]);
-    const fontSize = useTransform(scrollYProgress, [0, 0.5], ['1.5rem', '11.391rem']);
+    const fontSize = useTransform(scrollYProgress, [0, 0.5], ['1.5rem', '10rem']);
     const borderRadius = useTransform(scrollYProgress, [0, 0.4], ['0px', '3em']);
     const maxWidth = useTransform(scrollYProgress, [0, 1], ['100%', '90%']);
     const backgroundColor = useTransform(scrollYProgress, [0, 1], ['black', 'white']);
 
     // Check if the viewport width is less than a certain value (e.g., 768 for mobile devices)
-    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 1024;
 
     return (
         <>

@@ -53,9 +53,9 @@ const SelectedWork = () => {
 
 
                 </div>
-                <div style={{ maxWidth: '80%', padding: '1em', marginRight: 'auto', marginLeft: 'auto' }}>
-                    <div style={{ maxWidth: '60%', textAlign: 'center', fontSize: '2.25rem', margin: '0 auto' }}>
-                        <p style={{ marginBottom: '2em', marginTop: '2em' }}>
+                <div className={styles.dienstencontainer}>
+                    <div className={styles.dienstenbox}>
+                        <p className={styles.dienstentext} style={{ marginTop: '0em' }}>
                             Als bedrijf bieden we een breed scala aan diensten aan, waaronder
                             volledige video & film producties maar ook losse diensten zoals color
                             grading, sound design en motion design.
@@ -64,8 +64,8 @@ const SelectedWork = () => {
                     </div>
                 </div>
 
-                <div style={{ maxWidth: '80%', padding: '1em', marginLeft: 'auto', marginRight: 'auto' }}>
-                    <div style={{ fontSize: '2.25rem', width: '60%', marginTop: '4em', marginLeft: 'auto', marginRight: 'auto', zIndex: '3', position: 'relative', backgroundColor: 'white', textAlign: 'center' }}>
+                <div className={styles.dienstencontainer}>
+                    <div className={styles.dienstenbox}>
                         <div>
                             <p style={{ fontWeight: 'bold', marginBottom: '0em', fontSize: '3.375rem' }}>Onze succesformule?</p><p style={{ marginTop: '0.4em', lineHeight: 'normal' }}>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
                         </div>
