@@ -2,9 +2,9 @@
 .quote {
     padding-top: 4em;
     position: relative;
-    height: 24em;
+    height: fit-content;
     padding-bottom: 6em;
-    margin-bottom: 6em;
+    margin-bottom: 0em;
     background-color: white;
 }
 
@@ -350,7 +350,15 @@
 }
 
 .categories {
+    margin: 0 auto;
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    margin-top: 0.8em;
+    flex-wrap: wrap;
+    padding-left: 0;
     justify-content: center;
+    padding-bottom: 2em;
 }
 
 .categories li {
@@ -376,6 +384,8 @@
     margin-right: auto;
 }
 
+
+
 .dienstenbox {
     font-size: 2.25rem;
     width: 60%;
@@ -388,6 +398,12 @@
     text-align: center;
 }
 
+.titletext {
+    font-weight: bold;
+    margin-bottom: 0em;
+    font-size: 3.375rem;
+}
+
 @media (max-width: 1180px) {
     .pegasusContainer::after, .pegasusContainer::before, .lkqcContainer::after, .lkqcContainer::before, .autoContainer::after, .autoContainer::before, .bulaContainer::after, .bulaContainer::before, .lkqtContainer::after, .lkqtContainer::before, .sweetbobContainer::after, .sweetbobContainer::before {
         font-size: 1.2rem;
@@ -395,6 +411,11 @@
 }
 
 @media (max-width: 1024px) {
+
+    .categories li {
+        font-size: 1.5rem;
+    }
+
     .workflex {
         grid-template-columns: 1fr 1fr;
     }
@@ -406,6 +427,10 @@
     .dienstenbox {
         width: 100%;
         margin-top: 0em;
+    }
+
+    .titletext {
+        font-size: 2.25rem;
     }
 
     .diensentext p {
@@ -435,4 +460,27 @@
     .category {
         font-size: 1.5rem;
     }
+
+    .dienstenbox {
+        width: 80%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .dienstenbox {
+        font-size: 1.5rem;
+        margin-bot: 2em;
+    }
+
+    .servicebutton {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
 }

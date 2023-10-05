@@ -7,7 +7,13 @@ import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 const Header = () => {
+    const navLinks = [
+        { title: "Ons werk", href: "/about" },
+        { title: "Diensten", href: "/services" },
+        { title: "Over ons", href: "/about" },
+        { title: "Contact", href: "/contact" }
 
+    ];
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
@@ -41,18 +47,35 @@ const Header = () => {
                         <a className="hamburgerIcon" onClick={toggleMenu}>
                             <Image src={Hamburger} height={50} alt="Hamburger Menu" />
                         </a>
-                        {menuOpen && (
-                            <div id="hamburgerlinks">
-                                <Link href="/">Home</Link>
-                                <Link href="/about">Ons werk</Link>
-                                <Link href="/services">Diensten</Link>
-                                <Link href="/about">Over Ons</Link>
-                                <Link href="/contact">Contact</Link>
-                            </div>
-                        )}
+
                     </div>
                 </div>
             </div>
+            {menuOpen && (
+                // <div class="overlay" id="overlay">
+                //     <nav class="overlay-menu">
+                //         <ul>
+                //             <li><a href="#">Home</a></li>
+                //             <li><a href="#">About</a></li>
+                //             <li><a href="#">Work</a></li>
+                //             <li><a href="#">Contact</a></li>
+                //         </ul>
+                //     </nav>
+                // </div>
+                <div className="mobilemenu">
+                    <a onClick={toggleMenu}>
+                        <Image src={Hamburger} height={50} alt="Hamburger Menu" />
+                    </a>
+                    <div id="hamburgerlinks">
+                        <Link className="logomobile" href="/"><Image src={Logo} alt="" />
+                        </Link>
+                        <Link href="/about">Ons werk</Link>
+                        <Link href="/services">Diensten</Link>
+                        <Link href="/about">Over Ons</Link>
+                        <Link href="/contact">Contact</Link>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }

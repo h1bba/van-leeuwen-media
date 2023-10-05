@@ -60,16 +60,16 @@ const SelectedWork = () => {
                             volledige video & film producties maar ook losse diensten zoals color
                             grading, sound design en motion design.
                         </p>
-                        <a href='/services' className={styles.servicebutton} style={{}}>Bekijk diensten</a>
+                        <a href='/services' className={styles.servicebutton} >Bekijk diensten</a>
                     </div>
                 </div>
 
                 <div className={styles.dienstencontainer}>
                     <div className={styles.dienstenbox}>
                         <div>
-                            <p style={{ fontWeight: 'bold', marginBottom: '0em', fontSize: '3.375rem' }}>Onze succesformule?</p><p style={{ marginTop: '0.4em', lineHeight: 'normal' }}>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
+                            <p className={styles.titletext} >Onze succesformule?</p><p style={{ marginTop: '0.4em', lineHeight: 'normal' }}>Een vakkundige samenwerking tussen specialisten in elke fase van het project. Zo creëren we het beste resultaat: een doeltreffend eindproduct dat de verwachtingen overstijgt.</p>
                         </div>
-                        <ul className={styles.categories} style={{ margin: '0 auto', display: 'flex', gap: '1em', listStyle: 'none', paddingLeft: '0.25em', marginTop: '0.8em', flexWrap: 'wrap' }}>
+                        <ul className={styles.categories} >
                             <li>Commercial</li>
                             <li>Corporate</li>
                             <li>Fictional</li>

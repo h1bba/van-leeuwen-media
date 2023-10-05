@@ -1,7 +1,8 @@
 .teamcontainer {
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    flex-wrap: wrap;
+    grid-auto-flow: row;
     max-width: 80%;
     padding-left: 1em;
     padding-right: 1em;
@@ -11,6 +12,7 @@
 
 .teammember {
     display: flex;
+    flex-grow: 1;
     flex-basis: 50%;
     flex-direction: column;
     text-align: center;
