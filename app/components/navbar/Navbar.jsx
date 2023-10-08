@@ -47,6 +47,7 @@ const Header = () => {
         exit: {
             scaleY: 0,
             transition: {
+                delay: 0.5,
                 duration: 0.5,
                 ease: [0.22, 1, 0.36, 1],
             },
@@ -55,12 +56,11 @@ const Header = () => {
 
     const mobileLinkVars = {
         initial: {
-            y: "60vh",
+            y: "30vh",
             transition: {
                 duration: 0.5,
                 ease: [0.37, 0, 0.63, 1],
-                staggerChildren: 2.5,
-
+                staggerChildren: 0.2,
             }
         },
         open: {
@@ -68,23 +68,41 @@ const Header = () => {
             transition: {
                 duration: 0.7,
                 ease: [0, 0.55, 0.45, 1],
-                staggerChildren: 4.5,
+                staggerChildren: 0.2,
+
+            }
+        },
+
+        exit: {
+            y: "60vh",
+            transition: {
+                duration: 0.7,
+                ease: [0, 0.55, 0.45, 1],
+                staggerChildren: 0.2,
 
             }
         }
     }
 
     const containerVars = {
-        initial: {},
+        initial: {
+            transition: {
+                staggerChildren: 0.1,
+                staggerDirection: -1,
+            },
+        },
         open: {
             transition: {
-                staggerChildren: 0.5,
+                delayChildren: 0.3,
+                staggerChildren: 0.15,
+                staggerDirection: 1,
+
             },
         },
     };
 
     return (
-        <div className="navbarwidth">
+        <div className="navbarwidth" >
             <div
                 className="navbar">
                 <div className="navbar-container">
@@ -122,76 +140,70 @@ const Header = () => {
                             variants={containerVars}
                             initial="initial"
                             animate="open"
-                            id="hamburgerlinks"
-                        >
-                            <div className="overflowhidden">
+                            exit="initial"
+                            id="hamburgerlinks">
+                            <div className="overflowhiddenlogo">
+
                                 <motion.div
-                                    initial="initial"
-                                    animate="open"
+                                    variants={mobileLinkVars}>
+                                    <a className="logomobile" href="/"><Image src={LogoIcon} alt="" /></a>
+                                </motion.div>
+
+                            </div>
+                            <div className="overflowhidden">
+
+                                <motion.div
                                     variants={mobileLinkVars}
-                                    transition={{ delay: 1.25 }}
                                 >
                                     <Link href="/about">Ons werk</Link>
                                 </motion.div>
+
                             </div>
 
                             <div className="overflowhidden">
+
                                 <motion.div
-                                    initial="initial"
-                                    animate="open"
                                     variants={mobileLinkVars}
-                                    transition={{ delay: 1.5 }}
                                 >
                                     <Link className="overflowhidden" href="/services">Diensten</Link>
                                 </motion.div>
+
                             </div>
 
                             <div className="overflowhidden">
+
                                 <motion.div
-                                    initial="initial"
-                                    animate="open"
-                                    variants={mobileLinkVars}
-                                >
+                                    variants={mobileLinkVars}>
                                     <Link className="overflowhidden" href="/about">Over Ons</Link>
                                 </motion.div>
+
                             </div>
 
                             <div className="overflowhidden">
+
                                 <motion.div
-                                    initial="initial"
-                                    animate="open"
-                                    variants={mobileLinkVars}
-                                >
+                                    variants={mobileLinkVars}>
                                     <Link className="overflowhidden" href="/contact">Contact</Link>
                                 </motion.div>
+
                             </div>
 
-                            <div className="overflowhiddenlogo">
-                                <motion.div
-                                    initial="initial"
-                                    animate="open"
-                                    variants={mobileLinkVars}
-                                >
-                                    <a className="logomobile" href="/"><Image src={LogoIcon} alt="" /></a>
-                                </motion.div>
-                            </div>
+
 
                             <div className="overflowhidden">
+
                                 <motion.div
-                                    initial="initial"
-                                    animate="open"
                                     variants={mobileLinkVars}
-                                    className="mailfooter"
-                                >
+                                    className="mailfooter">
                                     <a>info@vanleeuwenmedia.com</a>
                                 </motion.div>
+
                             </div>
                         </motion.div>
-
                     </motion.div>
                 )}
             </AnimatePresence>
-        </div>
+        </div >
     )
 }
 
