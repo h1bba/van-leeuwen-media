@@ -40,14 +40,14 @@ const Header = () => {
         animate: {
             scaleY: 1,
             transition: {
-                duration: 0.4,
+                duration: 0.5,
                 ease: [0.12, 0, 0.39, 0],
             },
         },
         exit: {
             scaleY: 0,
             transition: {
-                delay: 0.5,
+                delay: 0.7,
                 duration: 0.5,
                 ease: [0.22, 1, 0.36, 1],
             },
@@ -56,6 +56,7 @@ const Header = () => {
 
     const mobileLinkVars = {
         initial: {
+            opacity: 0,
             y: "30vh",
             transition: {
                 duration: 0.5,
@@ -64,6 +65,8 @@ const Header = () => {
             }
         },
         open: {
+            opacity: 1,
+
             y: "0vh",
             transition: {
                 duration: 0.7,
