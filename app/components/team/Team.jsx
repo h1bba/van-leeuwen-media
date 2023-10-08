@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Team.module.css'
 import Image from 'next/image'
-import Slider from "react-slick";
 
 
 export const Team = () => {

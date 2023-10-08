@@ -4,7 +4,6 @@ import styles from './page.module.css'
 import Team from '../components/team/Team'
 import Image from 'next/image'
 import Ctabanner from '../components/ctabanner/Ctabanner'
-import Teamcarousel from '../components/teamcarousel/Teamcarousel'
 
 const About = () => {
     return (

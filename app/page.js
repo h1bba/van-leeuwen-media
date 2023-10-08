@@ -14,7 +14,7 @@ const Home = () => {
     <main className={mulish.className}>
       <div style={{width: '100%', height: '100%', backgroundColor: 'white', zIndex: '2', position: 'relative'}}>
       <SelectedWork />
-      <Ctabanner />
+      {/* <Ctabanner /> */}
       </div>
     </main>
 

@@ -1,10 +1,12 @@
 'use client'
 import Link from "next/link";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Logo from '../../../public/logo.svg'
+import LogoIcon from '../../../public/logoicon.svg'
 import Hamburger from '../../../public/Hamburger.svg'
+import Close from '../../../public/HamburgerClose.svg'
 import Image from "next/image";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll, useTransform, motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
     const navLinks = [
@@ -14,6 +16,9 @@ const Header = () => {
         { title: "Contact", href: "/contact" }
 
     ];
+
+
+
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
@@ -26,6 +31,56 @@ const Header = () => {
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+    };
+
+    const menuVars = {
+        initial: {
+            scaleY: 0,
+        },
+        animate: {
+            scaleY: 1,
+            transition: {
+                duration: 0.4,
+                ease: [0.12, 0, 0.39, 0],
+            },
+        },
+        exit: {
+            scaleY: 0,
+            transition: {
+                duration: 0.5,
+                ease: [0.22, 1, 0.36, 1],
+            },
+        }
+    };
+
+    const mobileLinkVars = {
+        initial: {
+            y: "60vh",
+            transition: {
+                duration: 0.5,
+                ease: [0.37, 0, 0.63, 1],
+                staggerChildren: 2.5,
+
+            }
+        },
+        open: {
+            y: "0vh",
+            transition: {
+                duration: 0.7,
+                ease: [0, 0.55, 0.45, 1],
+                staggerChildren: 4.5,
+
+            }
+        }
+    }
+
+    const containerVars = {
+        initial: {},
+        open: {
+            transition: {
+                staggerChildren: 0.5,
+            },
+        },
     };
 
     return (
@@ -51,31 +106,91 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            {menuOpen && (
-                // <div class="overlay" id="overlay">
-                //     <nav class="overlay-menu">
-                //         <ul>
-                //             <li><a href="#">Home</a></li>
-                //             <li><a href="#">About</a></li>
-                //             <li><a href="#">Work</a></li>
-                //             <li><a href="#">Contact</a></li>
-                //         </ul>
-                //     </nav>
-                // </div>
-                <div className="mobilemenu">
-                    <a onClick={toggleMenu}>
-                        <Image src={Hamburger} height={50} alt="Hamburger Menu" />
-                    </a>
-                    <div id="hamburgerlinks">
-                        <Link className="logomobile" href="/"><Image src={Logo} alt="" />
-                        </Link>
-                        <Link href="/about">Ons werk</Link>
-                        <Link href="/services">Diensten</Link>
-                        <Link href="/about">Over Ons</Link>
-                        <Link href="/contact">Contact</Link>
-                    </div>
-                </div>
-            )}
+            <AnimatePresence>
+                {menuOpen && (
+                    <motion.div
+                        variants={menuVars}
+                        initial="initial"
+                        animate="animate"
+                        exit="exit"
+                        className="mobilemenu">
+                        <a className="closebtn" onClick={toggleMenu}>
+                            <Image src={Close} height={50} alt="Close button" />
+                        </a>
+
+                        <motion.div
+                            variants={containerVars}
+                            initial="initial"
+                            animate="open"
+                            id="hamburgerlinks"
+                        >
+                            <div className="overflowhidden">
+                                <motion.div
+                                    initial="initial"
+                                    animate="open"
+                                    variants={mobileLinkVars}
+                                    transition={{ delay: 1.25 }}
+                                >
+                                    <Link href="/about">Ons werk</Link>
+                                </motion.div>
+                            </div>
+
+                            <div className="overflowhidden">
+                                <motion.div
+                                    initial="initial"
+                                    animate="open"
+                                    variants={mobileLinkVars}
+                                    transition={{ delay: 1.5 }}
+                                >
+                                    <Link className="overflowhidden" href="/services">Diensten</Link>
+                                </motion.div>
+                            </div>
+
+                            <div className="overflowhidden">
+                                <motion.div
+                                    initial="initial"
+                                    animate="open"
+                                    variants={mobileLinkVars}
+                                >
+                                    <Link className="overflowhidden" href="/about">Over Ons</Link>
+                                </motion.div>
+                            </div>
+
+                            <div className="overflowhidden">
+                                <motion.div
+                                    initial="initial"
+                                    animate="open"
+                                    variants={mobileLinkVars}
+                                >
+                                    <Link className="overflowhidden" href="/contact">Contact</Link>
+                                </motion.div>
+                            </div>
+
+                            <div className="overflowhiddenlogo">
+                                <motion.div
+                                    initial="initial"
+                                    animate="open"
+                                    variants={mobileLinkVars}
+                                >
+                                    <a className="logomobile" href="/"><Image src={LogoIcon} alt="" /></a>
+                                </motion.div>
+                            </div>
+
+                            <div className="overflowhidden">
+                                <motion.div
+                                    initial="initial"
+                                    animate="open"
+                                    variants={mobileLinkVars}
+                                    className="mailfooter"
+                                >
+                                    <a>info@vanleeuwenmedia.com</a>
+                                </motion.div>
+                            </div>
+                        </motion.div>
+
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     )
 }
