@@ -61,6 +61,17 @@ h2, h3 {
 
 }
 
+.contactpadding {
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 4em;
+}
+
+.contactpadding:hover {
+  border: 2px solid #FF8500;
+  
+}
+
 .navbar {
   padding-left: 1em;
   padding-right: 1em;
@@ -157,6 +168,7 @@ h2, h3 {
   position: absolute;
   right: 0;
   gap: 1.5em;
+  align-items: center;
 }
 
 #mobilenav {
@@ -171,7 +183,7 @@ a {
 
 .navbar-container>div>a {
   color: var(--var-color-black);
-
+  font-size: 16px;
   font-weight: 700;
   transition: 0.5s ease;
 }

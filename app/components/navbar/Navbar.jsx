@@ -117,7 +117,7 @@ const Header = () => {
                         <Link href="/portfolio">Ons werk</Link>
                         <Link href="/services">Diensten</Link>
                         <Link href="/about">Over ons</Link>
-                        <Link href="/contact">Contact</Link>
+                        <Link className="contactpadding" href="/contact">Contact</Link>
                     </div>
                     <div id="mobilenav">
                         <a className="hamburgerIcon" onClick={toggleMenu}>
