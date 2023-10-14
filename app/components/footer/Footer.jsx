@@ -35,15 +35,7 @@ export const Footer = () => {
                             <li>Pieterpauwstraat 70</li>
                         </ul>
 
-                        <div>
-                            <ul className='socials'>
-                                <li><a>Instagram</a></li>
-                                <li><a>Instagram</a></li>
-                                <li><a>Instagram</a></li>
-                                <li><a>Instagram</a></li>
 
-                            </ul>
-                        </div>
                         <ul className="info">
                             <li>vanleeuwenmedia® 2023</li>
                             <li>site by hibba</li>

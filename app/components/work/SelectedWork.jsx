@@ -30,17 +30,22 @@ const SelectedWork = () => {
 
     return (
         <>
+            <div className={styles.hero} style={{ backgroundColor: 'white', zIndex: '1', position: 'relative' }}>
+                <p><span style={{ color: '#FF8500' }}>Breng</span> jouw visie
+                    tot leven <span style={{ color: '#FF8500' }}>met onze creatieve </span>
+                    high-end media oplossingen </p>
+                <div className={styles.herobuttons}>
+                    <a href='#selectedwork'>Bekijk werk</a>
+                    <a href='/contact'>Contact</a>
+
+                </div>
+            </div>
             <div style={{ backgroundColor: 'white', zIndex: '1', position: 'relative' }}>
-                <motion.div
-                    className={styles.quote}
-                    ref={targetRef}>
-                    <Quote />
-                </motion.div>
 
                 <Showreel />
 
                 <div style={{ maxWidth: '80%', margin: '0 auto', paddingRight: '1em' }}>
-                    <h2 className={styles.title}>Selected work</h2>
+                    <h2 id='selectedwork' className={styles.title}>Selected work</h2>
                 </div>
                 <div className={styles.workflex}>
                     <a href='/project/pegasus'><Pegasus /></a>

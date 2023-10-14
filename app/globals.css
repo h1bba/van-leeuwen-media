@@ -62,14 +62,14 @@ h2, h3 {
 }
 
 .contactpadding {
-  padding: 1em;
+  padding: 0.8em 1.2em 0.8em 1.2em;
   border: 2px solid black;
   border-radius: 4em;
 }
 
 .contactpadding:hover {
   border: 2px solid #FF8500;
-  
+
 }
 
 .navbar {
@@ -167,7 +167,7 @@ h2, h3 {
   display: flex;
   position: absolute;
   right: 0;
-  gap: 1.5em;
+  gap: 2em;
   align-items: center;
 }
 

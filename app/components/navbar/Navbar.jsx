@@ -177,7 +177,7 @@ const Header = () => {
 
                                 <motion.div
                                     variants={mobileLinkVars}>
-                                    <Link className="overflowhidden" href="/about">Over Ons</Link>
+                                    <Link className="overflowhidden" href="/about">Over ons</Link>
                                 </motion.div>
 
                             </div>
