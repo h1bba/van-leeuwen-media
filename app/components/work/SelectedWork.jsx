@@ -44,7 +44,7 @@ const SelectedWork = () => {
 
                 <Showreel />
 
-                <div style={{ maxWidth: '80%', margin: '0 auto', paddingRight: '1em' }}>
+                <div className={styles.selectedworktitle} style={{  }}>
                     <h2 id='selectedwork' className={styles.title}>Selected work</h2>
                 </div>
                 <div className={styles.workflex}>
@@ -60,7 +60,7 @@ const SelectedWork = () => {
                 </div>
                 <div className={styles.dienstencontainer}>
                     <div className={styles.dienstenbox}>
-                        <p className={styles.dienstentext} style={{ marginTop: '0em' }}>
+                        <p className={styles.dienstentext}>
                             Als bedrijf bieden we een breed scala aan diensten aan, waaronder
                             volledige video & film producties maar ook losse diensten zoals color
                             grading, sound design en motion design.

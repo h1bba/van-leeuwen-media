@@ -37,4 +37,11 @@
     overflow-x: hidden;
     border-radius: 16px;
     aspect-ratio: 16/9;
+    transform-origin: top;
+}
+
+@media (max-width: 1023px) {
+    .showreelcontainer {
+        max-width: ;
+    }
 }

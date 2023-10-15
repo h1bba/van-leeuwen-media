@@ -53,16 +53,20 @@
 
 .servicebutton {
     margin-top: 2em;
-    background-color: #FF8500;
-    color: white;
-    padding: 0.5em;
-    border-radius: 16px;
+    border: 2px solid black;
+    color: black;
+    padding: 0.8em 1.2em 0.8em 1.2em;
+    border-radius: 2em;
     transition: 0.5s ease;
+    font-size: 36px;
+    text-align: center;
+
 }
 
 .servicebutton:hover {
-    background-color: var(--color-quote-bg);
-    color: black;
+    background-color: var(--var-color-orange);
+    border: 2px solid var(--var-color-orange);
+    color: white;
     transition: 0.5s ease;
 }
 
@@ -120,4 +124,73 @@
     height: 300px;
     border-radius: 1em;
     object-fit: cover;
+}
+
+.aboutpage p {
+    font-size: 36px;
+}
+
+.pagetitle {
+    text-align: right;
+    font-size: 3.375rem;
+}
+
+.aboutwidth {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.w72 {
+    max-width: 72%;
+}
+
+.rightcont {
+    max-width: 73%;
+    font-size: 36px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: 0;
+
+}
+
+.aboutpage h3 {
+    font-size: 54px;
+    font-weight: 400;
+}
+
+
+.overonsfotos {
+    width: 100%;
+    border-radius: 1EM;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .aboutpage h3 {
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    .aboutpage p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutwidth {
+        max-width: 91%;
+    }
+
+    .w72 {
+        max-width: 100%;
+    }
+
+    .rightcont {
+        max-width: 100%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
 }

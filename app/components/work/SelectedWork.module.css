@@ -16,6 +16,7 @@
     font-size: 81px;
     font-weight: 400;
     line-height: normal;
+    overflow: hidden;
 }
 
 .herobuttons {
@@ -29,7 +30,6 @@
 }
 
 .herobuttons>a:first-child {
-    font-size: 36px;
     padding: 0.8em 1.2em 0.8em 1.2em;
     border: 2px solid var(--var-color-orange);
     color: var(--var-color-orange);
@@ -101,7 +101,7 @@
     text-align: right;
     position: relative;
     background-color: white;
-    font-weight: 600;
+    font-weight: 400;
     z-index: 1;
 }
 
@@ -385,23 +385,25 @@
 }
 
 .servicebutton {
-    background-color: #FF8500;
-    color: white;
+    color: var(--var-color-orange) !important;
     padding: 0.5em;
-    border-radius: 16px;
+    border-radius: 2em;
+    padding: 0.8em 1.2em 0.8em 1.2em;
+    border: 2px solid var(--var-color-orange);
     transition: 0.5s ease;
 }
 
 .servicebutton:hover {
-    background-color: var(--color-quote-bg);
-    color: black;
+    background-color: var(--var-color-orange);
+    color: white;
     transition: 0.5s ease;
 }
 
 .categories {
     margin: 0 auto;
     display: flex;
-    gap: 1em;
+    row-gap: 1em;
+    column-gap: 1em;
     list-style: none;
     margin-top: 0.8em;
     flex-wrap: wrap;
@@ -433,12 +435,21 @@
     margin-right: auto;
 }
 
+.dienstentext {
+    margin-bottom: 2em;
+}
 
+.selectedworktitle {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-right: 1em;
+}
 
 .dienstenbox {
     font-size: 2.25rem;
     width: 60%;
-    margin-top: 4em;
+    margin-top: 1em;
+    margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
     z-index: 3;
@@ -491,10 +502,26 @@
 @media (max-width: 768px) {
     .workflex {
         grid-template-columns: 1fr;
+        padding: 0;
+        max-width: 91%;
     }
 
     .pegasusContainer::after, .pegasusContainer::before, .lkqcContainer::after, .lkqcContainer::before, .autoContainer::after, .autoContainer::before, .bulaContainer::after, .bulaContainer::before, .lkqtContainer::after, .lkqtContainer::before, .sweetbobContainer::after, .sweetbobContainer::before {
         font-size: 1.5rem;
+    }
+
+    .pegasusContainer::before, .lkqcContainer::before, .autoContainer::before, .bulaContainer::before, .lkqtContainer::before, .sweetbobContainer::before {
+        top: 0.5em;
+    }
+
+    .dienstencontainer {
+        max-width: 91%;
+    }
+
+    .selectedworktitle {
+        max-width: 91%;
+        margin: 0 auto;
+        padding-right: 0;
     }
 
 }
@@ -511,7 +538,7 @@
     }
 
     .dienstenbox {
-        width: 80%;
+        width: 100%;
         margin-top: 0;
     }
 }
@@ -529,6 +556,19 @@
     .servicebutton {
         font-size: 1.5rem;
     }
+
+    .hero {
+        font-size: 54px;
+    }
+
+    .herobuttons {
+        font-size: 24px !important;
+    }
+
 }
 
-@media (max-width: 1024px) {}
+@media (max-width: 492px) {
+    .hero {
+        font-size: 36px;
+    }
+}

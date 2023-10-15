@@ -44,6 +44,7 @@ html, body {
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 16px;
 }
 
@@ -135,17 +136,13 @@ h2, h3 {
   align-self: center;
 }
 
-.logomobile {
+/* .logomobile {
   position: absolute;
   top: 0.3em;
   left: 0;
   right: 0;
   margin: 0 auto;
-}
-
-.logomobile>img {
-  width: ;
-}
+} */
 
 .logo>img {
   width: 240px;
@@ -183,8 +180,8 @@ a {
 
 .navbar-container>div>a {
   color: var(--var-color-black);
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 400;
   transition: 0.5s ease;
 }
 
@@ -219,7 +216,8 @@ a {
 }
 
 footer {
-  height: 30%;
+  box-sizing: border-box;
+  height: 28%;
 }
 
 div.footerflex {
@@ -250,10 +248,12 @@ div.footercontainer>ul>li {
   position: fixed;
   width: 80%;
   height: fit-content;
+  align-items: flex-start;
   padding-left: 1em;
   padding-right: 1em;
   display: flex;
-  bottom: 0;
+  gap: 2em;
+  bottom: 0em;
   left: 50%;
   transform: translatex(-50%);
   z-index: 0;
@@ -270,10 +270,16 @@ div.footercontainer>ul {
   flex-direction: column;
   list-style: none;
   padding: 0;
+  margin-bottom: 0.2em;
 }
 
 .footercontainer>h2 {
   text-align: left;
+}
+
+.footerhead {
+  font-weight: normal;
+  font-size: 24px;
 }
 
 ul.socials {
@@ -337,6 +343,10 @@ img.br {
   border-radius: 1em;
 }
 
+.footerlogo {
+  display: flex;
+}
+
 @media (max-width: 1023px) {
   #navlinks>a {
     display: none;
@@ -362,7 +372,7 @@ img.br {
     display: flex !important;
     gap: 0.6em;
     flex-direction: column;
-    font-size: 24px;
+    font-size: 54px;
     opacity: 1;
     transition: 1s ease;
     justify-content: center;
@@ -388,7 +398,7 @@ img.br {
     overflow: hidden;
     position: absolute;
     display: inline-block;
-    width: 80px;
+    width: 100px;
     height: 100px;
     top: 0.3em;
     left: 0;
@@ -409,12 +419,61 @@ img.br {
     z-index: 11;
   }
 
+  .footerhead {
+    font-size: 24px;
+  }
+
+  /* .footerlogo {
+    width: 30%;
+    height: auto;
+  } */
+
+
+
+
+
 }
+
+@media (max-width: 963px) {
+  .footerlogo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {}
+
 
 @media (max-width: 640px) {
 
+  .footerlogo {
+    display: flex;
+    flex-basis: 100%;
+  }
+
+  .footercontainer {
+    /* flex-direction: column; */
+    position: relative;
+  }
+
+  div.footerflex {
+    height: unset;
+  }
+
   #hamburgerlinks {
     font-size: 54.00px;
+  }
+
+  .footerhead {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .footer {
+    height: 50%;
+  }
+
+  ul.info {
+    font-size: 14px;
   }
 
 }
