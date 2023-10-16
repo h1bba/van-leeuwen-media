@@ -21,7 +21,7 @@ const About = () => {
                     <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/About.jpg' alt='' />
                 </div>
 
-                <div className={styles.rightcont} style={{ marginTop: '-15%', mixBlendMode: 'difference', color: 'white' }}>
+                <div className={styles.rightcont}>
                     <h3>Minder generiek, meer creatief</h3>
                     <p>Bij Van Leeuwen Media streven we naar unieke en verrassende resultaten, waarbij we afstappen van generieke video&apos;s, daar zijn er immers al zo veel van. We willen onze kijkers telkens weer verrassen met een onvoorspelbaar script en een oogverbluffend plaatje.</p>
                 </div>

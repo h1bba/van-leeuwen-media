@@ -148,3 +148,8 @@
     border-radius: 1em;
     padding: 1em;
 }
+
+.imagessticky {
+    position: sticky;
+    top: 10%;
+}
