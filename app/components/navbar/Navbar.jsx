@@ -158,7 +158,7 @@ const Header = () => {
                                 <motion.div
                                     variants={mobileLinkVars}
                                 >
-                                    <Link onClick={toggleMenu} href="/about">Ons werk</Link>
+                                    <Link onClick={toggleMenu} href="/portfolio">Ons werk</Link>
                                 </motion.div>
 
                             </div>

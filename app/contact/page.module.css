@@ -1,6 +1,13 @@
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    height: 8em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2em;
     height: 8em;
 }
@@ -12,7 +19,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     border-radius: 1em;
-    background-color: var(--color-quote-bg);
     padding: 1.5em;
     transition: 0.5s ease;
 }
@@ -40,11 +46,11 @@
 
 .grid>div>div {
     display: flex;
-    flex-wrap: wrap;
     flex-basis: 80%;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     align-self: center;
+    text-align: left;
     padding-left: 1em;
     gap: 0.1em;
 
@@ -54,14 +60,12 @@
 .grid>div>div h3, .grid>div>div p {
     margin-top: 0;
     margin-bottom: 0;
-    align-self: center;
     flex-basis: 80%;
     transition: 0.5s ease;
 
 }
 
 .grid>div>div>a {
-    align-self: center;
     flex-basis: 80%;
 }
 
@@ -91,16 +95,34 @@
 .contactcontainer {
     gap: 2em;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 60%;
     padding-left: 1em;
     padding-right: 1em;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
 }
 
+.bedrijfflex {
+    display: flex;
+}
+
+.bedrijf {
+    margin: auto;
+    width: 60%;
+}
+
+div.bedrijf>div.grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+div.bedrijf>div.grid>div {
+    gap: 0em;
+}
+
 .contactperson {
+    margin-top: -20%;
     height: 100%;
     text-align: center;
 }
@@ -114,12 +136,14 @@
 .contactperson h4 {
     margin-top: 0.2em;
     font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .contactperson img {
-    border-radius: 1em;
+    border-radius: 100%;
     overflow: hidden;
     width: 100%;
+    max-width: 400px;
     height: auto;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -133,7 +157,7 @@
     flex-direction: row !important;
     align-items: center !important;
     transition: 0.5s ease;
-    justify-content: space-between !important;
+    justify-content: space-around !important;
     flex-basis: 100%;
 }
 
@@ -152,23 +176,45 @@ div.socials>div>svg>path {
 }
 
 .contactpage {
+    height: max-content;
     position: relative;
     z-index: 2;
     background-color: white;
+    padding-bottom: 2em;
 }
+
+.bedrijftext {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.introcontainer {
+    max-width: 60%;
+    margin: 0 auto;
+    padding-left: 16px;
+    font-size: 3.375em;
+    line-height: normal;
+}
+
+
+
 
 @media (max-width: 1440px) {
     .contactcontainer {
         position: relative;
-        grid-template-columns: 1fr;
         height: 100%;
+        align-items: flex-start;
     }
 
     .grid {
         position: relative;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 100%;
+        grid-template-columns: 1fr;
+
+    }
+
+    .contactperson {
+        margin-top: 0;
 
     }
 }
@@ -178,7 +224,14 @@ div.socials>div>svg>path {
         position: relative;
         display: grid;
         grid-template-columns: 1fr;
-        height: 100%;
+    }
+
+    .contactperson {
+        margin-top: 0;
 
     }
+}
+
+@media (max-width: 768px) {
+    .introcontainer {}
 }

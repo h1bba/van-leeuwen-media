@@ -73,6 +73,10 @@ h2, h3 {
 
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar {
   padding-left: 1em;
   padding-right: 1em;
@@ -175,12 +179,12 @@ h2, h3 {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none !important;
 }
 
 .navbar-container>div>a {
   color: var(--var-color-black);
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   transition: 0.5s ease;
 }
@@ -252,7 +256,7 @@ div.footercontainer>ul>li {
 
 .footercontainer {
   box-sizing: border-box;
-  position: fixed;
+  position: relative;
   width: 80%;
   height: fit-content;
   align-items: flex-start;
@@ -422,7 +426,7 @@ img.br {
   }
 
   .hamburgerIcon>img {
-    height: 2em;
+    height: 1.5em;
     z-index: 11;
   }
 
