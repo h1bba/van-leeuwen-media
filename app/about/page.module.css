@@ -2,7 +2,7 @@
     z-index: 2;
     position: relative;
     background-color: white;
-    height: fit-content;
+    height: max-content;
 }
 
 .aboutcontainer, .aboutcontainer2 {
@@ -136,6 +136,8 @@
 }
 
 .aboutwidth {
+    position: relative;
+    height: 100%;
     max-width: 80%;
     margin: 0 auto;
     padding: 1em;
@@ -192,5 +194,9 @@
         max-width: 100%;
         margin-top: 2em;
         margin-bottom: 2em;
+    }
+
+    .servicebutton {
+        font-size: 24px;
     }
 }

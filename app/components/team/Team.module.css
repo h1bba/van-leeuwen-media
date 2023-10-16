@@ -1,18 +1,23 @@
 .teamcontainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 32%);
-    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Adjust the minmax width as needed */
+    grid-auto-rows: 300px;
+    /* Set a fixed height for the rows */
     max-width: 80%;
-    padding-left: 1em;
-    padding-right: 1em;
+    height: 100%;
     margin: 0 auto;
     gap: 1em;
+    row-gap: 6em;
+    position: relative;
 }
 
 .teammember {
+    position: relative;
+    width: 100%;
+
+    height: 100%;
     display: flex;
-    flex-grow: 1;
-    flex-basis: 50%;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -20,31 +25,25 @@
 
 .teammember>img {
     filter: saturate(20%);
-    min-height: 402px;
-    min-width: 402px;
-    max-height: 100%;
-    max-width: 100%;
-    aspect-ratio: 1/1;
+    width: 100%;
+    /* Make images fill the available width */
+    height: 100%;
+    /* Maintain a square aspect ratio */
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
     border-radius: 1em;
     transition: 0.5s ease;
 }
 
 .teammember>img:hover {
     filter: saturate(100%);
-    height: 402px;
-    border-radius: 1em;
     transition: 0.5s ease;
-
 }
 
-
-
-
-
-.teammember h3 {
+.teammember>h3 {
     margin-bottom: 0;
     margin-top: 0.4em;
-    font-size: 2.25rem;
+    font-size: 24px;
 }
 
 .teammember h4 {
@@ -52,49 +51,48 @@
     font-size: 1.5rem;
 }
 
+.naam {
+    font-size: 36px !important;
+}
 
 @media (max-width: 1600px) {
     .teamcontainer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .teammember {
-        flex: 1;
-        width: 33%;
-        flex-wrap: wrap;
-        display: block;
-        position: relative;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        /* Adjust the minmax width as needed */
     }
 }
 
 @media (max-width: 1077px) {
     .teammember>img {
-        aspect-ratio: 1/1;
-        height: 100%;
         width: 100%;
-        border-radius: 1em;
-        transition: 0.5s ease;
-        min-width: 200px;
-        min-height: 200px;
-
-    }
-
-    .teammember {
-        display: block;
-        position: relative;
-        width: 50%;
+        /* Make images fill the available width */
         height: 100%;
+        /* Maintain a square aspect ratio */
+        /* Add padding for spacing */
+        border-radius: 1em;
+        aspect-ratio: 1/1;
     }
+
+    .teammember>img {
+        filter: saturate(20%);
+    }
+
+
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .teamcontainer {
-        padding: 0;
+        padding-bottom: 6em;
+        row-gap: 7em;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .teamcontainer {
+        row-gap: 8em;
     }
 }
 
-@media (max-width: 768px) {
 
-}
+@media (max-width: 768px) {}

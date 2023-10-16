@@ -9,7 +9,7 @@
 }
 
 .hero {
-    margin: 1.5em auto;
+    margin: 0 auto 1em auto;
     width: 80%;
     max-width: 1100px;
     text-align: center;
@@ -17,6 +17,7 @@
     font-weight: 400;
     line-height: normal;
     overflow: hidden;
+
 }
 
 .herobuttons {
@@ -386,7 +387,6 @@
 
 .servicebutton {
     color: var(--var-color-orange) !important;
-    padding: 0.5em;
     border-radius: 2em;
     padding: 0.8em 1.2em 0.8em 1.2em;
     border: 2px solid var(--var-color-orange);
@@ -508,6 +508,7 @@
 
     .pegasusContainer::after, .pegasusContainer::before, .lkqcContainer::after, .lkqcContainer::before, .autoContainer::after, .autoContainer::before, .bulaContainer::after, .bulaContainer::before, .lkqtContainer::after, .lkqtContainer::before, .sweetbobContainer::after, .sweetbobContainer::before {
         font-size: 1.5rem;
+        bottom: 0.5em;
     }
 
     .pegasusContainer::before, .lkqcContainer::before, .autoContainer::before, .bulaContainer::before, .lkqtContainer::before, .sweetbobContainer::before {

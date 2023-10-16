@@ -158,7 +158,7 @@ const Header = () => {
                                 <motion.div
                                     variants={mobileLinkVars}
                                 >
-                                    <Link href="/about">Ons werk</Link>
+                                    <Link onClick={toggleMenu} href="/about">Ons werk</Link>
                                 </motion.div>
 
                             </div>
@@ -168,7 +168,7 @@ const Header = () => {
                                 <motion.div
                                     variants={mobileLinkVars}
                                 >
-                                    <Link className="overflowhidden" href="/services">Diensten</Link>
+                                    <Link onClick={toggleMenu} className="overflowhidden" href="/services">Diensten</Link>
                                 </motion.div>
 
                             </div>
@@ -177,7 +177,7 @@ const Header = () => {
 
                                 <motion.div
                                     variants={mobileLinkVars}>
-                                    <Link className="overflowhidden" href="/about">Over ons</Link>
+                                    <Link onClick={toggleMenu} className="overflowhidden" href="/about">Over ons</Link>
                                 </motion.div>
 
                             </div>
@@ -186,7 +186,7 @@ const Header = () => {
 
                                 <motion.div
                                     variants={mobileLinkVars}>
-                                    <Link className="overflowhidden" href="/contact">Contact</Link>
+                                    <Link onClick={toggleMenu} className="overflowhidden" href="/contact">Contact</Link>
                                 </motion.div>
 
                             </div>
@@ -198,7 +198,7 @@ const Header = () => {
                                 <motion.div
                                     variants={mobileLinkVars}
                                     className="mailfooter">
-                                    <a>info@vanleeuwenmedia.com</a>
+                                    <a href="mailto:info@vanleeuwenmedia.com">info@vanleeuwenmedia.com</a>
                                 </motion.div>
 
                             </div>

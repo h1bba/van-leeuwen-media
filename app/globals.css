@@ -236,6 +236,13 @@ div.footerflex {
 .footercontainer>ul>li>a {
   text-decoration: none;
   color: black;
+  transition: 0.5s ease;
+}
+
+.footercontainer>ul>li>a:hover {
+  color: var(--var-color-orange);
+  transition: 0.5s ease;
+
 }
 
 div.footercontainer>ul>li {

@@ -14,6 +14,13 @@ const Motion = () => {
                     <h3>Van Leeuwen media neemt het uit handen</h3>
                     <p>Geen zin om urenlang te keyframen? Bij Van Leeuwen Media nemen we graag de complexiteit van Motion design uit handen. Onze Motion designer staat klaar om jouw project tot leven te brengen. Klaar om indruk te maken? Neem contact met ons op en ontdek wat we voor jou kunnen doen!</p>
                 </div>
+                <div className={styles.image}>
+                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Motiondesign/Motion1.gif' />
+                    {/* <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Motiondesign/Motion2.gif' /> */}
+                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Motiondesign/Motion3.gif' />
+                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Motiondesign/Motion4.gif' />
+
+                </div>
             </div >
             {/* <div className={styles.contact}>
                 <a>Contact</a>
