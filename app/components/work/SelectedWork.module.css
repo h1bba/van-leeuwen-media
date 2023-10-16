@@ -395,7 +395,7 @@
 
 .servicebutton:hover {
     background-color: var(--var-color-orange);
-    color: white;
+    color: white !important;
     transition: 0.5s ease;
 }
 
