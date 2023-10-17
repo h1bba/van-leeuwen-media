@@ -92,6 +92,7 @@
 
 .images {
     margin-top: 3em;
+    min-width: 400px;
 }
 
 .images img {
@@ -152,4 +153,11 @@
 .imagessticky {
     position: sticky;
     top: 10%;
+}
+
+@media (max-width: 1400px) {
+    .text p {
+        font-size: 20.00px;
+
+    }
 }

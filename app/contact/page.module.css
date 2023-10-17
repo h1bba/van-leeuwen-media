@@ -2,19 +2,15 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em;
-    height: 8em;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2em;
-    height: 8em;
+    height: auto;
+    background-color: white;
+    z-index: 2;
 }
 
 .grid>div {
     position: relative;
     height: 8em;
+    min-width: 404px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -78,9 +74,11 @@
     color: var(--var-color-black);
     font-size: 2.25rem;
     margin-bottom: 0;
+    font-weight: 400;
 }
 
 .grid h4 {
+    font-weight: 400;
     color: var(--var-color-black);
     font-size: 1.5rem;
     margin-bottom: 0;
@@ -96,8 +94,7 @@
     gap: 2em;
     margin: 0 auto;
     max-width: 60%;
-    padding-left: 1em;
-    padding-right: 1em;
+    min-width: 682px;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -109,8 +106,10 @@
 }
 
 .bedrijf {
+    height: max-content;
     margin: auto;
     width: 60%;
+    min-width: 682px;
 }
 
 div.bedrijf>div.grid {
@@ -118,10 +117,12 @@ div.bedrijf>div.grid {
 }
 
 div.bedrijf>div.grid>div {
-    gap: 0em;
+    min-width: 250px !important;
+
 }
 
 .contactperson {
+    position: relative;
     margin-top: -20%;
     height: 100%;
     text-align: center;
@@ -176,7 +177,6 @@ div.socials>div>svg>path {
 }
 
 .contactpage {
-    height: max-content;
     position: relative;
     z-index: 2;
     background-color: white;
@@ -190,8 +190,8 @@ div.socials>div>svg>path {
 
 .introcontainer {
     max-width: 60%;
+    min-width: 404px;
     margin: 0 auto;
-    padding-left: 16px;
     font-size: 3.375em;
     line-height: normal;
 }
@@ -230,8 +230,38 @@ div.socials>div>svg>path {
         margin-top: 0;
 
     }
+
+    .introcontainer {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .bedrijftext {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
     .introcontainer {}
+
+    .contactcontainer {
+        grid-template-columns: 1fr;
+        max-width: 91%;
+        min-width: unset;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    .contactperson img {
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .bedrijf {
+        width: 91%;
+        min-width: unset;
+    }
+
+
+
 }
