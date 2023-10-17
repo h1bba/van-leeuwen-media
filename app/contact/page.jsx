@@ -10,8 +10,8 @@ import GearIcon from '../../public/gear.svg'
 const Contact = () => {
     return (
         <div className={styles.contactpage}>
-            <div style={{ maxWidth: '80%', margin: '0 auto', paddingRight: '1em' }}>
-                <h2 style={{ fontSize: '3.375rem', textAlign: 'right' }}>Contact</h2>
+            <div className={styles.titlecontainer} >
+                <h2 className={styles.pagetitle} >Contact</h2>
             </div>
             <div className={styles.introcontainer}>
                 <p>Project in gedachte?<br></br> Laten we babbelen!</p>

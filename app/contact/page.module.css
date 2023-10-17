@@ -1,3 +1,8 @@
+.pagetitle {
+    font-size: 3.375rem;
+    text-align: right;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -196,6 +201,11 @@ div.socials>div>svg>path {
     line-height: normal;
 }
 
+.titlecontainer {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-right: 1em;
+}
 
 
 
@@ -242,7 +252,6 @@ div.socials>div>svg>path {
 }
 
 @media (max-width: 768px) {
-    .introcontainer {}
 
     .contactcontainer {
         grid-template-columns: 1fr;
@@ -262,6 +271,20 @@ div.socials>div>svg>path {
         min-width: unset;
     }
 
+    .socials {
+        width: 80%;
+    }
+
+    .pagetitle {
+        margin: auto;
+        padding-right: 0;
+    }
+
+    .titlecontainer {
+        max-width: 91%;
+        margin: 0 auto;
+        padding-right: 0em;
+    }
 
 
 }

@@ -229,7 +229,7 @@ div.footerflex {
   margin: 0 auto;
 
   width: 100%;
-  height: 100%;
+  height: auto;
 
   background-color: var(--color-quote-bg);
   padding: 2em 0em 2em 0em;
@@ -426,6 +426,7 @@ img.br {
 
   .hamburgerIcon>img {
     height: 1.5em;
+    width: auto;
     z-index: 11;
   }
 
@@ -450,7 +451,11 @@ img.br {
   }
 }
 
-@media only screen and (max-width: 768px) {}
+@media (max-width: 768px) {
+  .navbar {
+    width: 91%;
+  }
+}
 
 
 @media (max-width: 640px) {
