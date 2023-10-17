@@ -2,11 +2,7 @@
 import './globals.css'
 import Navbar from './components/navbar/Navbar.jsx'
 import Footer from './components/footer/Footer.jsx'
-import { Mulish } from 'next/font/google'
-// import AnimatedCursor from "react-animated-cursor"
 
-
-const mulish = Mulish({ subsets: ['latin']})
 
 export const metadata = {
   title: 'Van Leeuwen Media',
@@ -15,19 +11,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="nl">
       
       <body>
-      {/* <div className="cursor__dot">
-      <AnimatedCursor
-                innerSize={15}
-                outerSize={15}
-                color="255, 133, 0"
-                outerAlpha={0.4}
-                innerScale={0.7}
-                outerScale={5}
-            />
-      </div> */}
         <Navbar />
 
         {children}

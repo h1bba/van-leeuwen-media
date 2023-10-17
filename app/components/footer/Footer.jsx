@@ -5,13 +5,14 @@ import Insta from '../../../public/insta.svg'
 import LinkedIn from '../../../public/linkedin.svg'
 import Image from 'next/image.js'
 import Logo from '../../../public/logo.svg'
-
+import { Mulish } from "next/font/google";
+const mulish = Mulish({ subsets: ['latin'] })
 
 export const Footer = () => {
     return (
         <>
 
-            <footer style={{ zIndex: '0' }}>
+            <footer className={mulish.className} style={{ zIndex: '0' }}>
                 <div className='footerflex'>
                     <div className='footercontainer'>
                         <Image className='footerlogo' src={Logo} alt="vanleeuwenmedia® 2023" />

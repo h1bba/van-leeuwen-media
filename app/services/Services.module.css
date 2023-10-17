@@ -7,6 +7,7 @@
 
 .servicesheight {
     position: relative;
+    padding-bottom: 2em;
     height: 100%;
     background-color: white;
 }
@@ -170,6 +171,16 @@
     padding: 1em;
 }
 
+.container60 {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svgmargin {
+    margin: 1em auto;
+    text-align: center;
+}
 
 
 
@@ -197,9 +208,55 @@
 
     .services>a>li>h2 {
         font-size: 1.5rem;
-        font-weight: bold;
+        font-weight: 600;
         margin-top: 0.5em;
         margin-bottom: 1em;
     }
 
+}
+
+@media (max-width: 640px) {
+    .services {
+        max-width: 91%;
+    }
+
+    .services>a {
+        aspect-ratio: 1/1;
+        height: auto;
+        margin: 0.5em;
+        padding: 1em;
+    }
+
+    .services>a>li>h2 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .services>a>li {
+        position: relative;
+    }
+
+    .container60 {
+        max-width: 91%;
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+
+}
+
+@media (max-width: 425px) {
+    .services svg {
+        width: 50px;
+    }
+
+    .svgmargin {
+        margin: 0em auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .services svg {
+        height: 50px;
+    }
 }

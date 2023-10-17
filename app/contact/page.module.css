@@ -288,3 +288,9 @@ div.socials>div>svg>path {
 
 
 }
+
+@media (max-width: 568px) {
+    .grid>div {
+        min-width: unset;
+    }
+}
