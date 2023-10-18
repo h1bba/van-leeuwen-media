@@ -52,6 +52,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  position: relative;
+}
+
 
 h2, h3 {
   line-height: 111.4%
@@ -494,6 +498,11 @@ img.br {
 }
 
 @media (max-width:510px) {
+  .overflowhiddenlogo {
+    width: 80px;
+    height: 80px;
+  }
+
   .hamburgerIcon>img {
     height: 24px;
     width: auto;

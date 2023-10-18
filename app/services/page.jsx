@@ -85,8 +85,8 @@ const Services = () => {
         <>
             <main className={mulish.className}>
                 <div className={styles.servicespage}>
-                    <div style={{ maxWidth: '80%', margin: '0 auto', paddingRight: '1em' }}>
-                        <h2 className={styles.title} style={{ textAlign: 'right', position: 'relative' }}>Diensten</h2>
+                    <div className={styles.titlecontainer}>
+                        <h2 className={styles.title}>Diensten</h2>
                     </div>
                     <div className={styles.container60}>
                         <p className={styles.hovertext} id='text'>Als bedrijf bieden we een breed scala aan diensten aan, waaronder
