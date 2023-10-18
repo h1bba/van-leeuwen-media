@@ -228,6 +228,10 @@
         scroll-snap-type: x mandatory;
     }
 
+}
 
-
+@media (max-width: 425px) {
+    .categories>li {
+        font-size: 16px;
+    }
 }
