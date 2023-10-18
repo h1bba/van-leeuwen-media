@@ -75,3 +75,76 @@
     margin-bottom: 1em;
     border-radius: 1em;
 }
+
+.backarrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.375rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1400px) {
+    .grid p {
+        font-size: 1.5rem;
+    }
+
+    .grid {
+        gap: 2em;
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .backarrow {
+        margin: auto;
+        width: 91%;
+    }
+
+    .videocontainer {
+        width: 91%;
+        padding: 0;
+    }
+
+    .diensten {
+        padding-right: 0;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .infoflex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+
+    .diensten {
+        position: relative;
+        padding: 0;
+    }
+
+    .diensten ul {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .diensten ul {
+        font-size: 1rem;
+    }
+}
