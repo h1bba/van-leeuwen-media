@@ -216,8 +216,7 @@
     .images img {
         width: 100%;
         scroll-snap-align: center;
-        margin-bottom: 1em;
-        margin-right: 1em;
+        margin: 1em;
     }
 
     .imagessticky {

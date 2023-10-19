@@ -294,3 +294,43 @@ div.socials>div>svg>path {
         min-width: unset;
     }
 }
+
+@media (max-width: 425px) {
+    .pagetitle {
+        font-size: 30px;
+    }
+
+    .introcontainer {
+        max-width: 80%;
+        width: 80%;
+        font-size: 30px;
+    }
+
+    .grid>div>div h3 {
+        font-size: 20px;
+    }
+
+    .contactcontainer {
+        margin-top: 2em;
+    }
+
+    .grid>div {
+        padding: 1em;
+    }
+
+    .grid {
+        gap: 1em;
+    }
+
+    .contactperson h3 {
+        font-size: 30px;
+    }
+
+    .contactperson h4 {
+        font-size: 20px;
+    }
+
+    .bedrijftext {
+        font-size: 20px;
+    }
+}
