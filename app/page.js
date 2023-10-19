@@ -3,7 +3,7 @@ import SelectedWork from './components/work/SelectedWork'
 import Ctabanner from './components/ctabanner/Ctabanner'
 import { Mulish } from 'next/font/google'
 const mulish = Mulish({ subsets: ['latin'] })
-import AnimatedCursor from "react-animated-cursor"
+// import AnimatedCursor from "react-animated-cursor"
 
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
     <div>
-    <AnimatedCursor
+    {/* <AnimatedCursor
       innerSize={24}
       outerSize={10}
       color='255, 133, 0'
@@ -46,7 +46,7 @@ const Home = () => {
           }
         }
       ]}
-    />
+    /> */}
     </div>
     <main className={mulish.className}>
       <div style={{width: '100%', height: '100%', backgroundColor: 'white', zIndex: '2', position: 'relative'}}>

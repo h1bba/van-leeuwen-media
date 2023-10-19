@@ -25,7 +25,7 @@ export const Footer = () => {
                         </ul>
                         <ul>
                             <li className='footerhead'>Contact</li>
-                            <li>info@vanleeuwenmedia.com</li>
+                            <li><a href="mailto:info@vanleeuwenmedia.com">Info@vanleeuwenmedia.com</a></li>
                             <li>+31 6 40 34 35 54</li>
                             <li>1501TD, Zaandam</li>
                             <li>Pieterpauwstraat 70</li>

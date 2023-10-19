@@ -125,8 +125,7 @@ a, a:link, a:visited, a:focus, a:active {
   position: absolute;
   z-index: 11;
   top: 3em;
-  right: 10%;
-  padding-right: 1em;
+  right: 5%;
 }
 
 #hamburgerlinks>div>a {
@@ -472,6 +471,7 @@ img.br {
   .footercontainer {
     /* flex-direction: column; */
     position: relative;
+    padding: 0;
   }
 
   div.footerflex {
@@ -479,7 +479,7 @@ img.br {
   }
 
   #hamburgerlinks {
-    font-size: 54.00px;
+    font-size: 36.00px;
   }
 
   .footerhead {
@@ -498,6 +498,11 @@ img.br {
 }
 
 @media (max-width:510px) {
+
+  ul.info {
+    gap: 2em;
+  }
+
   .overflowhiddenlogo {
     width: 80px;
     height: 80px;

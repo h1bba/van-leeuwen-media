@@ -5,6 +5,7 @@ import { Mulish } from "next/font/google";
 const mulish = Mulish({ subsets: ['latin'] })
 
 const Sound = () => {
+    const video = 'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundShowreel.mp4'
     return (
         <>
             <main className={mulish.className}>
@@ -25,6 +26,9 @@ const Sound = () => {
                             <p>Een goede video bestaat uit drie hoofdelementen, een goed verhaal, mooie beelden en goede audio! Goede audio mag dus niet ontbreken en is een expertise apart. Laat ons jou helpen om de essentie van jouw video extra goed door te laten dringen!</p>
                         </div>
                         <div className={styles.images}>
+                            <video autoPlay muted loop controls >
+                                <source src={video} type="video/mp4" />
+                            </video>
                             <div className={styles.imagessticky}>
                                 <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign.jfif'></img>
                                 <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign1.jpeg'></img>
@@ -34,7 +38,6 @@ const Sound = () => {
                         </div>
                     </div>
                 </div>
-
                 <Ctabanner />
             </main>
 

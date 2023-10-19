@@ -512,7 +512,7 @@
     }
 
     .pegasusContainer::after, .pegasusContainer::before, .lkqcContainer::after, .lkqcContainer::before, .autoContainer::after, .autoContainer::before, .bulaContainer::after, .bulaContainer::before, .lkqtContainer::after, .lkqtContainer::before, .sweetbobContainer::after, .sweetbobContainer::before {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         bottom: 0.5em;
     }
 
@@ -568,6 +568,7 @@
     }
 
     .herobuttons {
+        gap: 0em;
         font-size: 24px !important;
     }
 
