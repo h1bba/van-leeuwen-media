@@ -93,6 +93,8 @@
 .images {
     margin-top: 3em;
     min-width: 400px;
+
+    height: auto;
 }
 
 .images img {
