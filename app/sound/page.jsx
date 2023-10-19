@@ -26,6 +26,7 @@ const Sound = () => {
                             <p>Een goede video bestaat uit drie hoofdelementen, een goed verhaal, mooie beelden en goede audio! Goede audio mag dus niet ontbreken en is een expertise apart. Laat ons jou helpen om de essentie van jouw video extra goed door te laten dringen!</p>
                         </div>
                         <div className={styles.images}>
+                            <h3 style={{ textAlign: 'right' }}>Sound Design Showreel</h3>
                             <video autoPlay muted loop controls >
                                 <source src={video} type="video/mp4" />
                             </video>

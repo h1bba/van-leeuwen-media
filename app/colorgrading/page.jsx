@@ -25,22 +25,22 @@ const Colorgrading = () => {
                     <div className={styles.images}>
                         <div className={styles.imagessticky}>
                             <div>
-                                <h3 className={styles.righttext} style={{ }}>Before</h3>
+                                <h3 className={styles.righttext}>Before</h3>
                                 <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Colorgrading/Before.jpg'></img>
                             </div>
 
                             <div>
-                                <h3 style={{ textAlign: 'right', fontSize: '24px' }}>After</h3>
+                                <h3 className={styles.righttext}>After</h3>
                                 <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Colorgrading/After.jpg'></img>
                             </div>
 
                             <div>
-                                <h3 style={{ textAlign: 'right', fontSize: '24px' }}>Before</h3>
+                                <h3 className={styles.righttext}>Before</h3>
                                 <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Before.jpg' alt='Before image' />
                             </div>
 
                             <div>
-                                <h3 style={{ textAlign: 'right', fontSize: '24px' }}>After</h3>
+                                <h3 className={styles.righttext}>After</h3>
                                 <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/After.jpg' alt='After image' />
                             </div>
 
