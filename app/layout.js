@@ -2,6 +2,7 @@
 import './globals.css'
 import Navbar from './components/navbar/Navbar.jsx'
 import Footer from './components/footer/Footer.jsx'
+import AnimatedCursor from 'react-animated-cursor'
 
 
 export const metadata = {
