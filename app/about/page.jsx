@@ -20,8 +20,9 @@ const About = () => {
                         </h3>
                         <p style={{ marginBottom: '3em' }}>Daarmee doelen we op mediaoplossingen met een unieke en creatieve benadering. We streven naar doeltreffende oplossingen die bedrijven en organisaties verder helpen. We werken nauw samen met een team van specialisten omdat we geloven dat een scherp oog voor detail in elk aspect leidt tot het beste resultaat.</p>
                     </div>
-                    <div>
-                        <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/About.jpg' alt='' />
+                    <div className={styles.aboutimages}>
+                        <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/About1.jpg' alt='' />
+                        <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/About3.jpg' alt='' />
                     </div>
 
                     <div className={styles.rightcont}>
@@ -37,7 +38,7 @@ const About = () => {
                         <a href='/services' className={styles.servicebutton}>Bekijk diensten</a>
 
                     </div>
-                    <h2 style={{ textAlign: 'right', fontSize: '3.375rem' }}>Team</h2>
+                    <h2 className={styles.teamtext}>Team</h2>
                 </div>
 
 

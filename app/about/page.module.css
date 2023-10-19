@@ -170,18 +170,61 @@
     margin: 0 auto;
 }
 
+.aboutimages {
+    display: flex;
+    gap: 2em;
+    flex-direction: row;
+    width: 50%;
+}
+
+.teamtext {
+    text-align: right;
+    font-size: 3.375rem;
+}
+
+
+
 @media (max-width: 1024px) {
+    .rightcont {
+
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+    }
+
+
+    .pagetitle {
+        font-size: 2.25rem;
+    }
+
+    .aboutwidth p {
+        font-size: 1.2rem;
+        margin-bottom: 0em;
+    }
+
     .aboutpage h3 {
-        font-size: 36px;
-        font-weight: 400;
+        font-size: 20px;
+        font-weight: 600;
     }
 
     .aboutpage p {
-        font-size: 24px;
+        font-size: 16px;
     }
 }
 
 @media (max-width: 768px) {
+
+    .teamtext {
+        text-align: right;
+        font-size: 2.25rem;
+    }
+
+    .aboutimages {
+        display: flex;
+        gap: 2em;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .aboutwidth {
         max-width: 91%;
     }
@@ -192,11 +235,21 @@
 
     .rightcont {
         max-width: 100%;
-        margin-top: 2em;
-        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     .servicebutton {
         font-size: 24px;
     }
+
+}
+
+@media (max-width: 425px) {
+    .teamtext {
+        font-size: 2.25rem;
+        margin-bottom: 0;
+        margin-top: 2em;
+    }
+
 }
