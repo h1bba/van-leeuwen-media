@@ -17,7 +17,7 @@ const Contact = () => {
                     <h2 className={styles.pagetitle} >Contact</h2>
                 </div>
                 <div className={styles.introcontainer}>
-                    <p>Project in gedachte?<br></br> Laten we babbelen!</p>
+                    <p>Project in gedachten?<br></br> Laat ons jouw visie tot leven brengen.</p>
                 </div>
                 <div className={styles.contactcontainer}>
 

@@ -44,7 +44,7 @@ const SelectedWork = () => {
 
                 <Showreel />
 
-                <div className={styles.selectedworktitle} style={{  }}>
+                <div className={styles.selectedworktitle}>
                     <h2 id='selectedwork' className={styles.title}>Selected work</h2>
                 </div>
                 <div className={styles.workflex}>

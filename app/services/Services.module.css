@@ -76,7 +76,7 @@
 .services>a:nth-child(1)::after {
     position: absolute;
     content: '*Meest gekozen';
-    bottom: -2.5em;
+    bottom: -2.25em;
     left: 1em;
     color: var(--var-color-orange);
 }
@@ -231,6 +231,7 @@
     }
 
     .services {
+        padding-top: 2em;
         max-width: 91%;
     }
 
@@ -257,9 +258,24 @@
 
     }
 
+    .services>a:nth-child(1)::after {
+        top: -2.5em;
+        left: 0.5em;
+        white-space: nowrap;
+    }
+
 }
 
 @media (max-width: 425px) {
+
+    .hovertext {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
     .services svg {
         width: 50px;
     }
