@@ -530,6 +530,10 @@
         padding-right: 0;
     }
 
+    .categories {
+        padding-bottom: 0em;
+    }
+
 }
 
 @media (max-width: 1440px) {
@@ -579,4 +583,6 @@
         font-size: 36px;
         line-height: 115%;
     }
+
+
 }
