@@ -31,9 +31,9 @@ const Sound = () => {
                                 <source src={video} type="video/mp4" />
                             </video>
                             <div className={styles.imagessticky}>
-                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign.jfif'></img>
-                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign1.jpeg'></img>
                                 <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign2.jpg'></img>
+                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign1.jpeg'></img>
+                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign.jfif'></img>
                             </div>
 
                         </div>

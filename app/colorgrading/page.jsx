@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import styles from './color.module.css'
-import Ctabanner from '../components/ctabanner/Ctabanner';
+// import Ctabanner from '../components/ctabanner/Ctabanner';
 import { Mulish } from "next/font/google";
 const mulish = Mulish({ subsets: ['latin'] })
 
@@ -46,7 +46,7 @@ const Colorgrading = () => {
                         </div>
                     </div>
                 </div>
-                <Ctabanner />
+                {/* <Ctabanner /> */}
             </main>
 
         </>

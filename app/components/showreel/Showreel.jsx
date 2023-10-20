@@ -18,13 +18,13 @@ export const Showreel = () => {
         offset: ["start end", "start start"],
     })
 
-    let widthValue;
-    if (window.innerWidth < 768) {
-        widthValue = '91%';
-    } else {
-        widthValue = '80%';
-    }
-    const width = useTransform(scrollYProgress, [0.2, 0.8], ['50%', widthValue]);
+    // let widthValue;
+    // if (window.innerWidth < 768) {
+    //     widthValue = '91%';
+    // } else {
+    //     widthValue = '80%';
+    // }
+    // const width = useTransform(scrollYProgress, [0.2, 0.8], ['50%', widthValue]);
 
     return (
         <>
