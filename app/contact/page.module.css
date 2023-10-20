@@ -128,7 +128,6 @@ div.bedrijf>div.grid>div {
 
 .contactperson {
     position: relative;
-    margin-top: -20%;
     height: 100%;
     text-align: center;
 }
@@ -194,7 +193,8 @@ div.socials>div>svg>path {
 }
 
 .introcontainer {
-    max-width: 60%;
+    max-width: 80%;
+    text-align: center;
     min-width: 404px;
     margin: 0 auto;
     font-size: 3.375em;

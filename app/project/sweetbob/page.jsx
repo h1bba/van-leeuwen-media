@@ -56,7 +56,7 @@ const Sweetbob = () => {
                 <p>In de commercial laten we zien hoe Sweet Bob de kracht heeft om je dag compleet te veranderen en zelfs je stemming te verbeteren. We tonen het verhaal van Marcelo die aanvankelijk inspiratieloos lijkt, maar wanneer Marcelo Sweet Bob bezoekt, wordt hij geïnspireerd om te delen.</p>
               </div>
               <div>
-                <p>Het delen van ervaringen, positiviteit en lekkernijen. Dit allemaal onder het genot van &quot;Bossa Nova&quot; muziek en de heerlijke omgeving &quot;de Jordaan&quot;.</p>
+                <p>Het delen van ervaringen, positiviteit en lekkernijen. Dit allemaal onder het genot van chocolade bonbons & de heerlijke omgeving &quot;de Jordaan&quot;.</p>
               </div>
               <div className={styles.gridimgs}>
                 <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Sweetbob/sweetbob3.jpg"></img>

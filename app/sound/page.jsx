@@ -15,7 +15,7 @@ const Sound = () => {
                         <div className={styles.text}>
                             <h2>Sound design</h2>
                             <h3>Maak je video compleet met sound design</h3>
-                            <p>Audio is een essentieel onderdeel van een geslaagde video en vereist speciale expertise. Versterk het verhaal dat je wilt vertellen met sound design, creëer een meeslepende auditieve ervaring en voeg een nieuwe dimensie toe aan jouw video!. Laat ons het geluid van jouw video naar een hoger niveau tillen.</p>
+                            <p>Audio is een essentieel onderdeel van een geslaagde video en vereist speciale expertise. Versterk het verhaal dat je wilt vertellen met sound design, creëer een meeslepende auditieve ervaring en voeg een nieuwe dimensie toe aan jouw video!</p>
                             <h3>Sound design op Maat</h3>
                             <p>Wij bieden jou de keuze. Of het nu gaat om op maat gecomponeerde muziekstukken die naadloos passen bij de sfeer en het verhaal van je video, of het selecteren van bestaande muziek die perfect aansluit. Wij zorgen ervoor dat de muziek de essentie van de video versterkt. De toon, emotie en boodschap worden weerspiegeld in elke noot van de soundtrack.</p>
                             <h3>Dynamische geluidseffecten & volley&apos;s</h3>

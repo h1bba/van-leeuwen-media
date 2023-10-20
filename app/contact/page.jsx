@@ -17,7 +17,7 @@ const Contact = () => {
                     <h2 className={styles.pagetitle} >Contact</h2>
                 </div>
                 <div className={styles.introcontainer}>
-                    <p>Project in gedachten?<br></br> Laat ons jouw visie tot leven brengen.</p>
+                    <p>Wij brengen jouw visie tot leven!</p>
                 </div>
                 <div className={styles.contactcontainer}>
 
@@ -50,7 +50,7 @@ const Contact = () => {
                             </svg>
 
                             <div>
-                                <a><h3>WhatsApp</h3></a>
+                                <a href='https://wa.me/640343554'><h3>WhatsApp</h3></a>
                             </div>
                         </div>
 

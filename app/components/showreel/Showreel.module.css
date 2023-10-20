@@ -22,7 +22,6 @@
     border-radius: 16px;
     overflow: hidden;
     scroll-snap-align: start;
-
 }
 
 .showreelcontainer video {
@@ -42,6 +41,46 @@
 
 @media (max-width: 1023px) {
     .showreelcontainer {
-        max-width: ;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16/9;
+        padding-left: 1em;
+        padding-right: 1em;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 16px;
+        overflow: hidden;
+        scroll-snap-align: start;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .showreelcontainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16/9;
+        padding-left: 1em;
+        padding-right: 1em;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 16px;
+        overflow: hidden;
+        scroll-snap-align: start;
+    }
+
+    .outershowreel {
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        scroll-snap-type: y mandatory;
     }
 }

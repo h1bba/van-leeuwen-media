@@ -27,22 +27,18 @@ const About = () => {
 
                     <div className={styles.rightcont}>
                         <h3>Minder generiek, meer creatief</h3>
-                        <p>Bij Van Leeuwen Media streven we naar unieke en verrassende resultaten, waarbij we afstappen van generieke video&apos;s, daar zijn er immers al zo veel van. We willen onze kijkers telkens weer verrassen met een onvoorspelbaar script en een oogverbluffend plaatje.</p>
+                        <p>Bij Van Leeuwen Media streven we naar unieke en verrassende resultaten, waarbij we afstappen van generieke video&apos;s, daar zijn er immers al zo veel van. We willen onze kijkers telkens weer verrassen met een onvoorspelbaar script en een oogverbluffend plaatje. </p>
                     </div>
                     {/* <div>
                     <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/About2.jpg' alt='' />
                 </div> */}
                     <div className={styles.w72}>
                         <h3>Welke diensten bieden wij aan?</h3>
-                        <p style={{ marginBottom: '3em' }}>Als bedrijf bieden we een breed scala aan diensten aan, waaronder volledige Video & Film producties maar ook losse diensten zoals Color grading, Sound design en Motion design. Hierover is meer te lezen op onze diensten pagina waarbij we elke dienst uitgebreid beschrijven.</p>
+                        <p style={{ marginBottom: '3em' }}>Wij bieden we een breed scala aan diensten aan, waaronder volledige Video & Film producties maar ook losse diensten zoals Color grading, Sound design en Motion design. Hierover is meer te lezen op onze diensten pagina waarbij we elke dienst uitgebreid beschrijven.</p>
                         <a href='/services' className={styles.servicebutton}>Bekijk diensten</a>
-
                     </div>
                     <h2 className={styles.teamtext}>Team</h2>
                 </div>
-
-
-
 
                 <Team />
                 <Ctabanner />

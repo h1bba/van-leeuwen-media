@@ -143,6 +143,28 @@
     }
 }
 
+@media (max-width: 640px) {
+    .videocontainer h3 {
+        font-size: 30px;
+    }
+
+    .videocontainer p {
+        font-size: 20px;
+    }
+
+    .diensten ul {
+        font-size: 20px;
+    }
+
+    .grid p {
+        font-size: 16px;
+    }
+
+    .grid {
+        margin-top: 1.5em;
+    }
+}
+
 @media (max-width: 425px) {
     .diensten ul {
         font-size: 1rem;

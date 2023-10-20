@@ -42,7 +42,7 @@ const LKQcom = () => {
                             </div>
                         </div>
 
-                        <div className={styles.grid} style={{ marginTop: '4em' }}>
+                        <div className={styles.grid}>
                             <div>
                                 <p>LKQ stond voor een uitdaging: het optimaliseren van hun onboardingstraject. Ze benaderden ons met de vraag om een video te maken die nieuw personeel zou laten zien hoe essentieel LKQ is voor de samenleving.</p>
                             </div>
@@ -54,10 +54,10 @@ const LKQcom = () => {
                                 <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom/LKQcom2.jpg"></img>
                             </div>
                             <div>
-                                <p>In de video hebben we op een leuke en speelse manier een essentieel beroep verwerkt: de verloskundige. We wilden de kijkers laten zien hoe belangrijk en waardevol LKQ is in de dagelijkse werkzaamheden van de verloskundige. Ook was het belangrijk voor LKQ dat de medewerkers zich betrokken voelden, daarom hebben we meerdere functies in de video verwerkt, zoals orderpicker, chauffeur, binnendienstmedewerker, enzovoort.</p>
+                                <p>In de video hebben we op een leuke en speelse manier een essentieel beroep verwerkt: de verloskundige. We wilden de kijkers laten zien hoe belangrijk en waardevol LKQ is in de dagelijkse werkzaamheden van de verloskundige. Ook was het belangrijk voor LKQ dat de medewerkers zich betrokken voelden, daarom hebben we meerdere functies in de video verwerkt, zoals orderpicker, binnendienstmedewerker, chauffeur, enzovoort.</p>
                             </div>
                             <div>
-                                <p>Om ervoor te zorgen dat de boodschap in de hele Benelux begrepen kon worden, hebben we de video geleverd in drie verschillende talen: Nederlands, Vlaams en Frans. Op die manier konden we een breed publiek bereiken en het onboardingstraject van LKQ verbeteren. </p>
+                                <p>Om ervoor te zorgen dat de boodschap in de hele Benelux begrepen kon worden, hebben we de video geleverd in drie verschillende talen: Nederlands, Vlaams en Frans. Op die manier konden we een breed publiek bereiken en het onboardingstraject van LKQ verbeteren.</p>
                             </div>
                             <div className={styles.gridimgs}>
                                 <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom/LKQcom3.jpg"></img>
