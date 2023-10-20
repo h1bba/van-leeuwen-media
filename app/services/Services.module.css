@@ -70,7 +70,7 @@
 
 
 .services>a:nth-child(1) {
-    border: 8px solid var(--var-color-orange);
+    box-shadow: 0px 0px 0px 8px rgba(255, 132, 0, 1);
 }
 
 .services>a:nth-child(1)::after {
@@ -267,6 +267,9 @@
 }
 
 @media (max-width: 425px) {
+    .services>a:nth-child(1) {
+        box-shadow: 0px 0px 0px 4px rgba(255, 132, 0, 1);
+    }
 
     .hovertext {
         font-size: 20px;
