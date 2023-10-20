@@ -42,7 +42,7 @@ export const Showreel = () => {
                     ref={targetRef}
 
                     className={styles.showreelcontainer}>
-                    <video autoPlay muted loop controls >
+                    <video autoPlay playsinline muted loop controls >
                         <source src={showreelmp4} type="video/mp4" />
                         <source src={showreelwebm} type="video/webm" />
                     </video>
