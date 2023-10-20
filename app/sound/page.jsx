@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './sound.module.css'
 import Ctabanner from '../components/ctabanner/Ctabanner';
+import Image from 'next/image';
 import { Mulish } from "next/font/google";
 const mulish = Mulish({ subsets: ['latin'] })
 
@@ -31,11 +32,10 @@ const Sound = () => {
                                 <source src={video} type="video/mp4" />
                             </video>
                             <div className={styles.imagessticky}>
-                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign2.jpg'></img>
-                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign1.jpeg'></img>
-                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign.jfif'></img>
+                                <Image quality={100} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign2.jpg' />
+                                <Image quality={100} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign1.jpeg' />
+                                <Image quality={100} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign.jfif' />
                             </div>
-
                         </div>
                     </div>
                 </div>
