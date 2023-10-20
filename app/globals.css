@@ -223,7 +223,7 @@ a {
 
 footer {
   box-sizing: border-box;
-  height: 28%;
+  height: unset;
 }
 
 div.footerflex {
@@ -457,6 +457,10 @@ img.br {
 @media (max-width: 768px) {
   .navbar {
     width: 91%;
+  }
+
+  .footer {
+    height: unset;
   }
 }
 
