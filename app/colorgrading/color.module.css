@@ -118,6 +118,11 @@
     font-size: 24.00px;
 }
 
+.text {
+    position: relative;
+    box-sizing: border-box;
+}
+
 .text h2 {
     font-size: 54.00px;
     line-height: normal;
@@ -174,7 +179,7 @@
 
     .images {
         position: relative;
-        height: fit-content;
+        height: auto;
         margin-top: 0;
         margin-bottom: 2em;
     }
@@ -204,11 +209,6 @@
         padding: 0;
         grid-gap: 0;
         gap: 0;
-
-    }
-
-    .text {
-        white-space: normal;
 
     }
 
