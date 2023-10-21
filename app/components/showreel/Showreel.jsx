@@ -51,7 +51,7 @@ export const Showreel = () => {
                     ref={targetRef}
 
                     className={styles.showreelcontainer}>
-                    <video autoPlay loop muted playsInline controls=''>
+                    <video autoPlay loop muted playsInline controls poster='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula1.jpg'>
                         <source src={showreelmp4} type="video/mp4" />
                         <source src={showreelwebm} type="video/webm" />
                     </video>
