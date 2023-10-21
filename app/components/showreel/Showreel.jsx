@@ -42,9 +42,12 @@ export const Showreel = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.2 }}
-                className={styles.outershowreel}>
+                className={styles.outershowreel}
+                style={{ width }}
+            >
+
                 <motion.div
-                    style={{ width }}
+
                     ref={targetRef}
 
                     className={styles.showreelcontainer}>
