@@ -36,7 +36,7 @@
     overflow-x: hidden;
     border-radius: 16px;
     aspect-ratio: 16/9;
-    transform-origin: top;
+    transform-origin: center;
 }
 
 @media (max-width: 1023px) {
