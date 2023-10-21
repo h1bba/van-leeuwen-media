@@ -25,7 +25,7 @@ export const Showreel = () => {
     //     widthValue = '80%';
     // }
     // const width = useTransform(scrollYProgress, [0.2, 0.8], ['50%', widthValue]);
-    const width = useTransform(scrollYProgress, [0.2, 0.8], ['50%', '80%']);
+    const width = useTransform(scrollYProgress, [0.2, 0.8], ['50%', '91%']);
 
     return (
         <>
