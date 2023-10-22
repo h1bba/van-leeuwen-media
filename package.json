@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export",
     "lint": "next lint"
   },
   "dependencies": {
@@ -14,18 +15,17 @@
     "@fontsource/nunito-sans": "^5.0.3",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.5",
+    "@react-hook/media-query": "^1.1.1",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
     "framer-motion": "^10.12.17",
-    "gsap": "^3.12.2",
     "next": "13.4.4",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.11.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "react-player": "^2.12.0",
-    "slick-carousel": "^1.8.1",
-    "swiper": "^10.2.0"
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "20.3.0",
