@@ -28,6 +28,7 @@ const Ctabanner = () => {
         };
     }, []);
 
+    const translateY = useTransform(scrollYProgress, [0, 1], [0, -16]);
     const fontSize = useTransform(
         scrollYProgress,
         [0, 0.5],
@@ -47,7 +48,7 @@ const Ctabanner = () => {
         <>
             <a href="/contact">
                 <motion.div ref={targetRef} style={{ alignSelf: 'center' }} className={styles.ctabox}>
-                    <motion.p ref={targetRef} style={{ fontSize }} className={styles.ctatext}>
+                    <motion.p ref={targetRef} style={{ fontSize, translateY }} className={styles.ctatext}>
                         Daag ons uit
                     </motion.p>
                 </motion.div>
