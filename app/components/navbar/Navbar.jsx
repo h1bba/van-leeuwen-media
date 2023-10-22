@@ -108,9 +108,10 @@ const Header = () => {
     };
 
     return (
-        <Headroom>
-            <div className={mulish.className}>
-                <div className="navbarwidth" >
+        <div className={mulish.className}>
+            <div className="navbarwidth" >
+                <Headroom>
+
                     <div
                         className="navbar">
                         <div className="navbar-container">
@@ -132,88 +133,89 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
-                    <AnimatePresence>
-                        {menuOpen && (
+                </Headroom>
+
+                <AnimatePresence>
+                    {menuOpen && (
+                        <motion.div
+                            variants={menuVars}
+                            initial="initial"
+                            animate="animate"
+                            exit="exit"
+                            className="mobilemenu">
+                            <a className="closebtn" onClick={toggleMenu}>
+                                <Image src={Close} height={50} alt="Close button" />
+                            </a>
+
                             <motion.div
-                                variants={menuVars}
+                                variants={containerVars}
                                 initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                className="mobilemenu">
-                                <a className="closebtn" onClick={toggleMenu}>
-                                    <Image src={Close} height={50} alt="Close button" />
-                                </a>
+                                animate="open"
+                                exit="initial"
+                                id="hamburgerlinks">
+                                <div className="overflowhiddenlogo">
 
-                                <motion.div
-                                    variants={containerVars}
-                                    initial="initial"
-                                    animate="open"
-                                    exit="initial"
-                                    id="hamburgerlinks">
-                                    <div className="overflowhiddenlogo">
+                                    <motion.div
+                                        variants={mobileLinkVars}>
+                                        <a className="logomobile" href="/"><Image src={LogoIcon} alt="" /></a>
+                                    </motion.div>
 
-                                        <motion.div
-                                            variants={mobileLinkVars}>
-                                            <a className="logomobile" href="/"><Image src={LogoIcon} alt="" /></a>
-                                        </motion.div>
+                                </div>
+                                <div className="overflowhidden">
 
-                                    </div>
-                                    <div className="overflowhidden">
+                                    <motion.div
+                                        variants={mobileLinkVars}
+                                    >
+                                        <Link onClick={toggleMenu} href="/portfolio">Ons werk</Link>
+                                    </motion.div>
 
-                                        <motion.div
-                                            variants={mobileLinkVars}
-                                        >
-                                            <Link onClick={toggleMenu} href="/portfolio">Ons werk</Link>
-                                        </motion.div>
+                                </div>
 
-                                    </div>
+                                <div className="overflowhidden">
 
-                                    <div className="overflowhidden">
+                                    <motion.div
+                                        variants={mobileLinkVars}
+                                    >
+                                        <Link onClick={toggleMenu} className="overflowhidden" href="/services">Diensten</Link>
+                                    </motion.div>
 
-                                        <motion.div
-                                            variants={mobileLinkVars}
-                                        >
-                                            <Link onClick={toggleMenu} className="overflowhidden" href="/services">Diensten</Link>
-                                        </motion.div>
+                                </div>
 
-                                    </div>
+                                <div className="overflowhidden">
 
-                                    <div className="overflowhidden">
+                                    <motion.div
+                                        variants={mobileLinkVars}>
+                                        <Link onClick={toggleMenu} className="overflowhidden" href="/about">Over ons</Link>
+                                    </motion.div>
 
-                                        <motion.div
-                                            variants={mobileLinkVars}>
-                                            <Link onClick={toggleMenu} className="overflowhidden" href="/about">Over ons</Link>
-                                        </motion.div>
+                                </div>
 
-                                    </div>
+                                <div className="overflowhidden">
 
-                                    <div className="overflowhidden">
+                                    <motion.div
+                                        variants={mobileLinkVars}>
+                                        <Link onClick={toggleMenu} className="overflowhidden" href="/contact">Contact</Link>
+                                    </motion.div>
 
-                                        <motion.div
-                                            variants={mobileLinkVars}>
-                                            <Link onClick={toggleMenu} className="overflowhidden" href="/contact">Contact</Link>
-                                        </motion.div>
-
-                                    </div>
+                                </div>
 
 
 
-                                    <div className="overflowhidden">
+                                <div className="overflowhidden">
 
-                                        <motion.div
-                                            variants={mobileLinkVars}
-                                            className="mailfooter">
-                                            <a href="mailto:info@vanleeuwenmedia.com">info@vanleeuwenmedia.com</a>
-                                        </motion.div>
+                                    <motion.div
+                                        variants={mobileLinkVars}
+                                        className="mailfooter">
+                                        <a href="mailto:info@vanleeuwenmedia.com">info@vanleeuwenmedia.com</a>
+                                    </motion.div>
 
-                                    </div>
-                                </motion.div>
+                                </div>
                             </motion.div>
-                        )}
-                    </AnimatePresence>
-                </div >
-            </div>
-        </Headroom>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div >
+        </div >
     )
 }
 

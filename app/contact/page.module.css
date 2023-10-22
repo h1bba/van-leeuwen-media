@@ -9,7 +9,6 @@
     gap: 2em;
     height: auto;
     background-color: white;
-    z-index: 2;
 }
 
 .grid>div {
@@ -182,7 +181,6 @@ div.socials>div>svg>path {
 
 .contactpage {
     position: relative;
-    z-index: 2;
     background-color: white;
     padding-bottom: 2em;
 }

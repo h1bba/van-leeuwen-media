@@ -104,7 +104,6 @@
     position: relative;
     background-color: white;
     font-weight: 400;
-    z-index: 1;
 }
 
 .category {
@@ -383,7 +382,6 @@
     justify-content: center;
     background-color: white;
     padding-bottom: 2em;
-    z-index: 3;
 }
 
 .servicebutton {
@@ -453,7 +451,6 @@
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    z-index: 3;
     position: relative;
     background-color: white;
     text-align: center;

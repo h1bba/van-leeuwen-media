@@ -88,7 +88,6 @@ a, a:link, a:visited, a:focus, a:active {
   backdrop-filter: blur(0.2em);
   justify-content: center;
   position: sticky;
-  z-index: 5;
   color: var(--var-color-white);
   top: 0;
   display: flex;
@@ -236,7 +235,6 @@ div.footerflex {
 
   background-color: var(--color-quote-bg);
   padding: 2em 0em 2em 0em;
-  z-index: 0;
 }
 
 .footercontainer>ul>li>a {
@@ -269,7 +267,6 @@ div.footercontainer>ul>li {
   bottom: 0em;
   left: 50%;
   transform: translatex(-50%);
-  z-index: 0;
   justify-content: space-between;
   color: black;
   font-size: 1em;
@@ -327,37 +324,16 @@ ul.info {
   flex-direction: row !important;
 }
 
-.ctacontainer {
-  color: white;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
-  bottom: 13em;
-  position: fixed;
-  display: flex;
-  justify-items: center;
-  height: 12em;
-}
-
-.cta {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.cta>p {
-  position: relative;
-  font-size: 48px;
-  font-weight: bold;
-  color: var(--var-color-white);
-  z-index: -1;
-}
-
 img.br {
   border-radius: 1em;
 }
 
 .footerlogo {
   display: flex;
+}
+
+.headroom {
+  z-index: 10 !important;
 }
 
 @media (max-width: 1023px) {
@@ -457,6 +433,7 @@ img.br {
 @media (max-width: 768px) {
   .navbar {
     width: 91%;
+    height: 6em;
   }
 
   .footer {

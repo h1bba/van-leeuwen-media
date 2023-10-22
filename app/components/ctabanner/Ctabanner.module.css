@@ -8,7 +8,6 @@
     height: 30vh;
     background-color: white;
     width: 80%;
-    z-index: 1;
     text-align: center;
     transform-origin: center;
 }
