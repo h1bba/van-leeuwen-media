@@ -2,13 +2,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     /* Adjust the minmax width as needed */
-    grid-auto-rows: 300px;
     /* Set a fixed height for the rows */
     max-width: 80%;
-    height: 100%;
+    height: max-content;
     margin: 0 auto;
     gap: 1em;
-    row-gap: 6em;
+    row-gap: 1em;
     position: relative;
 }
 
@@ -33,6 +32,7 @@
     /* Ensure the image covers the entire container */
     border-radius: 1em;
     transition: 0.5s ease;
+    aspect-ratio: 1/1;
 }
 
 .teammember>img:hover {
@@ -50,6 +50,7 @@
 .teammember h4 {
     font-weight: 400;
     margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
     font-size: 1.5rem;
 }
 
@@ -120,6 +121,10 @@
 }
 
 @media (max-width: 425px) {
+    .teamcontainer {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
     .naam {
         font-size: 24px !important;
     }

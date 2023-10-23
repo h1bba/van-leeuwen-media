@@ -12,6 +12,7 @@
 }
 
 .grid>div {
+    border: 2px solid black;
     position: relative;
     height: 8em;
     min-width: 404px;
@@ -24,6 +25,8 @@
 }
 
 .grid>div:hover {
+    border: 2px solid var(--var-color-orange);
+
     background-color: var(--var-color-orange);
     transition: 0.5s ease;
 }
@@ -193,7 +196,6 @@ div.socials>div>svg>path {
 .introcontainer {
     max-width: 80%;
     text-align: center;
-    min-width: 404px;
     margin: 0 auto;
     font-size: 3.375em;
     line-height: normal;
@@ -261,7 +263,7 @@ div.socials>div>svg>path {
 
     .contactperson img {
         max-width: 300px;
-        min-width: 300px;
+        min-width: 280px;
     }
 
     .bedrijf {
@@ -299,7 +301,6 @@ div.socials>div>svg>path {
     }
 
     .introcontainer {
-        max-width: 60%;
         width: 80%;
         font-size: 30px;
     }
@@ -330,5 +331,18 @@ div.socials>div>svg>path {
 
     .bedrijftext {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 330px) {
+    .grid>div {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 768px) {
+    div.bedrijf {
+
+        width: 80%;
     }
 }
