@@ -42,7 +42,7 @@
     align-items: start;
 }
 
-.services>a {
+.servicebutton {
     position: relative;
     aspect-ratio: 1/1;
     width: auto;
@@ -95,18 +95,18 @@
     align-self: end;
 }
 
-.services>a svg>path {
+.servicebutton svg>path {
     transition: 0.5s ease;
 }
 
-.services>a>li>h2 {
+.servicebutton>li>h2 {
     font-size: 2.25rem;
     font-weight: bold;
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
 
-.services>a>li>h3 {
+.servicebutton>li>h3 {
     position: absolute;
     bottom: 1em;
     left: 0;
@@ -197,7 +197,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .services>a {
+    .servicebutton {
         height: 20em;
         aspect-ratio: unset;
 
@@ -214,7 +214,7 @@
         font-size: 2.25rem;
     }
 
-    .services>a>li>h2 {
+    .servicebutton>li>h2 {
         font-size: 1.5rem;
         font-weight: 600;
         margin-top: 0.5em;
@@ -234,19 +234,19 @@
         max-width: 91%;
     }
 
-    .services>a {
+    .servicebutton {
         aspect-ratio: 1/1;
         height: auto;
         margin: 0.5em;
         padding: 1em;
     }
 
-    .services>a>li>h2 {
+    .servicebutton>li>h2 {
         font-size: 1rem;
         font-weight: 600;
     }
 
-    .services>a>li {
+    .servicebutton>li {
         position: relative;
     }
 
@@ -257,7 +257,7 @@
 
     }
 
-    .services>a:nth-child(1)::after {
+    .servicebutton:nth-child(1)::after {
         top: -2.5em;
         left: 0.5em;
         white-space: nowrap;
@@ -266,7 +266,7 @@
 }
 
 @media (max-width: 425px) {
-    .services>a:nth-child(1) {
+    .servicebutton:nth-child(1) {
         box-shadow: 0px 0px 0px 4px rgba(255, 132, 0, 1);
     }
 

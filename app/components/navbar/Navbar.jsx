@@ -9,6 +9,7 @@ import Image from "next/image";
 import Headroom from "react-headroom";
 import { useScroll, useTransform, motion, AnimatePresence } from "framer-motion";
 import { Mulish } from "next/font/google";
+import { Fade } from "react-awesome-reveal";
 const mulish = Mulish({ subsets: ['latin'] })
 
 const Header = () => {
@@ -115,15 +116,19 @@ const Header = () => {
                     <div
                         className="navbar">
                         <div className="navbar-container">
-                            <div>
-                                <Link className="logo" href="/"><Image src={Logo} alt="" />
-                                </Link>
-                            </div>
+                            <Fade>
+                                <div>
+                                    <Link className="logo" href="/"><Image src={Logo} alt="" />
+                                    </Link>
+                                </div>
+                            </Fade>
                             <div id="navlinks">
-                                <Link href="/portfolio">Ons werk</Link>
-                                <Link href="/services">Diensten</Link>
-                                <Link href="/about">Over ons</Link>
-                                <Link className="contactpadding" href="/contact">Contact</Link>
+                                <Fade cascade damping={0.1}>
+                                    <Link className="portfolio" href="/portfolio">Ons werk</Link>
+                                    <Link href="/services">Diensten</Link>
+                                    <Link href="/about">Over ons</Link>
+                                    <Link className="contactpadding" href="/contact">Contact</Link>
+                                </Fade>
                             </div>
                             <div id="mobilenav">
                                 <a className="hamburgerIcon" onClick={toggleMenu}>

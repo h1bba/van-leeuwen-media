@@ -2,6 +2,7 @@
 import React from "react";
 import SelectedWork from '../components/work/SelectedWork'
 import Ctabanner from '../components/ctabanner/Ctabanner'
+import styles from './portfolio.module.css'
 import { Mulish } from 'next/font/google'
 const mulish = Mulish({ subsets: ['latin'] })
 

@@ -2,6 +2,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import styles from './Ctabanner.module.css';
+import { Fade } from "react-awesome-reveal";
+
 
 const Ctabanner = () => {
     const targetRef = useRef(null);
@@ -47,11 +49,13 @@ const Ctabanner = () => {
     return (
         <>
             <a href="/contact">
-                <motion.div ref={targetRef} style={{ alignSelf: 'center' }} className={styles.ctabox}>
-                    <motion.p ref={targetRef} style={{ fontSize, translateY }} className={styles.ctatext}>
-                        Daag ons uit
-                    </motion.p>
-                </motion.div>
+                <Fade fraction={0.3}>
+                    <motion.div ref={targetRef} style={{ alignSelf: 'center' }} className={styles.ctabox}>
+                        <motion.p ref={targetRef} style={{ fontSize, translateY }} className={styles.ctatext}>
+                            Daag ons uit
+                        </motion.p>
+                    </motion.div>
+                </Fade>
             </a>
         </>
     );

@@ -337,8 +337,14 @@ img.br {
 }
 
 @media (max-width: 1023px) {
-  #navlinks>a {
-    display: none;
+  .contactpadding {
+    padding: 0;
+    border: none;
+    border-radius: unset;
+  }
+
+  #navlinks {
+    display: none !important;
   }
 
   .hamburgerIcon {
