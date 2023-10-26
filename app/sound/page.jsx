@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Head from 'next/head';
 import styles from './sound.module.css'
 import Ctabanner from '../components/ctabanner/Ctabanner';
 import { Fade } from 'react-awesome-reveal';
@@ -7,9 +8,14 @@ import { Mulish } from "next/font/google";
 const mulish = Mulish({ subsets: ['latin'] })
 
 const Sound = () => {
+
+
     const video = 'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundShowreel.mp4'
     return (
         <>
+            <Head>
+                <title>Sound Design | Van Leeuwen Media</title>
+            </Head>
             <main className={mulish.className}>
 
                 <div className={styles.servicepage}>

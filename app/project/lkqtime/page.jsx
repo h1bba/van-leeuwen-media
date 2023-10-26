@@ -3,6 +3,7 @@ import React from 'react'
 import styles from '../project.module.css'
 import Arrow from '../../../public/SingleArrow.svg'
 import Image from 'next/image'
+import Head from 'next/head'
 import { Fade } from 'react-awesome-reveal'
 import { Mulish } from "next/font/google";
 const mulish = Mulish({ subsets: ['latin'] })
@@ -11,6 +12,9 @@ const LKQtime = () => {
   const video = 'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQtime/Lkq+Tijdlijn.mp4'
   return (
     <>
+      <Head>
+        <title>LKQ | Van Leeuwen Media</title>
+      </Head>
       <main className={mulish.className}>
         <div className={styles.page}>
           <div className={styles.backarrow}>

@@ -5,12 +5,16 @@ import Arrow from '../../../public/SingleArrow.svg'
 import Image from 'next/image'
 import { Mulish } from "next/font/google";
 import { Fade } from 'react-awesome-reveal';
+import Head from 'next/head';
 const mulish = Mulish({ subsets: ['latin'] })
 
 const Pegasus = () => {
     const video = 'https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bikker/Autofirst+Bikker.mp4'
     return (
         <>
+            <Head>
+                <title>Autofirst | Van Leeuwen Media</title>
+            </Head>
             <main className={mulish.className}>
                 <div className={styles.page}>
                     <div className={styles.backarrow}>

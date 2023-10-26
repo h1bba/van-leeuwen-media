@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import styles from './Services.module.css';
 import Ctabanner from '../components/ctabanner/Ctabanner';
+import Head from 'next/head';
 import { Fade } from 'react-awesome-reveal';
 import { Mulish } from "next/font/google";
 const mulish = Mulish({ subsets: ['latin'] })
@@ -84,6 +85,9 @@ const Services = () => {
 
     return (
         <>
+            <Head>
+                <title>Diensten | Van Leeuwen Media</title>
+            </Head>
             <main className={mulish.className}>
                 <div className={styles.servicespage}>
                     <div className={styles.titlecontainer}>

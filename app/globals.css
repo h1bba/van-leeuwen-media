@@ -56,6 +56,10 @@ main {
   position: relative;
 }
 
+.active {
+  color: var(--var-color-orange) !important;
+}
+
 
 h2, h3 {
   line-height: 111.4%
@@ -74,7 +78,10 @@ h2, h3 {
 
 .contactpadding:hover {
   border: 2px solid #FF8500;
+}
 
+#mobilenav {
+  display: none;
 }
 
 a, a:link, a:visited, a:focus, a:active {
@@ -141,14 +148,6 @@ a, a:link, a:visited, a:focus, a:active {
   align-self: center;
 }
 
-/* .logomobile {
-  position: absolute;
-  top: 0.3em;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-} */
-
 .logo>img {
   width: 240px;
   height: auto;
@@ -158,39 +157,38 @@ a, a:link, a:visited, a:focus, a:active {
   position: relative;
   flex-direction: row;
   width: 80%;
+  justify-content: space-between;
   gap: 2em;
   margin: 0 auto;
   align-items: center;
   display: flex;
   transition: 1s ease;
+  align-self: center;
 }
 
-.navbar-container>#navlinks {
+.navbar-container #navlinks {
   display: flex;
   position: absolute;
   right: 0;
   gap: 2em;
   align-items: center;
+  margin-top: -1.5em;
 }
 
-#mobilenav {
-  display: flex;
-  align-self: center;
-  align-items: center;
-}
+
 
 a {
   text-decoration: none !important;
 }
 
-.navbar-container>div>a {
+.navbar-container div>a {
   color: var(--var-color-black);
   font-size: 16px;
   font-weight: 400;
   transition: 0.5s ease;
 }
 
-.navbar-container>div>a:hover {
+.navbar-container div>a:hover {
   transition: .5s ease;
   color: var(--var-color-orange);
 }
@@ -351,6 +349,12 @@ img.br {
     display: inline-flex !important;
     position: absolute;
     right: 0;
+  }
+
+  #mobilenav {
+    display: flex;
+    align-self: center;
+    align-items: center;
   }
 
   #mobilenav {

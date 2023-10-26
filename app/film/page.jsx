@@ -2,6 +2,7 @@
 import React from 'react'
 import styles from './film.module.css'
 import Ctabanner from '../components/ctabanner/Ctabanner';
+import Head from 'next/head';
 import { Fade } from 'react-awesome-reveal';
 import { Mulish } from "next/font/google";
 const mulish = Mulish({ subsets: ['latin'] })
@@ -9,6 +10,9 @@ const mulish = Mulish({ subsets: ['latin'] })
 const Film = () => {
     return (
         <>
+            <Head>
+                <title>Video/film Productie | Van Leeuwen Media</title>
+            </Head>
             <main className={mulish.className}>
                 <div className={styles.servicegrid}>
                     <div className={styles.text}>

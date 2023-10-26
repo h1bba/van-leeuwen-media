@@ -3,12 +3,16 @@ import React from 'react'
 import styles from './color.module.css'
 import Ctabanner from '../components/ctabanner/Ctabanner';
 import { Fade } from 'react-awesome-reveal';
+import Head from 'next/head';
 import { Mulish } from "next/font/google";
 const mulish = Mulish({ subsets: ['latin'] })
 
 const Colorgrading = () => {
     return (
         <>
+            <Head>
+                <title>Colorgrading | Van Leeuwen Media</title>
+            </Head>
             <main className={mulish.className}>
                 <div className={styles.servicegrid}>
                     <div className={styles.text}>

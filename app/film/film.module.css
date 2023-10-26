@@ -230,10 +230,10 @@
 
     .imagessticky {
         display: block;
-        overflow: auto;
-        white-space: nowrap;
-        scroll-behavior: smooth;
-        scroll-snap-type: x mandatory;
+        /* overflow: auto; */
+        /* white-space: nowrap; */
+        /* scroll-behavior: smooth;
+        scroll-snap-type: x mandatory; */
     }
 
 }

@@ -1,5 +1,6 @@
 'use client'
 import Link from "next/link";
+import { useRouter } from "next/navigation"; // Import useRouter
 import React, { useRef, useState, useEffect } from "react";
 import Logo from '../../../public/logo.svg'
 import LogoIcon from '../../../public/logoicon.svg'
@@ -13,15 +14,13 @@ import { Fade } from "react-awesome-reveal";
 const mulish = Mulish({ subsets: ['latin'] })
 
 const Header = () => {
-    const navLinks = [
-        { title: "Ons werk", href: "/about" },
-        { title: "Diensten", href: "/services" },
-        { title: "Over ons", href: "/about" },
-        { title: "Contact", href: "/contact" }
+    const [activeLink, setActiveLink] = useState(""); // State to store the active link
+    const router = useRouter(); // Initialize useRouter
 
-    ];
-
-
+    // Use useEffect to set the active link based on the current route
+    useEffect(() => {
+        setActiveLink(router.pathname);
+    }, [router.pathname]);
 
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -107,6 +106,7 @@ const Header = () => {
             },
         },
     };
+    
 
     return (
         <div className={mulish.className}>
@@ -122,14 +122,14 @@ const Header = () => {
                                     </Link>
                                 </div>
                             </Fade>
-                            <div id="navlinks">
-                                <Fade cascade damping={0.1}>
-                                    <Link className="portfolio" href="/portfolio">Ons werk</Link>
-                                    <Link href="/services">Diensten</Link>
-                                    <Link href="/about">Over ons</Link>
-                                    <Link className="contactpadding" href="/contact">Contact</Link>
-                                </Fade>
-                            </div>
+                            <Fade>
+                                <div id="navlinks">
+                                    <Link id="onswerk" className={`${activeLink === "/portfolio" ? "active" : ""}`} href="/portfolio">Ons werk</Link>
+                                    <Link id="diensten" className={`${activeLink === "/services" ? "active" : ""}`} href="/services">Diensten</Link>
+                                    <Link id="overons" className={`${activeLink === "/about" ? "active" : ""}`} href="/about">Over ons</Link>
+                                    <Link id="contact" className={`contactpadding ${activeLink === "/contact" ? "active" : ""}`} href="/contact">Contact</Link>
+                                </div>
+                            </Fade>
                             <div id="mobilenav">
                                 <a className="hamburgerIcon" onClick={toggleMenu}>
                                     <Image src={Hamburger} height={50} alt="Hamburger Menu" />

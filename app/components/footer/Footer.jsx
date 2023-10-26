@@ -51,7 +51,8 @@ export const Footer = () => {
                     <div className='footercontainer'>
                         <div className="overflowhidden footeranim">
                             <motion.div
-                                variants={mobileLinkVars}
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
                                 className='footeranim'>
                                 <Image className='footerlogo' src={Logo} alt="vanleeuwenmedia® 2023" />
                             </motion.div>
