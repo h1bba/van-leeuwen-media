@@ -106,7 +106,7 @@ const Header = () => {
             },
         },
     };
-    
+
 
     return (
         <div className={mulish.className}>

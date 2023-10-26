@@ -11,11 +11,6 @@ import { Fade } from 'react-awesome-reveal'
 import Head from 'next/head'
 const mulish = Mulish({ subsets: ['latin'] })
 
-export const metadata = {
-    title: 'Contact - Van Leeuwen Media',
-    description: 'Wij brengen jouw visie tot leven!',
-}
-
 const Contact = () => {
     return (
         <>
