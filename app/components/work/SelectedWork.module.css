@@ -185,7 +185,7 @@
     cursor: pointer;
 }
 
-.pegasusContainer, .lkqcContainer, .autoContainer, .bulaContainer, .lkqtContainer, .sweetbobContainer {
+.pegasusContainer, .lkqcContainer, .autoContainer, .bulaContainer, .lkqtContainer, .sweetbobContainer, .clesContainer {
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
@@ -347,6 +347,32 @@
 .autoContainer::after {
 
     content: 'Autofirst | Geen gedoe, goed geregeld';
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+.clesContainer::before {
+    content: 'Fictional';
+    font-size: 1.5rem;
+    position: absolute;
+    color: var(--var-color-white);
+    bottom: 2.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+.clesContainer::after {
+
+    content: 'Cles | Da Pele Pra Fora';
     font-size: 1.5rem;
     font-weight: bold;
     position: absolute;

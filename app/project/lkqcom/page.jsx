@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
 import styles from '../project.module.css'
@@ -21,7 +22,7 @@ const LKQcom = () => {
                         <Fade cascade damping={0.2}>
 
                             <a href='/'>
-                                <Image src={Arrow} height={40} alt='' />
+                                <Image src={Arrow} height={40} alt='Back arrow' />
                             </a>
                             <h2 className={styles.title}> LKQ | Keeping you moving</h2 >
                         </Fade>
@@ -63,11 +64,11 @@ const LKQcom = () => {
                                     <p>LKQ stond voor een uitdaging: het optimaliseren van hun onboardingstraject. Ze benaderden ons met de vraag om een video te maken die nieuw personeel zou laten zien hoe essentieel LKQ is voor de samenleving.</p>
                                 </div>
                                 <div className={styles.gridimgs}>
-                                    <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom/LKQcom1.jpg"></img>
+                                    <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom/LKQcom1.jpg" alt='LKQ commercial'></img>
                                 </div>
 
                                 <div className={styles.gridimgs}>
-                                    <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom/LKQcom2.jpg"></img>
+                                    <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom/LKQcom2.jpg" alt='LKQ commercial'></img>
                                 </div>
                                 <div>
                                     <p>In de video hebben we op een leuke en speelse manier een essentieel beroep verwerkt: de verloskundige. We wilden de kijkers laten zien hoe belangrijk en waardevol LKQ is in de dagelijkse werkzaamheden van de verloskundige. Ook was het belangrijk voor LKQ dat de medewerkers zich betrokken voelden, daarom hebben we meerdere functies in de video verwerkt, zoals orderpicker, binnendienstmedewerker, chauffeur, enzovoort.</p>
@@ -76,7 +77,7 @@ const LKQcom = () => {
                                     <p>Om ervoor te zorgen dat de boodschap in de hele Benelux begrepen kon worden, hebben we de video geleverd in drie verschillende talen: Nederlands, Vlaams en Frans. Op die manier konden we een breed publiek bereiken en het onboardingstraject van LKQ verbeteren.</p>
                                 </div>
                                 <div className={styles.gridimgs}>
-                                    <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom/LKQcom3.jpg"></img>
+                                    <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom/LKQcom3.jpg" alt='LKQ commercial'></img>
                                 </div>
                             </Fade>
                         </div>

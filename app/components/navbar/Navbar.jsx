@@ -118,7 +118,7 @@ const Header = () => {
                         <div className="navbar-container">
                             <Fade>
                                 <div>
-                                    <Link className="logo" href="/"><Image src={Logo} alt="" />
+                                    <Link className="logo" href="/"><Image src={Logo} alt="Van Leeuwen Media Logo" />
                                     </Link>
                                 </div>
                             </Fade>
@@ -132,7 +132,7 @@ const Header = () => {
                             </Fade>
                             <div id="mobilenav">
                                 <a className="hamburgerIcon" onClick={toggleMenu}>
-                                    <Image src={Hamburger} height={50} alt="Hamburger Menu" />
+                                    <Image src={Hamburger} height={50} alt="Hamburger Menu button" />
                                 </a>
 
                             </div>

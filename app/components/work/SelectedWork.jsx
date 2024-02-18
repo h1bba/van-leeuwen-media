@@ -15,6 +15,7 @@ import Bula from './Bula/Bula'
 import Lkqtime from './Lkqtime/Lkqtime'
 import Bikker from './Autofirst/Autofirst'
 import Sweetbob from './Sweetbob/Sweetbob'
+import Cles from './Cles/Cles'
 import { Fade } from "react-awesome-reveal";
 
 
@@ -73,6 +74,7 @@ const SelectedWork = () => {
 
                         <a href='/project/lkqtime'><Lkqtime /></a>
                         <a href='/project/sweetbob'><Sweetbob /></a>
+                        <a href='/project/cles'><Cles /></a>
 
                     </Fade>
 

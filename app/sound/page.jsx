@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
 import Head from 'next/head';
@@ -15,6 +16,10 @@ const Sound = () => {
         <>
             <Head>
                 <title>Sound Design | Van Leeuwen Media</title>
+                <meta
+                    name="description"
+                    content="Audio is een essentieel onderdeel van een geslaagde video en vereist speciale expertise. Versterk het verhaal dat je wilt vertellen met sound design, creëer een meeslepende auditieve ervaring en voeg een nieuwe dimensie toe aan jouw video."
+                />
             </Head>
             <main className={mulish.className}>
 
@@ -47,9 +52,9 @@ const Sound = () => {
                             <div className={styles.imagessticky}>
                                 <Fade cascade triggerOnce>
 
-                                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign2.jpg'></img>
-                                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign1.jpeg'></img>
-                                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign.jfif'></img>
+                                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign2.jpg' alt='Sound design service showcase'></img>
+                                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign1.jpeg' alt='Sound design service showcase'></img>
+                                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/SoundDesign/SoundDesign.jfif' alt='Sound design service showcase'></img>
                                 </Fade>
                             </div>
 

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
 import styles from './film.module.css'
@@ -12,6 +13,10 @@ const Film = () => {
         <>
             <Head>
                 <title>Video/film Productie | Van Leeuwen Media</title>
+                <meta
+                    name="description"
+                    content="Imponeer met onze creatieve high-end video/filmoplossingen. Breng jouw visie tot leven met onze creatieve high-end video-oplossingen. Wij leveren visuele content die fascineert en verrast, waarbij out-of-the-box denken geen taboe is. Met indrukwekkende cinematografie, meeslepende storytelling en het oog voor detail van specialisten tillen we jouw project naar een hoger niveau. Vertrouw op onze creatieve expertise voor een onvergetelijke videobeleving."
+                />
             </Head>
             <main className={mulish.className}>
                 <div className={styles.servicegrid}>
@@ -40,11 +45,11 @@ const Film = () => {
                         <div className={styles.imagessticky}>
                             <Fade cascade triggerOnce>
 
-                                <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bikker/Autofirst2.jpg"></img>
-                                <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula1.jpg"></img>
-                                <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom/LKQcom3.jpg"></img>
+                                <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bikker/Autofirst2.jpg" alt='Autofirst commercial'></img>
+                                <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula1.jpg" alt='Bula Pano De Prato commercial'></img>
+                                <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQcom/LKQcom3.jpg" alt='LKQ commercial'></img>
 
-                                <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Sweetbob/sweetbob1.jpg"></img>
+                                <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Sweetbob/sweetbob1.jpg" alt='Sweet Bob commercial'></img>
                             </Fade>
                         </div>
                     </div>

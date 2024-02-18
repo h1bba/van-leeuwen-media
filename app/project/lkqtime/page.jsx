@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
 import styles from '../project.module.css'
@@ -21,7 +22,7 @@ const LKQtime = () => {
             <Fade cascade damping={0.2}>
 
               <a href='/'>
-                <Image src={Arrow} height={40} alt='' />
+                <Image src={Arrow} height={40} alt='Back arrow' />
               </a>
               <h2 className={styles.title}> LKQ | The future is now</h2 >
             </Fade>
@@ -60,11 +61,11 @@ const LKQtime = () => {
                   <p>LKQ had de wens om een visueel verhaal te vertellen over de snelle vooruitgang van de tijd waarbij ze de boodschap wilden overbrengen : &quot;the future is now&quot;. Doormiddel van een vlotte reeks aan innovaties namen we de kijkers mee op een reis door de tijd, waarbij we belangrijke mijlpalen en technologische ontwikkelingen illustreerden.</p>
                 </div>
                 <div className={styles.gridimgs}>
-                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQtime/LKQtime1.jpg"></img>
+                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQtime/LKQtime1.jpg" alt='LKQ commercial time'></img>
                 </div>
 
                 <div className={styles.gridimgs}>
-                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQtime/LKQtime2.jpg"></img>
+                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQtime/LKQtime2.jpg" alt='LKQ commercial time'></img>
                 </div>
                 <div>
                   <p>Van oude voertuigen tot geavanceerde technologieën en innovatieve oplossingen, de video benadrukte de constante evolutie en vooruitgang in de autowereld. Door deze transformatie te laten zien, wilden we de kijkers inspireren en laten nadenken over de mogelijkheden en kansen die het heden en de toekomst bieden.</p>
@@ -75,7 +76,7 @@ const LKQtime = () => {
                     “The future is now!”</p>
                 </div>
                 <div className={styles.gridimgs}>
-                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQtime/LKQtime3.jpg"></img>
+                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/LKQtime/LKQtime3.jpg" alt='LKQ commercial time'></img>
                 </div>
               </Fade>
             </div>

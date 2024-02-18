@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
 import styles from './motion.module.css'
@@ -12,6 +13,10 @@ const Motion = () => {
         <>
             <Head>
                 <title>Motion Design | Van Leeuwen Media</title>
+                <meta
+                    name="description"
+                    content="Motion design is een breed begrip waar diverse aspecten onder vallen. Denk bijvoorbeeld aan creatieve animaties, visuele effecten en grafische elementen om een visueel spektakel te creëren dat onmiddellijk de aandacht trekt en een blijvende indruk achterlaat. Of je nu een bedrijfslogo wilt animeren, special effects nodig hebt of dat er iets weggepoetst moet worden, motion design voegt een wow factor toe aan jouw video."
+                />
             </Head>
             <main className={mulish.className}>
                 <div className={styles.servicegrid}>
@@ -28,10 +33,9 @@ const Motion = () => {
                     <div className={styles.images}>
                         <div className={styles.imagessticky}>
                             <Fade cascade triggerOnce>
-                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Motiondesign/Motion1.gif' />
-                                {/* <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Motiondesign/Motion2.gif' /> */}
-                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Motiondesign/Motion3.gif' />
-                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Motiondesign/Motion4.gif' />
+                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Motiondesign/Motion1.gif' alt='Motion design showcase' />
+                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Motiondesign/Motion3.gif' alt='Motion design showcase' />
+                                <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Motiondesign/Motion4.gif' alt='Motion design showcase' />
                             </Fade>
                         </div>
                     </div>

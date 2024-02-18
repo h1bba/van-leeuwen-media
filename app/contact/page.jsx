@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
 import Image from 'next/image'
@@ -16,6 +17,10 @@ const Contact = () => {
         <>
             <Head>
                 <title>Contact | Van Leeuwen Media</title>
+                <meta
+                    name="description"
+                    content="Wij brengen uw visie tot leven!"
+                />
             </Head>
             <main className={mulish.className}>
                 <div className={styles.contactpage}>

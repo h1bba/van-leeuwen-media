@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
 import styles from '../project.module.css'
@@ -21,7 +22,7 @@ const Pegasus = () => {
             <Fade cascade damping={0.2}>
 
               <a href='/'>
-                <Image src={Arrow} height={40} alt='' />
+                <Image src={Arrow} height={40} alt='Back arrow' />
               </a>
               <h2 className={styles.title}> Bula | Pano de prato</h2 >
             </Fade>
@@ -63,11 +64,11 @@ const Pegasus = () => {
                   <p>De Braziliaanse band Bula benaderde ons met de wens om een indrukwekkende videoclip te produceren voor hun eerste single van het nieuwe album &quot;Indivíduo Coletivo&quot;. Na vele succesvolle albums en hits wilden ze iets creëren dat alles zou overtreffen. We waren ontzettend enthousiast om deze internationale klus aan te pakken en we hebben onze koffers gepakt richting Santos (São Paulo), Brazilië.</p>
                 </div>
                 <div className={styles.gridimgs}>
-                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula1.jpg"></img>
+                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula1.jpg" alt='Bula - Pano De Prato Videoclip'></img>
                 </div>
 
                 <div className={styles.gridimgs}>
-                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula2.jpg"></img>
+                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula2.jpg" alt='Bula - Pano De Prato Videoclip'></img>
                 </div>
                 <div>
                   <p>Het nummer &quot;Pano de Prato&quot; beschrijft hoe mensen vaak geneigd zijn om naar anderen te wijzen en hun eigen fouten niet willen toegeven. In de clip wilden we deze boodschap overbrengen. We lieten zien dat het belangrijk is om eerst naar jezelf te kijken voordat je naar anderen wijst.</p>
@@ -76,7 +77,7 @@ const Pegasus = () => {
                   <p>Een leuk aspect uit de clip is dat de bandleden zelf als edelfiguranten figureerden. Dit zorgt voor een persoonlijke en komische touch die de clip uniek maakt. Het is interessant om de bandleden, die bekend staan om hun muzikale talent, te zien in een compleet andere rol.</p>
                 </div>
                 <div className={styles.gridimgs}>
-                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula3.jpg"></img>
+                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Bula/bula3.jpg" alt='Bula - Pano De Prato Videoclip'></img>
                 </div>
               </Fade>
             </div>

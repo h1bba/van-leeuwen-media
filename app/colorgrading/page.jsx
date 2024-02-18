@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
 import styles from './color.module.css'
@@ -12,6 +13,10 @@ const Colorgrading = () => {
         <>
             <Head>
                 <title>Colorgrading | Van Leeuwen Media</title>
+                <meta
+                    name="description"
+                    content="In de audiovisuele wereld is de waarde van een goede Colorist niet te onderschatten. Met Color grading, een geavanceerde techniek binnen de post-productie, krijgen jouw beelden een indrukwekkende transformatie. Of het nu gaat om commercials, films, documentaires of andere vormen van mediaproducties, color grading is de sleutel tot het bereiken van een high-end uitstraling. Wij zorgen ervoor dat jouw visie tot leven komt. Met behulp van Color Grading tillen we jouw project naar het hoogst haalbare niveau."
+                />
             </Head>
             <main className={mulish.className}>
                 <div className={styles.servicegrid}>
@@ -35,22 +40,22 @@ const Colorgrading = () => {
 
                                 <div>
                                     <h3 className={styles.righttext}>Before</h3>
-                                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Colorgrading/Before.jpg'></img>
+                                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Colorgrading/Before.jpg' alt='Color grading before image'></img>
                                 </div>
 
                                 <div>
                                     <h3 className={styles.righttext}>After</h3>
-                                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Colorgrading/After.jpg'></img>
+                                    <img src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Colorgrading/After.jpg' alt='Color grading after image'></img>
                                 </div>
 
                                 <div>
                                     <h3 className={styles.righttext}>Before</h3>
-                                    <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Before.jpg' alt='Before image' />
+                                    <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Before.jpg' alt='Color grading before image' />
                                 </div>
 
                                 <div>
                                     <h3 className={styles.righttext}>After</h3>
-                                    <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/After.jpg' alt='After image' />
+                                    <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/After.jpg' alt='Color grading after image' />
                                 </div>
                             </Fade>
                         </div>

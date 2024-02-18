@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
 import styles from '../project.module.css'
@@ -20,7 +21,7 @@ const Pegasus = () => {
           <div className={styles.backarrow}>
             <Fade cascade damping={0.2}>
               <a href='/'>
-                <Image src={Arrow} height={40} alt='' />
+                <Image src={Arrow} height={40} alt='Back arrow' />
               </a>
               <h2 className={styles.title}> Pegasus | Jouw paard onze zorg</h2 >
             </Fade>
@@ -61,11 +62,11 @@ const Pegasus = () => {
                   <p>Bij Paardensportcentrum Pegasus draait alles om de zorg voor jouw paard. Het doel van de commercial was om op een boeiende manier in beeld te brengen hoe jouw paard bij Pegasus in goede handen is.</p>
                 </div>
                 <div className={styles.gridimgs}>
-                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus/Pegasus1.jpg"></img>
+                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus/Pegasus1.jpg" alt='Pegasus - Jouw paard onze zorg commercial'></img>
                 </div>
 
                 <div className={styles.gridimgs}>
-                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus/Pegasus2.jpg"></img>
+                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus/Pegasus2.jpg" alt='Pegasus - Jouw paard onze zorg commercial'></img>
                 </div>
 
                 <div>
@@ -77,7 +78,7 @@ const Pegasus = () => {
                 </div>
 
                 <div className={styles.gridimgs}>
-                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus/Pegasus3.jpg"></img>
+                  <img src="https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/Pegasus/Pegasus3.jpg" alt='Pegasus - Jouw paard onze zorg commercial'></img>
                 </div>
               </Fade>
             </div>

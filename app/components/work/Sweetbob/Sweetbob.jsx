@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
 import styles from '../SelectedWork.module.css';
 
@@ -21,7 +22,7 @@ const Sweetbob = () => {
             </video>
             <img
                 src={sweetbobPreviewPoster}
-                alt="Pegasus Thumbnail"
+                alt="Sweetbob commercial productie Thumbnail"
                 className={`${styles.thumbnailWrapper} ${isHovered ? styles.hidden : ''}`}
             />
         </div>

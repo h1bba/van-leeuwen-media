@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
 import styles from '../SelectedWork.module.css';
 
@@ -21,7 +22,7 @@ const Autofirst = () => {
             </video>
             <img
                 src={autoPreviewPoster}
-                alt="Pegasus Thumbnail"
+                alt="Autofirst productie Thumbnail"
                 className={`${styles.thumbnailWrapper} ${isHovered ? styles.hidden : ''}`}
             />
         </div>

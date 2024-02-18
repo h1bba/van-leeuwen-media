@@ -87,6 +87,12 @@ const Services = () => {
         <>
             <Head>
                 <title>Diensten | Van Leeuwen Media</title>
+                <meta
+                    name="description"
+                    content="Als bedrijf bieden we een breed scala aan diensten aan, waaronder
+                    volledige video & film producties maar ook losse diensten zoals color
+                        grading, sound design en motion design"
+                />
             </Head>
             <main className={mulish.className}>
                 <div className={styles.servicespage}>

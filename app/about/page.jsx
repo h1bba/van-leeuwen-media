@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
 import Head from 'next/head'
@@ -14,7 +15,7 @@ const About = () => {
         <>
             <Head>
                 <title>Over ons | Van Leeuwen Media</title>
-                <meta name='description' content='Over ons - Van Leeuwen Media' />
+                <meta name='description' content='Van Leeuwen Media staat voor creatieve high-end mediaoplossingen, daarmee doelen we op mediaoplossingen met een unieke en creatieve benadering. We streven naar doeltreffende oplossingen die bedrijven en organisaties verder helpen. We werken nauw samen met een team van specialisten omdat we geloven dat een scherp oog voor detail in elk aspect leidt tot het beste resultaat.' />
             </Head>
             <main className={mulish.className}>
                 <div className={styles.aboutpage}>
@@ -35,8 +36,8 @@ const About = () => {
 
                             <div className={styles.aboutimages}>
 
-                                <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/About1.jpg' alt='' />
-                                <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/About3.jpg' alt='' />
+                                <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/About1.jpg' alt='Professional production camera' />
+                                <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/About3.jpg' alt='Filming production picture' />
 
                             </div>
                         </Fade>
@@ -50,9 +51,7 @@ const About = () => {
                             </Fade>
 
                         </div>
-                        {/* <div>
-                    <img className={styles.overonsfotos} src='https://vanleeuwenmedia.s3.eu-central-1.amazonaws.com/About2.jpg' alt='' />
-                </div> */}
+
                         <div className={styles.w72}>
                             <Fade cascade damping={0.2}>
 

@@ -54,7 +54,7 @@ export const Footer = () => {
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
                                 className='footeranim'>
-                                <Image className='footerlogo' src={Logo} alt="vanleeuwenmedia® 2023" />
+                                <Image className='footerlogo' src={Logo} alt="Van Leeuwen Media Logo" />
                             </motion.div>
                         </div>
                         <ul>

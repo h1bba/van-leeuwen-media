@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
 import styles from '../SelectedWork.module.css';
 
@@ -21,7 +22,7 @@ const LKQcom = () => {
             </video>
             <img
                 src={lkqcomPreviewPoster}
-                alt="Pegasus Thumbnail"
+                alt="LKQ commercial productie Thumbnail"
                 className={`${styles.thumbnailWrapper} ${isHovered ? styles.hidden : ''}`}
             />
         </div>
